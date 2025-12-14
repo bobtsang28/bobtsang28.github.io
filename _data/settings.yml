@@ -94,6 +94,8 @@ footer_menu__settings:
       url: '/photography/'
     - url: '/about/'
       title: 'About'
+    - url: '/blog/'
+      title: 'Blog'
     - url: '/contact/'
       title: 'Contact'
 
