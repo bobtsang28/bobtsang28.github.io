@@ -20,8 +20,8 @@ menu__settings:
       submenu:
       - url: '/about/'
         title: 'About'
-      - url: '/Blog/'
-        title: '/blog/'
+      - url: '/blog/'
+        title: 'Blog'
       - url: '/contact/'
         title: 'Contact'
       - url: '/elements/'
