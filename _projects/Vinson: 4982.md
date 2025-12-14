@@ -1,5 +1,4 @@
----
-title: VINSON: 4892
+title: "VINSON: 4892"
 date: 2024-01
 subtitle: Travel Video
 image: '/images/project-9.jpg'
