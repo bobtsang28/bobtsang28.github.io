@@ -4,7 +4,9 @@ subtitle: Travel Video
 image: '/images/project-9.jpg'
 ---
 
-In qua quid est boni praeter summam voluptatem, et eam sempiternam? Cur post Tarentum ad Archytam? Qua ex cognitione facilior facta est investigatio rerumano occultissimarum. Negat enim tenuissimo victu, id est contemptissimis escis et sed potionibus, minorem voluptatem. Ego quoque, inquit, didicerim libentius si table quiduse proactive domination.
+In January 2024, I finally wrapped up a long-standing mountaineering obsession: the Seven Summits, which invovled climbing the tallest mountain on every continent, including Mount Everest. Vinson Massif in Antarctica was the final peak and certainly an unforgettable trip that ended the entire journey.
+
+I’ve been filming my expeditions ever since my very first summit on Mount Kilimanjaro back in 2016. To mark the completion of the Seven Summits, I returned home and, without taking any sensible amount of rest, began working on a travel video that recaps the entire adventure.
 
 <div class="gallery-box">
   <div class="gallery">
