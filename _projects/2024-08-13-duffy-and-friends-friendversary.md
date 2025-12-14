@@ -22,11 +22,9 @@ In the end, we focused on what makes LPC truly unique. Amidst a changing macro e
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-2a.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-2b.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-2c.jpg" loading="lazy" alt="Project">
-  </div>
-  <em>Photo by HKDL</em>
+    <img src="/images/project-example-3a.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-3b.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-3c.jpg" loading="lazy" alt="Project">
 </div>
 
 Considering the message, I chose to focus on the “people of LPC” as the central element of the video, highlighting their resilience and positivity in the face of challenges ahead. Accordingly, all visual and audio elements, including the soundtrack, were carefully selected and edited to reinforce this theme.
