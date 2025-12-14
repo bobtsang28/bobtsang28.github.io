@@ -24,6 +24,8 @@ menu__settings:
         title: 'Blog'
       - url: '/contact/'
         title: 'Contact'
+      - url: '/credits/'
+        title: 'Credits'
 
 
 #-------------------------------
