@@ -1,4 +1,6 @@
-title: "VINSON: 4892"
+---
+layout: project
+title: "VINSON: 4982"
 date: 2024-01
 subtitle: Travel Video
 image: '/images/project-9.jpg'
