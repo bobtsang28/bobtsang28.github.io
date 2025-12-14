@@ -49,8 +49,8 @@ social:
 #-------------------------------
 # Hero Settings
 hero:
-  hero__title: Bob is a London-based
-  hero__description: So, If you're looking for designs that have a high visual impact on your target audience, while also aligning with your brand, Let's talk about your project in more detail.
+  hero__title: Bob is a UK-based filmmaker and photographer who happens to love the outdoors
+  hero__description: Looking for end-to-end services to bring your video or photography projects to life? Let's chat!
   hero__image: '/images/01.jpg'
 
 
