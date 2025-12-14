@@ -17,9 +17,7 @@ As part of my internship at Disneyland Hong Kong as a broadcast marketing intern
 
 ***
 
-Considering the limited budget and tight production timeline, I approached the project from a fairly mathematical perspective, holding multiple meetings with LPC board members to understand the logistical considerations before delving into narrative and story elements. Once I received a brief outlining the board’s goals, I crafted a treatment and style deck, and held further discussions in the weeks leading up to the shoot to refine the visual elements.
-
-In the end, we focused on what makes LPC truly unique. Amidst a changing macro environment and with the future in mind, we agreed that the core value of a UWC education is its ability to inspire students to become, quite simply, good-natured people, an attribute no technology can replace, and one that is essential if we are to come together to address common challenges such as societal conflicts and climate change.
+Although this project was quite different from my previous work, I approached it in more or less the same way, starting with storyboarding and brainstorming ideas that would immediately capture the audience’s attention. Since these were social videos, my main focus was on audience retention, which relies heavily on visuals and editing. For the three videos I produced, I treated each one differently, experimenting with various transition styles. Whether they be a simple graphic match cut or picture-in-picture, my goal was to make each short feel fresh and distinct while maintaining a consistent overall tone.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -29,4 +27,4 @@ In the end, we focused on what makes LPC truly unique. Amidst a changing macro e
     </div>
 </div>
 
-Considering the message, I chose to focus on the “people of LPC” as the central element of the video, highlighting their resilience and positivity in the face of challenges ahead. Accordingly, all visual and audio elements, including the soundtrack, were carefully selected and edited to reinforce this theme.
+Since these were Disneyland shorts, I not only had to follow Disney’s high editing standards and stylistic guidelines, but also highlight the guests’ enjoyment and their interactions with the characters. With multiple camera operators on each shoot, I planned ahead, identifying which parts of the day would best capture guest reactions and prioritising coverage based on the activities, whether it was the parade, a drawing session, or a photoshoot. Navigating Disney’s strict character guidelines alongside the tight event schedule was certainly challenging, but seeing the final footage made it all the more rewarding.
