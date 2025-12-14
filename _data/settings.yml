@@ -1,8 +1,8 @@
 #-------------------------------
 # Site Settings
-title: Hilton
+title: Bob Tsang
 logo: # You can add own logo. For example '/images/logo.png'.
-description: Hilton is a super simple portfolio theme for Jekyll.
+description: Bob Tsang is a freelance filmmaker and photographer based in the UK.
 color_scheme: auto # You can choose three modes auto, light, and dark. By default, the auto mode is set, which means the user can choose the light or dark mode themself.
 
 
@@ -12,14 +12,16 @@ menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Projects'
+    - title: 'Film Projects'
       url: '/projects/'
-    - title: 'Blog'
-      url: '/blog/'
+    - title: 'Photography'
+      url: '/photography/'
     - title: 'Pages'
       submenu:
       - url: '/about/'
         title: 'About'
+      - url: '/Blog/'
+        title: '/blog/'
       - url: '/contact/'
         title: 'Contact'
       - url: '/elements/'
