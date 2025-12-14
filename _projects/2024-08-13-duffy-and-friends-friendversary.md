@@ -1,16 +1,16 @@
 ---
 layout: project
-title: "LPCUWC VISION 2052"
-date: 2025-02-03
-subtitle: Promotional Video
-image: '/images/project-2.jpg'
+title: "DUFFY AND FRIENDS FRIENDVERSARY"
+date: 2024-08-13
+subtitle: Social Video
+image: '/images/project-7.jpg'
 ---
 
 In the summer of 2024, I was approached by the Chair of UWCGO Hong Kong, Elizabeth Fung, to lead the development of a promotional video for Li Po Chun United World College's fundraising project, "Vision 2052: Together Shaping the Next 30 Years of LPC." This transformative initiative aims to shape the future of UWC Hong Kong and empower generations of students to come. The investments are intended to serve as a cornerstone for enhancing the college’s ability to deliver an even stronger academic program, equipping students with the tools and knowledge to tackle the urgent challenges facing both our local and global communities.
 
 ***
 
-<p><iframe src="https://www.youtube.com/embed/LZ8t5Nh2E7w" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://www.instagram.com/p/C-mIg3IPfFZ/embed/" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
 
 ***
 
