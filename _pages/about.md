@@ -32,7 +32,7 @@ Bring to the table win-win survival strategies to ensure proactive domination. A
 Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. Holistically foster superior methodologies without market-driven best practices.
 
 
-#Credits
+## Credits
 
 | Title | Production Company | Date | Role |
 |-------|---------------------|------|------|
