@@ -36,11 +36,9 @@ author:
   author__avatar: '/images/01-1.jpg'
 
 social:
-- {icon: "fa-brands fa-x-twitter", link: "https://twitter.com"}
-- {icon: "fa-brands fa-square-facebook", link: "https://facebook.com"}
-- {icon: "fa-brands fa-instagram", link: "https://instagram.com"}
-- {icon: "fa-brands fa-pinterest", link: "https://pinterest.com"}
-- {icon: "fa-brands fa-github", link: "https://github.com"}
+- {icon: "fa-brands fa-square-facebook", link: "https://www.facebook.com/filmmakingbob/"}
+- {icon: "fa-brands fa-instagram", link: "https://www.instagram.com/filmmaking_bob/"}
+- {icon: "fa-brands fa-youtube", link: "https://www.youtube.com/@filmmakingbob"}
 
 # Example of adding a new link to the footer - {icon: "fa-brands fa-dribbble", link: "https://dribbble.com"}
 # Other icons can be found at https://fontawesome.com/icons
@@ -59,7 +57,7 @@ hero:
 mailchimp: enable # To enable the mailchimp form, use the value 'enable'. To disable the form, leave the field blank.
 mailchimp__identifier: gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp # Add your MailChimp form identifier. For example - gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp
 mailchimp__input__text: Your email address...
-mailchimp__button__text: Get updates
+mailchimp__button__text: Get in touch
 
 
 #-------------------------------
