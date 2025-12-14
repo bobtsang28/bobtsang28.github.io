@@ -68,10 +68,10 @@ projects__settings:
 
 
 #-------------------------------
-# Blog Section
-blog__settings:
-  blog__title: Recent Posts
-  blog__description:
+# Gallwery Settings
+gallery__settings:
+  gallery__title: Photography
+  gallery__description: A selection of my recent photography works.
 
 
 #-------------------------------
