@@ -24,8 +24,6 @@ menu__settings:
         title: 'Blog'
       - url: '/contact/'
         title: 'Contact'
-      - url: '/elements/'
-        title: 'Elements'
 
 
 #-------------------------------
