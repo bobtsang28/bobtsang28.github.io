@@ -6,7 +6,7 @@ subtitle: Mini Documentary
 image: '/images/project-5.jpg'
 ---
 
-One of my passions is bikepacking! Over the years, I’ve found cycling to be one of the most exciting ways to explore countries like Japan. It’s at just the right pace where you move fast enough to cover ground, yet slow enough to truly take in your surroundings and discover hidden spots off the beaten path, something you rarely get to experience, even by car.
+In my final year of university, I wanted to try something beyond my coursework. Having previously worked on video content with the student television society, I made the decision to take on projects completely independently. That’s how my documentary series started, traveling to interesting places and interviewing fascinating people, hoping their stories would capture the interest of my friends and family around the world.
 
 ***
 
