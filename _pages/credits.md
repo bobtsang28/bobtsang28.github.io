@@ -4,9 +4,7 @@ title: Credits
 permalink: /credits/
 ---
 
-# Credits
-
-Below is a table of my credits:
+# Project Credits
 
 | Title | Production Company | Date | Role |
 |-------|---------------------|------|------|
