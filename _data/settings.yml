@@ -12,7 +12,7 @@ menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Film Projects'
+    - title: 'Projects'
       url: '/projects/'
     - title: 'Photography'
       url: '/photography/'
@@ -87,7 +87,7 @@ footer_menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Film Projects'
+    - title: 'Projects'
       url: '/projects/'
     - title: 'Photography'
       url: '/photography/'
