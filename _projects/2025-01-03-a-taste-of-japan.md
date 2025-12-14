@@ -4,7 +4,6 @@ title: "A TASTE OF JAPAN"
 date: 2025-01-03
 subtitle: Mini Documentary
 image: '/images/project-5.jpg'
-image_position: center top
 ---
 
 In my final year of university, I wanted to try something beyond my coursework. Having previously worked on video content with the student television society, I made the decision to take on projects completely independently. That’s how my documentary series started, traveling to interesting places and interviewing fascinating people, hoping their stories would capture the interest of my friends and family around the world.
