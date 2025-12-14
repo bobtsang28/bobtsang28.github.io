@@ -12,7 +12,7 @@ As part of my internship at Disneyland Hong Kong as a broadcast marketing intern
 ***
 
 <div style="position: relative; padding-bottom: 100%; height: 0; overflow: hidden; max-width: 540px; margin: 0rem auto;">
-  <iframe src="https://www.instagram.com/p/C-mIg3IPfFZ/embed/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" loading="lazy" allowfullscreen></iframe>
+  <iframe src="https://www.instagram.com/p/C-mIg3IPfFZ/embed/" style="position: absolute; top: 0; left: 0; width: 110%; height: 110%; border: 0;" loading="lazy" allowfullscreen></iframe>
 </div>
 
 ***
