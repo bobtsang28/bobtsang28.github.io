@@ -2,7 +2,7 @@
 layout: project
 title: "A TASTE OF JAPAN"
 date: 2025-01-03
-subtitle: Mini Documentary
+subtitle: Mini-Documentary
 image: '/images/project-5.jpg'
 ---
 
