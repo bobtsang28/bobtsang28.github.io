@@ -30,3 +30,10 @@ Globally incubate standards compliant channels before scalable benefits. Quickly
 Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
 
 Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. Holistically foster superior methodologies without market-driven best practices.
+
+
+#Credits
+
+| Title | Production Company | Date | Role |
+|-------|---------------------|------|------|
+|       |                     |      |      |
