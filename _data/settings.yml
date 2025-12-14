@@ -53,7 +53,7 @@ hero:
 #-------------------------------
 # Newsletter
 mailchimp: enable # To enable the mailchimp form, use the value 'enable'. To disable the form, leave the field blank.
-mailchimp__identifier: "http://eepurl.com/jut1m-/"
+mailchimp__identifier: "eepurl.com/jut1m-/"
 # Add your MailChimp form identifier. For example - gmail.us21.list-manage.com/subscribe/post?u=8aeb9c31a5c97a3a5f9ff2740&amp;id=0e31fd7793&amp
 mailchimp__input__text: Your email address...
 mailchimp__button__text: Get in touch
