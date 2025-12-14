@@ -23,7 +23,7 @@ When I first started, I knew I wanted to interview the owners of some of my favo
   </div>
 </div>
 
-The second half of the route took me on intense uphill trails through some of Japan’s most mountainous terrain. Despite the grueling climbs, it was certainly the highlight of the journey, exploring some of the most rural corners of the country I’ve ever seen and connecting with locals, hearing their stories and learning about life in these remote areas.
+In recent years, Japanese cuisine has become increasingly popular, but finding an authentic Japanese restaurant in the UK can still be a challenge. Hearing Frankie share her personal journey with her husband, from selling Japanese tea online to opening a tea house in the heart of York, was truly inspiring. Although COVID had a significant impact on their business, Frankie remains hopeful that they will bounce back in the near future.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -33,4 +33,4 @@ The second half of the route took me on intense uphill trails through some of Ja
   </div>
 </div>
 
-Shooting this film required an unprecedented level of pre-production, simply because it was a solo project. After planning a general route with a dozen waypoints, I also prepared several backup options in case I couldn’t reach my intended destination each day. With no pre-booked accommodation, I often had to search online, or even knock on doors, just to find a place to stay. Even though I had mapped out the structure and visuals of the video in advance, the daily unpredictability, combined with the need to capture a quota of footage to weave together a coherent narrative, made it one of the most logistically challenging projects I’ve ever undertaken.
+This video has gathered over 1,400 views on YouTube. While not a huge number, for me it was already a meaningful achievement for one of the first independent mini-documentaries I produced. Navigating all the behind-the-scenes logistics was definitely a challenge, but getting an inside look at how a Japanese tea house operates and meeting the people who bring it to life immediately made me want to create more of these types of videos.
