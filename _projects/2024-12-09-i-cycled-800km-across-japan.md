@@ -20,10 +20,10 @@ In the end, we focused on what makes LPC truly unique. Amidst a changing macro e
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-2a.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-2b.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-2c.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-2d.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-4a.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-4b.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-4c.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-4d.jpg" loading="lazy" alt="Project">
   </div>
 </div>
 
