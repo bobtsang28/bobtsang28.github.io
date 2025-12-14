@@ -24,9 +24,9 @@ To that end, I avoided flashy match cuts, elaborate transitions, and heavy-hande
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-1a.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-1b.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-1c.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-6a.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-bb.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-6c.jpg" loading="lazy" alt="Project">
   </div>
 </div>
 
