@@ -68,13 +68,6 @@ projects__settings:
 
 
 #-------------------------------
-# Gallwery Settings
-gallery__settings:
-  gallery__title: Photography
-  gallery__description: A selection of my recent photography works.
-
-
-#-------------------------------
 # Gallery Footer Settings
 gallery:
   gallery__images:
@@ -94,16 +87,16 @@ footer_menu__settings:
   menu__items:
     - title: 'Home'
       url: '/'
-    - title: 'Projects'
+    - title: 'Film Projects'
       url: '/projects/'
+    - title: 'Photography'
+      url: '/photography/'
     - title: 'Blog'
       url: '/blog/'
     - url: '/about/'
       title: 'About'
     - url: '/contact/'
       title: 'Contact'
-    - url: '/elements/'
-      title: 'Elements'
 
 
 #-------------------------------
