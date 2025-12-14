@@ -33,4 +33,4 @@ In recent years, Japanese cuisine has become increasingly popular, but finding a
   </div>
 </div>
 
-This video has gathered over 1,400 views on YouTube. While not a huge number, it was already a meaningful achievement for one of the first independent mini-documentaries I produced. Navigating all the behind-the-scenes logistics was definitely a challenge, but getting an inside look at how a Japanese tea house operates and meeting the people who bring it to life immediately made me want to create more of these types of videos.
+This video has gathered over 1,400 views on YouTube. Navigating all the behind-the-scenes logistics was definitely a challenge, but getting an inside look at how a Japanese tea house operates and meeting the people who bring it to life immediately made me want to create more of these types of videos.
