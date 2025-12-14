@@ -4,6 +4,7 @@ title: "A TASTE OF JAPAN"
 date: 2025-01-03
 subtitle: Mini Documentary
 image: '/images/project-5.jpg'
+image_position: center top
 ---
 
 In my final year of university, I wanted to try something beyond my coursework. Having previously worked on video content with the student television society, I made the decision to take on projects completely independently. That’s how my documentary series started, traveling to interesting places and interviewing fascinating people, hoping their stories would capture the interest of my friends and family around the world.
@@ -14,7 +15,7 @@ In my final year of university, I wanted to try something beyond my coursework. 
 
 ***
 
-Having done quite a few bikepacking trips in Japan, I decided in the summer of 2024 to take on a solo adventure, riding 800km across Central Japan, a region close to my heart. Starting in Kyoto, the journey carried me from Japan’s historic capital to the remote prefecture of Fukui, a place I had long dreamed of visiting. Despite being one of the least populated and visited prefectures in the country, I’d seen glimpses of its stunning rural towns online and knew I had to experience them for myself.
+When I first started, I knew I wanted to interview the owners of some of my favorite restaurants in York, but Ippuku Tea House felt like too big a project to tackle at the time. So I initially focused on a few smaller independent businesses. After struggling to spark interest from several of the restaurants I had hoped to film, I decided to return to my original plan and reach out to Ippuku. It took weeks of back-and-forth emails, but in the end, not only did the owner, Frankie, agree to be interviewed, one of the chefs, Eden, who happened to be a film school graduate, offered to help with the project.
 
 <div class="gallery-box">
   <div class="gallery">
