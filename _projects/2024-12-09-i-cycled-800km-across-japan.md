@@ -10,7 +10,7 @@ In the summer of 2024, I was approached by the Chair of UWCGO Hong Kong, Elizabe
 
 ***
 
-<p><iframe src="https://www.youtube.com/embed/LZ8t5Nh2E7w" loading="lazy" allowfullscreen style="border: 0;"></iframe></p>
+<p><iframe src="https://www.youtube.com/embed/LPClV3na6k8" loading="lazy" allowfullscreen style="border: 0;"></iframe></p>
 
 ***
 
