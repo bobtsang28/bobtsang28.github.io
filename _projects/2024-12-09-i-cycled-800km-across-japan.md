@@ -6,7 +6,7 @@ subtitle: Travel Video
 image: '/images/project-4.jpg'
 ---
 
-In the summer of 2024, I was approached by the Chair of UWCGO Hong Kong, Elizabeth Fung, to lead the development of a promotional video for Li Po Chun United World College's fundraising project, "Vision 2052: Together Shaping the Next 30 Years of LPC." This transformative initiative aims to shape the future of UWC Hong Kong and empower generations of students to come. The investments are intended to serve as a cornerstone for enhancing the college’s ability to deliver an even stronger academic program, equipping students with the tools and knowledge to tackle the urgent challenges facing both our local and global communities.
+One of my passions is bikepacking! Over the years, I’ve found cycling to be one of the most exciting ways to explore countries like Japan. It’s at just the right pace where you move fast enough to cover ground, yet slow enough to truly take in your surroundings and discover hidden spots off the beaten path, something you rarely get to experience, even by car.
 
 ***
 
@@ -14,13 +14,18 @@ In the summer of 2024, I was approached by the Chair of UWCGO Hong Kong, Elizabe
 
 ***
 
-Given the limited budget and tight production timeline, I approached the project from a fairly mathematical perspective, holding multiple production meetings with LPC board members to understand the logistical considerations before delving into narrative and story elements. Once I received a brief outlining the board’s goals, I crafted a treatment and style deck, and held further discussions in the weeks leading up to the shoot to refine the visual elements.
+Having done a fair few of these bikepacking trips in Japan. In the summer of 2024, I decided to attempt it solo, travelling 800km across Central Japan, a place near and dear to my heart. Landing in Osaka, the 
+
+<div class="gallery-box">
+  <div class="gallery">
+    <img src="/images/project-example-4a.jpg" loading="lazy" alt="Project">
+  </div>
+</div>
 
 In the end, we focused on what makes LPC truly unique. Amidst a changing macro environment and with the future in mind, we agreed that the core value of a UWC education is its ability to inspire students to become, quite simply, good-natured people, an attribute no technology can replace, and one that is essential if we are to come together to address common challenges such as societal conflicts and climate change.
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-4a.jpg" loading="lazy" alt="Project">
     <img src="/images/project-example-4b.jpg" loading="lazy" alt="Project">
     <img src="/images/project-example-4c.jpg" loading="lazy" alt="Project">
     <img src="/images/project-example-4d.jpg" loading="lazy" alt="Project">
