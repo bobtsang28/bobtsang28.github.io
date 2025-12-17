@@ -37,4 +37,4 @@ In post-production, various colour grades were experimented to capture Mong Kok�
   </div>
 </div>
 
-In the months following the release of the video, many more of the neon lights in the area have been taken down. With new regulations in place, this once-celebrated city tradition has all but disappeared. It’s heartbreaking to see, myself included, but I’m grateful to have captured this iconic aspect of the city on film before it disappeared. To me, it serves as a lasting memory of my years living in this incredible place.
+In the months following the release of the video, many more of the neon lights in the area were taken down. With new regulations in place, this once-celebrated city tradition has all but disappeared. It’s heartbreaking to see, myself included, but I’m grateful to have captured this iconic aspect of the city on film before it disappeared. To me, it serves as a lasting memory of my years living in this incredible place.

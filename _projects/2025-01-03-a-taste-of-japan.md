@@ -14,7 +14,7 @@ In recent years, Japanese cuisine has become increasingly popular, but finding a
 
 ***
 
-When I first started, I knew I wanted to interview the owners of some of my favorite restaurants in York, but Ippuku Tea House felt like too big a project to tackle at the time. So I initially focused on a few smaller independent businesses. After struggling to spark interest from several of the restaurants I had hoped to film, I decided to return to my original plan and reach out to Ippuku. It took weeks of back-and-forth emails, but in the end, not only did the owner, Frankie, agree to be interviewed, one of the chefs, Eden, who happened to be a film school graduate, offered to help with the project.
+In my final year of university, my focus shifted toward projects beyond the standard coursework. Building on experience creating video content with the student television society, the decision was made to pursue more independent projects. This led to the development of a mini-documentary series, exploring interesting places and people with a particular focus on how South Asian culture. The hope was that these stories would about cultural dialogue would engage friends, family, and a wider audience around the world.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -23,7 +23,7 @@ When I first started, I knew I wanted to interview the owners of some of my favo
   </div>
 </div>
 
-In my final year of university, I wanted to try something beyond my coursework. Having previously worked on video content with the student television society, I made the decision to take on projects completely independently. That’s how my documentary series started, traveling to interesting places and interviewing fascinating people, hoping their stories would capture the interest of my friends and family around the world.
+At the early stages of development, with the idea of filming something food-related, the plan was to interview the owners of some of my favourite local restaurants in York. Though Ippuku Tea House initially felt too ambitious to take on, after finding it difficult to generate interest from several other independent businesses, it made sense to return to the original plan and reach out to Ippuku. 
 
 <div class="gallery-box">
   <div class="gallery">
@@ -33,4 +33,6 @@ In my final year of university, I wanted to try something beyond my coursework. 
   </div>
 </div>
 
-This video has gathered over 1,400 views on YouTube. Navigating all the behind-the-scenes logistics was definitely a challenge, but getting an inside look at how a Japanese tea house operates and meeting the people who bring it to life immediately made me want to create more of these types of videos.
+The film’s audio-visual style is crafted to evoke a cosy, at-home atmosphere, reflecting the experience Ippuku has aimed to create since its opening. Frankie sought to offer an alternative to traditional high-end Japanese restaurants, providing a dining experience that captures the feeling of enjoying a fresh, home-cooked Japanese meal with family.
+
+Ultimately, the video has attracted over 1,400 views on YouTube and received positive feedback from York’s Japanese community.
