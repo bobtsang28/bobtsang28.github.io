@@ -6,7 +6,7 @@ subtitle: Mini-Documentary
 image: '/images/project-5.jpg'
 ---
 
-In my final year of university, I wanted to try something beyond my coursework. Having previously worked on video content with the student television society, I made the decision to take on projects completely independently. That’s how my documentary series started, traveling to interesting places and interviewing fascinating people, hoping their stories would capture the interest of my friends and family around the world.
+In recent years, Japanese cuisine has become increasingly popular, but finding an authentic Japanese restaurant in the UK can still be a challenge. Hearing Frankie share her personal journey with her husband, from selling Japanese tea online to opening a tea house in the heart of York, was truly inspiring. Although COVID had a significant impact on their business, Frankie remains hopeful that they will bounce back in the near future.
 
 ***
 
@@ -23,7 +23,7 @@ When I first started, I knew I wanted to interview the owners of some of my favo
   </div>
 </div>
 
-In recent years, Japanese cuisine has become increasingly popular, but finding an authentic Japanese restaurant in the UK can still be a challenge. Hearing Frankie share her personal journey with her husband, from selling Japanese tea online to opening a tea house in the heart of York, was truly inspiring. Although COVID had a significant impact on their business, Frankie remains hopeful that they will bounce back in the near future.
+In my final year of university, I wanted to try something beyond my coursework. Having previously worked on video content with the student television society, I made the decision to take on projects completely independently. That’s how my documentary series started, traveling to interesting places and interviewing fascinating people, hoping their stories would capture the interest of my friends and family around the world.
 
 <div class="gallery-box">
   <div class="gallery">

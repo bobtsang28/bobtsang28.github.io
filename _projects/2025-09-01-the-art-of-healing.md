@@ -6,9 +6,7 @@ subtitle: Mini-Documentary
 image: '/images/project-9.jpg'
 ---
 
-In January 2024, I finally wrapped up a long-standing mountaineering obsession: the Seven Summits, which involved climbing the tallest mountain on every continent, including Mount Everest. Vinson Massif in Antarctica was the final peak and certainly an unforgettable trip that ended the entire journey.
-
-I’ve been filming my expeditions ever since my very first summit on Mount Kilimanjaro back in 2016. To mark the completion of the Seven Summits, I returned home and, without taking any sensible amount of rest, began working on a travel video that recaps the entire adventure.
+Maki moved to the UK over 20 years ago, looking to experience a new culture. It is there that she discovered a love for pottery and eventually studied under her late mentor, studio potter David White. She eventually settled in Yorkshire, where she opened her own studio. Now, she not only sells her work but also runs workshops that focus on healing and self-care. 
 
 ***
 
@@ -16,11 +14,9 @@ I’ve been filming my expeditions ever since my very first summit on Mount Kili
 
 ***
 
-Drawing on everything I’ve learned over the years of producing travel videos, I made a deliberate stylistic choice. Even though this felt to me like a fairly grand and monumental adventure, I didn’t want the film to feel overly dramatic filled with cliché cinematic background music.
+I first discovered Maki online, but it wasn’t until I spoke with her that I fully appreciated how inspiring her story truly is. While most coverage highlights her work and the workshops she offers at her studio in Knaresborough, centred around mindfulness and healing, few truly delved into her past or the motivations that shaped the direction of her art.
 
-Inspired by the trekking videos of creators like Kraig Adams, I aimed to present the climb in a more quiet and reflective manner. Despite how physically demanding it was, I wanted the audience to experience the same sense of awe and stillness I felt on the mountain.
-
-To that end, I avoided flashy match cuts, elaborate transitions, and heavy-handed music. The edit is intentionally restrained and designed to make it feel less like you’re watching a video and more like you’re simply there, climbing alongside the people on screen.
+It’s certainly a difficult subject to approach. Maki experienced a deeply traumatic childhood, the effects of which continued well into her young adulthood. Yet, the more I learned about her, the more I found myself relating to her journey of finding self-worth and confidence. After years of struggle, she was able to confront her past through her passion for pottery, transforming it not only into a source of positive energy but also into a way to support and inspire others.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -30,4 +26,4 @@ To that end, I avoided flashy match cuts, elaborate transitions, and heavy-hande
   </div>
 </div>
 
-I also considered removing narration altogether and not speaking directly to the camera. Partly to deepen immersion, and partly because I am, frankly, terrible at speaking on camera. In the end, I settled on a middle ground, balancing between cinematic footage and light on-screen narration, giving the film just enough structure without getting in its own way.
+Seeing the dedication Maki has poured into building her studio and the passion she has for it, it was clear that the space had to be an integral part of the film, even without being explicitly highlighted. The visual approach for this project reflects that, using more fluid handheld camera work than previous endeavours. The style attempts to allow the audience to feel as though they are in the studio with Maki, sharing a conversation and experiencing the space alongside her.
