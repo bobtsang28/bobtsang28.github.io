@@ -19,9 +19,9 @@ At its heart, the film is about the cycle of life and the importance of treasuri
   </div>
 </div>
 
-As the final-year project of my university course, each student was given the opportunity to pitch their own idea for a 15-minute short film. Out of dozens of proposals, I was fortunate to have mine selected and to take on the role of director.
+For the final-year project of my university course, each student was invited to pitch a concept for a 15-minute short film. Out of dozens of proposals, mine was selected, allowing me to take on the role of director.
 
-The concept of the film drew from a wide range of inspirations. rom story elements influenced by films like Mirai (2018, dir. Mamoru Hosoda) to the title, which came from an antique shop called the Red Brick House near my home, I wanted to create a bittersweet story that explored family and the complexities of those relationships.
+The concept of the film drew from a wide variety of inspirations. From story elements influenced by films like Mirai (2018, dir. Mamoru Hosoda) to its title, inspired by an antique shop near my home called the Red Brick House, the aim was to craft a bittersweet narrative exploring family and the complexities of those relationships.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -31,6 +31,6 @@ The concept of the film drew from a wide range of inspirations. rom story elemen
   </div>
 </div>
 
-The production lasted over seven months. Through our fundraising campaign, we managed to raise more than £2,500, but as a student project, we still faced significant limitations. I was responsible for managing a wide range of creative and logistical responsibilities for the film from start to finish.
+The production spanned over seven months. Through our fundraising campaign, more than £2,500 was raised, yet, as a student project, there were still considerable limitations. I oversaw a broad range of creative and logistical responsibilities, guiding the film from initial concept to final delivery.
 
 AVAILABLE SHORTLY
