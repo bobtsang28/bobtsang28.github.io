@@ -31,6 +31,6 @@ The concept of the film drew from a wide variety of inspirations. From story ele
   </div>
 </div>
 
-The production spanned over seven months. Through our fundraising campaign, more than £2,500 was raised, yet, as a student project, there were still considerable limitations. I oversaw a broad range of creative and logistical responsibilities, guiding the film from initial concept to final delivery.
+The production spanned over seven months. Through our fundraising campaign, more than £2,500 was raised. I oversaw a broad range of creative and logistical responsibilities, guiding the film from initial concept to final delivery.
 
 AVAILABLE SOON
