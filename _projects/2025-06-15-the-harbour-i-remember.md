@@ -21,7 +21,7 @@ From our very first conversations, it was clear that the idea of memory would pl
 <div class="gallery-box">
   <div class="gallery">
     <img src="/images/project-example-6a.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-bb.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-6b.jpg" loading="lazy" alt="Project">
     <img src="/images/project-example-6c.jpg" loading="lazy" alt="Project">
   </div>
 </div>
