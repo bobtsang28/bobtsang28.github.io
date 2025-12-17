@@ -6,9 +6,11 @@ subtitle: Short Film
 image: '/images/project-8.jpg'
 ---
 
-In the summer of 2024, I was approached by the Chair of UWCGO Hong Kong, Elizabeth Fung, to lead the development of a promotional video for Li Po Chun United World College's fundraising project, "Vision 2052: Together Shaping the Next 30 Years of LPC." This transformative initiative aims to shape the future of UWC Hong Kong and empower generations of students to come. The investments are intended to serve as a cornerstone for enhancing the college’s ability to deliver an even stronger academic program, equipping students with the tools and knowledge to tackle the urgent challenges facing both our local and global communities.
+Milo is a young adult feeling lost in life. Having left home with his girlfriend years ago, he has grown distant from the rest of his family. When he learns that his estranged father has passed away, he returns to the now-abandoned family inn, the Red Brick House, hoping for some form of reconciliation.
 
-One evening after work, I grabbed my camera and headed out for a night shoot in Mong Kok, one of Hong Kong’s busiest districts and one synonymous with the neon glow the city is known for. I didn't really have a plan; I simply wandered for hours, filming places I remembered fondly from my childhood. What I didn’t expect was how strongly it would stir my memories.
+At the inn, Milo embarks on a journey into the past, revisiting moments in his family’s history that shaped the present. From witnessing his parents’ first meeting to seeing his father reaching out to him in his final moments, Milo gradually gains a deeper understanding of his family’s past. Through these encounters, he begins to learn how to let go.
+
+At its heart, the film is about the cycle of life and the importance of treasuring the time we have with our family.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -17,7 +19,9 @@ One evening after work, I grabbed my camera and headed out for a night shoot in 
   </div>
 </div>
 
-In post-production, I experimented with different colour grades, searching for a balance that could nod to Mong Kok’s cyberpunk atmosphere without tipping into a stereotypical, tourist-eye rendition of the city. That same thinking led me to choose an instrumental cover of a well-known nostalgic Cantopop song instead of an electronic synth track, giving the film the feel of being set in the early 2000s.
+As the final-year project of my university course, each student was given the opportunity to pitch their own idea for a 15-minute short film. Out of dozens of proposals, I was fortunate to have mine selected and to take on the role of director.
+
+The concept of the film drew from a wide range of inspirations. rom story elements influenced by films like Mirai (2018, dir. Mamoru Hosoda) to the title, which came from an antique shop called the Red Brick House near my home, I wanted to create a bittersweet story that explored family and the complexities of those relationships.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -27,4 +31,4 @@ In post-production, I experimented with different colour grades, searching for a
   </div>
 </div>
 
-In the months following the release of the video, many more of the neon lights in the area have been taken down. With new regulations in place, this once-celebrated city tradition has all but disappeared. It’s heartbreaking to see, myself included, but I’m grateful to have captured this iconic aspect of the city on film before it disappeared. To me, it serves as a lasting memory of my years living in this incredible place.
+The production lasted over seven months. Through our fundraising campaign, we managed to raise more than £2,500, but as a student project, we still faced significant limitations. I was responsible for managing a wide range of creative and logistical responsibilities for the film from start to finish.
