@@ -26,4 +26,4 @@ From our earliest conversations, it was clear that the idea of memory would play
   </div>
 </div>
 
-The camera work was intentionally restrained, creating an observational style that complements the narrative. This was paired with a warm-hued colour grade and a 4:3 aspect ratio, evoking nostalgia and highlighting Martin’s connection to Hong Kong’s evolving social and political landscape. The sound design reinforces this atmosphere, weaving in ambient street sounds from the city alongside subtle retro effects to immerse viewers in the experience.
+The camera work was intentionally restrained. It was paired with a warm-hued colour grade and a 4:3 aspect ratio to evoke a sense of nostalgia and invite reflection from the audience. The sound design aimed to reinforce this atmosphere, weaving in ambient street sounds from Hong Kong alongside subtle retro effects to immerse viewers in the experience.
