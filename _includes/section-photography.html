@@ -1,0 +1,36 @@
+<!-- begin photography -->
+<section class="section photography animate">
+  <div class="container">
+    <div class="row">
+      <div class="col col-12">
+        <div class="contaniner__inner">
+
+          <div class="section__info">
+            <h2 class="section__title">Photography</h2>
+          </div>
+
+          <div class="row">
+            {% assign sorted = site.photography | sort: 'date' | reverse %}
+            {% for photo in sorted %}
+            <article class="project col col-12">
+              <div class="project__content">
+                <a href="{{ photo.url }}" class="project__image">
+                  <img class="lazy" data-src="{{ photo.image }}" alt="{{ photo.title }}">
+                </a>
+                <div class="project__info">
+                  <h3 class="project__title"><a href="{{ photo.url }}">{{ photo.title }}</a></h3>
+                  {% if photo.subtitle %}
+                    <div class="project__subtitle">{{ photo.subtitle }}</div>
+                  {% endif %}
+                </div>
+              </div>
+            </article>
+            {% endfor %}
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end photography -->

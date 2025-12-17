@@ -12,22 +12,4 @@ description:
   </div>
 </div>
 
-<div class="projects-page container animate">
-  <div class="row">
-    {% for photo in site.photography reversed %}
-      <article class="project col col-12">
-        <div class="project__content">
-          <a href="{{ photo.url }}" class="project__image">
-            <img class="lazy" data-src="{{ photo.image }}" alt="{{ photo.title }}">
-          </a>
-          <div class="project__info">
-            <h3 class="project__title"><a href="{{ photo.url }}">{{ photo.title }}</a></h3>
-            {% if photo.subtitle %}
-            <div class="project__subtitle">{{ photo.subtitle }}</div>
-            {% endif %}
-          </div>
-        </div>
-      </article>
-    {% endfor %}
-  </div>
-</div>
+{% include section-photography.html %}
