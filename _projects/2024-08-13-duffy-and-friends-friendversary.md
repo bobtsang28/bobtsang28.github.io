@@ -19,7 +19,7 @@ With the franchise continuing to grow, Hong Kong Disneyland now hosts an annual 
 
 ***
 
-Although the project differed from many of my previous works, a similar approach was applied, beginning with storyboarding and brainstorming concepts, this time with the aim of immediately engaging the viewers. Given the social media format, audience retention was a primary focus, which relies heavily on the pacing of the edit. For the three videos produced, each was treated uniquely, experimenting with different transition styles, from simple graphic match cuts to picture-in-picture, ensuring each short felt fresh and distinct while maintaining a consistent overall tone.
+Although the project differed from many of my previous works, a similar approach was applied, beginning with storyboarding and brainstorming concepts, this time with the aim of immediately engaging the viewers. Given the social media format, audience retention was a primary focus, which relies heavily on the snappy transitions and quick pacing. For the three videos produced, each was treated uniquely, experimenting with different transition styles, from simple graphic match cuts to picture-in-picture, ensuring each short felt fresh and distinct while maintaining a consistent overall tone.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -29,4 +29,4 @@ Although the project differed from many of my previous works, a similar approach
     </div>
 </div>
 
-Working within Disneyland’s high editing standards and stylistic guidelines, the content also needed to highlight guest interactions and enjoyment specifically. With multiple camera operators on each shoot, careful planning helped identify key moments of engagement between the Duffy characters and guests, whether during the parade, a drawing session, or a photoshoot. Balancing strict character guidelines with a tight event schedule presented numerous challenges, but the final footage delivered a polished result, one that captures why Disneyland holds such a special place for so many visitors.
+Working within Disneyland’s high editing standards and stylistic guidelines, the content also needed to highlight guest interactions and enjoyment specifically. With multiple camera operators on each shoot, every video included a standout “hero shot” or a joyful guest moment, capturing the Duffy characters engaging with visitors and conveying why Disneyland holds such a special place for so many.
