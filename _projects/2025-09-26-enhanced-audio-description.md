@@ -1,12 +1,12 @@
 ---
 layout: project
 title: ENHANCED AUDIO DESCRIPTION
-date: 2025-09-02
-subtitle: Mini-Documentary
+date: 2025-09-26
+subtitle: Corporate Video
 image: '/images/project-10.jpg'
 ---
 
-Maki moved to the UK over 20 years ago, looking to experience a new culture. It is there that she discovered a love for pottery and studied under her late mentor, studio potter David White. She eventually settled in Yorkshire, where she opened her own studio. Now, she not only sells her work but also runs workshops that focus on healing and self-care. 
+While awareness of accessibility in film and television has grown in recent years, it remains an area where the industry still has significant gaps. The Enhancing Audio Description project explores how sound design and spatial audio can create more inclusive experiences for visually impaired audiences. The project expands the concept of media accessibility and enhances both the quality and availability of audio description services, offering cutting-edge techniques to the UK cultural sector.
 
 ***
 
