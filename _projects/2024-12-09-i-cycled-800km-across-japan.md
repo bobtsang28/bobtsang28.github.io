@@ -6,7 +6,7 @@ subtitle: Travel Video
 image: '/images/project-4.jpg'
 ---
 
-One of my passions is bikepacking! Over the years, I’ve found cycling to be one of the most exciting ways to explore countries like Japan. It’s at just the right pace where you move fast enough to cover ground, yet slow enough to truly take in your surroundings and discover hidden spots off the beaten path, something you rarely get to experience, even by car.
+One of my passions is bikepacking! Over the years, I’ve found cycling to be one of the most exciting ways to explore countries like Japan. It strikes the perfect balance where you move fast enough to cover distance, yet slow enough to truly take in your surroundings and discover hidden spots off the beaten path, even when traveling by car.
 
 ***
 
@@ -14,7 +14,7 @@ One of my passions is bikepacking! Over the years, I’ve found cycling to be on
 
 ***
 
-Having done quite a few bikepacking trips in Japan, I decided in the summer of 2024 to take on a solo adventure, riding 800km across Central Japan, a region close to my heart. Starting in Kyoto, the journey carried me from Japan’s historic capital to the remote prefecture of Fukui, a place I had long dreamed of visiting. Despite being one of the least populated and visited prefectures in the country, I’d seen glimpses of its stunning rural towns online and knew I had to experience them for myself.
+Having done quite a few bikepacking trips in Japan, in the summer of 2024, I embarked on a solo 800km journey across Central Japan, a region particularly close to my heart. Beginning in Kyoto, the ride carried me from Japan’s historic capital to the remote prefecture of Fukui, a place I had long dreamed of visiting. Despite being one of the least populated and visited prefectures in the country, glimpses of its stunning rural towns online convinced me I had to experience them for myself.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -22,7 +22,7 @@ Having done quite a few bikepacking trips in Japan, I decided in the summer of 2
   </div>
 </div>
 
-The second half of the route took me on intense uphill trails through some of Japan’s most mountainous terrain. Despite the grueling climbs, it was certainly the highlight of the journey, exploring some of the most rural corners of the country I’ve ever seen and connecting with locals, hearing their stories and learning about life in these remote areas.
+The second half of the route took me through some of Japan’s most mountainous terrain, with intense uphill trails. While physically demanding, this portion of the journey proved to be the highlight, offering glimpses into the country’s most rural corners and the opportunity to connect with locals, hear their stories, and gain insight into life in these remote areas.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -32,4 +32,4 @@ The second half of the route took me on intense uphill trails through some of Ja
   </div>
 </div>
 
-Shooting this film required an unprecedented level of pre-production, simply because it was a solo project. After planning a general route with a dozen waypoints, I also prepared several backup options in case I couldn’t reach my intended destination each day. With no pre-booked accommodation, I often had to search online, or even knock on doors, just to find a place to stay. Even though I had mapped out the structure and visuals of the video in advance, the daily unpredictability, combined with the need to capture a quota of footage to weave together a coherent narrative, made it one of the most logistically challenging projects I’ve ever undertaken.
+Producing a film of this journey demanded an unprecedented level of pre-production, especially given that it was a solo endeavor. After a general route with a dozen waypoints was mapped out, several backup options were also created in case certain destinations proved unreachable each day. With no pre-booked accommodation, securing places to stay often required online searches or even knocking on doors. Despite having the structure and visual plan for the video prepared well in advance, the daily unpredictability, combined with the necessity of capturing enough footage to construct a coherent narrative, made this one of the most logistically challenging projects I have undertaken.
