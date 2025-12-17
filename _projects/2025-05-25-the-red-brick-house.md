@@ -21,7 +21,7 @@ At its heart, the film is about the cycle of life and the importance of treasuri
 
 For the final-year project of my university course, each student was invited to pitch a concept for a 15-minute short film. Out of dozens of proposals, mine was selected, allowing me to take on the role of director.
 
-The concept of the film drew from a wide variety of inspirations. From story elements influenced by films like Mirai (2018, dir. Mamoru Hosoda) to its title, inspired by an antique shop near my home called the Red Brick House, the aim was to craft a bittersweet narrative exploring family and the complexities of those relationships.
+The concept of the film drew from a wide variety of inspirations. From story elements influenced by films like Mirai (2018, dir. Mamoru Hosoda) to its title, inspired by an antique shop near my home called the Red Brick House, the aim was to combine a high-concept magical realist style with a bittersweet narrative that explores the complexities of family relationships and the challenge of maintaining connections within a dysfunctional environment, despite the best intentions.
 
 <div class="gallery-box">
   <div class="gallery">
