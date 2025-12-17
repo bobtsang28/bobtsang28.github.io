@@ -6,9 +6,7 @@ subtitle: Mini-Documentary
 image: '/images/project-6.jpg'
 ---
 
-In January 2024, I finally wrapped up a long-standing mountaineering obsession: the Seven Summits, which invovled climbing the tallest mountain on every continent, including Mount Everest. Vinson Massif in Antarctica was the final peak and certainly an unforgettable trip that ended the entire journey.
-
-I’ve been filming my expeditions ever since my very first summit on Mount Kilimanjaro back in 2016. To mark the completion of the Seven Summits, I returned home and, without taking any sensible amount of rest, began working on a travel video that recaps the entire adventure.
+Having lived in Hong Kong on and off for over 40 years, Martin Lever's time in the city led him to make the shift from advertising to becoming an award-winning abstract and pop artist. Now back in the UK with his family, he’s focused on growing his art and expanding his business. 
 
 ***
 
@@ -16,11 +14,9 @@ I’ve been filming my expeditions ever since my very first summit on Mount Kili
 
 ***
 
-Drawing on everything I’ve learned over the years of producing travel videos, I made a deliberate stylistic choice. Even though this felt to me like a fairly grand and monumental adventure, I didn’t want the film to feel overly dramatic filled with cliché cinematic background music.
+I met Martin while videographing an art exhibition at my university, where he was showing a selection of his work from Hong Kong. It didn’t take long for me to learn just how much of his life he had spent there, or how deeply the city’s culture had shaped his practice. I was immediately captivated. A couple of months later, I reached out to ask if he might be interested in being part of the project.
 
-Inspired by the trekking videos of creators like Kraig Adams, I aimed to present the climb in a more quiet and reflective manner. Despite how physically demanding it was, I wanted the audience to experience the same sense of awe and stillness I felt on the mountain.
-
-To that end, I avoided flashy match cuts, elaborate transitions, and heavy-handed music. The edit is intentionally restrained and designed to make it feel less like you’re watching a video and more like you’re simply there, climbing alongside the people on screen.
+From our very first conversations, it was clear that the idea of memory would play a central role in the video. Given how deeply his life in Hong Kong is woven into his work, even today, the film was shaped to make the audience feel as though they are peering through a picture frame, into Martin’s memories as he reflects on his upbringing in the city.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -30,4 +26,4 @@ To that end, I avoided flashy match cuts, elaborate transitions, and heavy-hande
   </div>
 </div>
 
-I also considered removing narration altogether and not speaking directly to the camera. Partly to deepen immersion, and partly because I am, frankly, terrible at speaking on camera. In the end, I settled on a middle ground, balancing between cinematic footage and light on-screen narration, giving the film just enough structure without getting in its own way.
+As a result, the camera work was deliberately restrained to create a more observational style. This was complemented by a warm-hued colour grade and a 4:3 aspect ratio, emphasising a sense of nostalgia and Martin’s feelings toward Hong Kong’s shifting social and political landscape over the years. The sound design further supports this, with occasional ambient street sounds from Hong Kong woven throughout, alongside subtle retro sound effects.
