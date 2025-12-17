@@ -14,9 +14,9 @@ Maki moved to the UK over 20 years ago, looking to experience a new culture. It 
 
 ***
 
-I first discovered Maki online, but it wasn’t until I spoke with her that I fully appreciated how inspiring her story truly is. While most coverage highlights her work and the workshops she offers at her studio in Knaresborough, centred around mindfulness and healing, few truly delved into her past or the motivations that shaped the direction of her art.
+I first came across Maki online, but it wasn’t until I spoke with her that I truly understood how inspiring her story is. While most articles and interviews have focused on her work and the workshops she offers at her studio in Knaresborough, few have explored her past or the motivations that shaped the direction of her art.
 
-It’s certainly a difficult subject to approach. Maki experienced a deeply traumatic childhood, the effects of which continued well into her young adulthood. Yet, the more I learned about her, the more I found myself relating to her journey of finding self-worth and confidence. After years of struggle, she was able to confront her past through her passion for pottery, transforming it not only into a source of positive energy but also into a way to support and inspire others.
+Her story is not an easy one to approach. Maki experienced a deeply traumatic childhood, the effects of which persisted into her young adulthood. However, as I learnt more about her journey, I found myself connecting with her pursuit of self-worth and confidence. Through her passion for pottery, she was able to confront her past, transforming it not only into a source of positive energy but also into a way to support and inspire others.
 
 <div class="gallery-box">
   <div class="gallery">
