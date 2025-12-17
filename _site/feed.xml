@@ -3,10 +3,10 @@
     <channel>
         <title>Bob Tsang</title>
         <description>Bob Tsang is a freelance filmmaker and photographer based in the UK (who also loves mountaineering and travelling).</description>
-        <link>http://localhost:4000/</link>
-        <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sun, 14 Dec 2025 19:52:40 +0000</pubDate>
-        <lastBuildDate>Sun, 14 Dec 2025 19:52:40 +0000</lastBuildDate>
+        <link>/</link>
+        <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+        <pubDate>Wed, 17 Dec 2025 08:35:45 +0000</pubDate>
+        <lastBuildDate>Wed, 17 Dec 2025 08:35:45 +0000</lastBuildDate>
         <generator>Jekyll v4.4.1</generator>
         
             <item>
@@ -53,8 +53,8 @@
 &lt;p&gt;Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.&lt;/p&gt;
 </description>
                 <pubDate>Thu, 14 Nov 2024 12:01:35 +0000</pubDate>
-                <link>http://localhost:4000/blog/that-which-does-not-kill-us-makes-us-stronger</link>
-                <guid isPermaLink="true">http://localhost:4000/blog/that-which-does-not-kill-us-makes-us-stronger</guid>
+                <link>/blog/that-which-does-not-kill-us-makes-us-stronger</link>
+                <guid isPermaLink="true">/blog/that-which-does-not-kill-us-makes-us-stronger</guid>
                 
                 <category>workflow</category>
                 
@@ -113,8 +113,8 @@
 &lt;p&gt;Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.&lt;/p&gt;
 </description>
                 <pubDate>Tue, 12 Nov 2024 12:01:35 +0000</pubDate>
-                <link>http://localhost:4000/blog/do-what-you-can-with-what-you-have-where-you-are</link>
-                <guid isPermaLink="true">http://localhost:4000/blog/do-what-you-can-with-what-you-have-where-you-are</guid>
+                <link>/blog/do-what-you-can-with-what-you-have-where-you-are</link>
+                <guid isPermaLink="true">/blog/do-what-you-can-with-what-you-have-where-you-are</guid>
                 
                 <category>lifestyle</category>
                 
@@ -173,8 +173,8 @@
 &lt;p&gt;Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.&lt;/p&gt;
 </description>
                 <pubDate>Mon, 11 Nov 2024 12:01:35 +0000</pubDate>
-                <link>http://localhost:4000/blog/if-you-cannot-do-great-things-do-small-things-in-a-great-way</link>
-                <guid isPermaLink="true">http://localhost:4000/blog/if-you-cannot-do-great-things-do-small-things-in-a-great-way</guid>
+                <link>/blog/if-you-cannot-do-great-things-do-small-things-in-a-great-way</link>
+                <guid isPermaLink="true">/blog/if-you-cannot-do-great-things-do-small-things-in-a-great-way</guid>
                 
                 <category>lifestyle</category>
                 
@@ -209,8 +209,8 @@
 &lt;p&gt;Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.&lt;/p&gt;
 </description>
                 <pubDate>Sun, 10 Nov 2024 12:01:35 +0000</pubDate>
-                <link>http://localhost:4000/blog/strive-not-to-be-a-success-but-rather-to-be-of-value</link>
-                <guid isPermaLink="true">http://localhost:4000/blog/strive-not-to-be-a-success-but-rather-to-be-of-value</guid>
+                <link>/blog/strive-not-to-be-a-success-but-rather-to-be-of-value</link>
+                <guid isPermaLink="true">/blog/strive-not-to-be-a-success-but-rather-to-be-of-value</guid>
                 
                 <category>technology</category>
                 
@@ -269,8 +269,8 @@
 &lt;p&gt;Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.&lt;/p&gt;
 </description>
                 <pubDate>Sat, 09 Nov 2024 12:01:35 +0000</pubDate>
-                <link>http://localhost:4000/blog/a-journey-of-a-thousand-leagues-begins-beneath-one-s-feet</link>
-                <guid isPermaLink="true">http://localhost:4000/blog/a-journey-of-a-thousand-leagues-begins-beneath-one-s-feet</guid>
+                <link>/blog/a-journey-of-a-thousand-leagues-begins-beneath-one-s-feet</link>
+                <guid isPermaLink="true">/blog/a-journey-of-a-thousand-leagues-begins-beneath-one-s-feet</guid>
                 
                 <category>travel</category>
                 
@@ -305,8 +305,8 @@
 &lt;p&gt;Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.&lt;/p&gt;
 </description>
                 <pubDate>Fri, 08 Nov 2024 12:01:35 +0000</pubDate>
-                <link>http://localhost:4000/blog/life-shrinks-or-expands-in-proportion-to-one-s-courage</link>
-                <guid isPermaLink="true">http://localhost:4000/blog/life-shrinks-or-expands-in-proportion-to-one-s-courage</guid>
+                <link>/blog/life-shrinks-or-expands-in-proportion-to-one-s-courage</link>
+                <guid isPermaLink="true">/blog/life-shrinks-or-expands-in-proportion-to-one-s-courage</guid>
                 
                 <category>notes</category>
                 
@@ -341,8 +341,8 @@
 &lt;p&gt;Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.&lt;/p&gt;
 </description>
                 <pubDate>Wed, 29 May 2024 16:05:55 +0100</pubDate>
-                <link>http://localhost:4000/blog/everything-has-beauty-but-not-everyone-can-see</link>
-                <guid isPermaLink="true">http://localhost:4000/blog/everything-has-beauty-but-not-everyone-can-see</guid>
+                <link>/blog/everything-has-beauty-but-not-everyone-can-see</link>
+                <guid isPermaLink="true">/blog/everything-has-beauty-but-not-everyone-can-see</guid>
                 
                 <category>fashion</category>
                 
@@ -377,8 +377,8 @@
 &lt;p&gt;Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.&lt;/p&gt;
 </description>
                 <pubDate>Wed, 24 Apr 2024 13:01:35 +0100</pubDate>
-                <link>http://localhost:4000/blog/remember-that-happiness-is-a-way-of-travel-not-a-destination</link>
-                <guid isPermaLink="true">http://localhost:4000/blog/remember-that-happiness-is-a-way-of-travel-not-a-destination</guid>
+                <link>/blog/remember-that-happiness-is-a-way-of-travel-not-a-destination</link>
+                <guid isPermaLink="true">/blog/remember-that-happiness-is-a-way-of-travel-not-a-destination</guid>
                 
                 <category>fashion</category>
                 
@@ -413,8 +413,8 @@
 &lt;p&gt;Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.&lt;/p&gt;
 </description>
                 <pubDate>Tue, 23 Apr 2024 13:01:35 +0100</pubDate>
-                <link>http://localhost:4000/blog/the-way-to-get-started-is-to-quit-talking-and-begin-doing</link>
-                <guid isPermaLink="true">http://localhost:4000/blog/the-way-to-get-started-is-to-quit-talking-and-begin-doing</guid>
+                <link>/blog/the-way-to-get-started-is-to-quit-talking-and-begin-doing</link>
+                <guid isPermaLink="true">/blog/the-way-to-get-started-is-to-quit-talking-and-begin-doing</guid>
                 
                 <category>fashion</category>
                 
