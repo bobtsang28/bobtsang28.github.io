@@ -1,7 +1,8 @@
 ---
 layout: project
 title: "Street Photography"
-date: 2024-01-02
+date: 2024-01-03
+order: 3
 image: '/images/street-1.jpg'
 ---
 

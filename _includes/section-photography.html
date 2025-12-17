@@ -6,7 +6,7 @@
         <div class="contaniner__inner">
 
           <div class="row">
-            {% assign sorted = site.photography | sort: 'date' | reverse %}
+            {% assign sorted = site.photography | sort: 'order' %}
             {% for photo in sorted %}
             <article class="project col col-12">
               <div class="project__content">
