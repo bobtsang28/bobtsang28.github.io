@@ -16,7 +16,7 @@ It wasn’t until I had lived abroad that I began to realise how many people’s
 
 ***
 
-Having spent the summer of 2023 back in Hong Kong, I made a conscious effort to see the city from an outsider’s perspective, asking myself what someone who had never visited might think of it. It proved to be a surprisingly eye-opening experience. I not only found myself enjoying the city more than I had in years, but also realised just how much I had previously taken for granted.
+Having spent the summer of 2023 back in Hong Kong, I made an effort to see the city from an outsider’s perspective, asking myself what someone who had never visited might think of it. It proved to be a surprisingly eye-opening experience. I not only found myself enjoying the city more than I had in years, but also realised just how much I had previously taken for granted.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -25,9 +25,9 @@ Having spent the summer of 2023 back in Hong Kong, I made a conscious effort to 
   </div>
 </div>
 
-One evening after work, I grabbed my camera and headed out for a night shoot in Mong Kok, one of Hong Kong’s busiest districts and one synonymous with the neon glow the city is known for. I didn't really have a plan; I simply wandered for hours, filming places I remembered fondly from my childhood. What I didn’t expect was how strongly it would stir my memories.
+One evening after work, I grabbed my camera and headed out for a night shoot in Mong Kok, one of Hong Kong’s busiest districts and one synonymous with the neon glow the city is known for. Without a set plan, I wandered for hours, filming places I remembered fondly from my childhood. What I didn’t expect was how strongly it would stir my memories.
 
-In post-production, I experimented with different colour grades, searching for a balance that could nod to Mong Kok’s cyberpunk atmosphere without tipping into a stereotypical, tourist-eye rendition of the city. That same thinking led me to choose an instrumental cover of a well-known nostalgic Cantopop song instead of an electronic synth track, giving the film the feel of being set in the early 2000s.
+In post-production, various colour grades were experimented to capture Mong Kok’s cyberpunk atmosphere without leaning too much into a stereotypical, tourist-focused perspective. This same approach informed my decision to use an instrumental cover of a well-known nostalgic Cantopop song over an electronic synth track, giving the film a sense of being set in the early 2000s.
 
 <div class="gallery-box">
   <div class="gallery">
