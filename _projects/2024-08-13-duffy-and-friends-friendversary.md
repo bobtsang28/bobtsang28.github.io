@@ -13,7 +13,7 @@ With the franchise continuing to grow, Hong Kong Disneyland now hosts an annual 
 
 ***
 
-<div style="position: relative; padding-bottom: 125%; height: 0; overflow: hidden; max-width: 540px; margin: 0rem auto;">
+<div style="position: relative; padding-bottom: 100%; height: 0; overflow: hidden; max-width: 540px; margin: 0rem auto;">
   <iframe src="https://www.instagram.com/p/C-mIg3IPfFZ/embed/" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; pointer-events: none;" loading="lazy" allowfullscreen scrolling="no"></iframe>
 </div>
 
