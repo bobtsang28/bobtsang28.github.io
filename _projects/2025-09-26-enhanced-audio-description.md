@@ -14,16 +14,17 @@ While awareness of accessibility in film and television has grown in recent year
 
 ***
 
-I first came across Maki online, but it wasn’t until I spoke with her that I truly understood how inspiring her story is. While most articles and interviews have focused on her work and the workshops she offers at her studio in Knaresborough, few have explored her past or the motivations that shaped the direction of her art.
+Corporate videos often carry the reputation of being either overly sterile or overloaded with information. From the outset, discussions with Mariana López, the principal investigator of the project, focused on creating a video that felt more casual and intimate, taking an approach that contrasted with typical corporate styles and drawing inspiration from Apple’s Behind the Mac commercials.
 
-Her story is not an easy one to approach. Maki experienced a deeply traumatic childhood, the effects of which persisted into her young adulthood. However, as I learnt more about her journey, I found myself connecting with her pursuit of self-worth and confidence. Through her passion for pottery, she was able to confront her past, transforming it not only into a source of positive energy but also into a way to support and inspire others.
+This approach informed the cinematography and sound design, resulting in softer, mood-driven lighting across the main scenes, a restrained and unobtrusive background music, and a greater reliance on close-ups and handheld camera work. In terms of audio, the enhanced audio description technique was woven directly into the narrative track, allowing visually impaired viewers to fully apprehend the on-screen action without the use of a separate voice-over.
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-9a.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-9b.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-9c.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-10a.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-10b.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-10c.jpg" loading="lazy" alt="Project">
   </div>
 </div>
 
-Seeing the dedication Maki has poured into building her studio and the passion she has for it, it was clear that the space had to be an integral part of the film, even without being explicitly highlighted. The visual approach for this project reflects that, using more fluid handheld camera work than previous endeavours. The style attempts to allow the audience to feel as though they are in the studio with Maki, sharing a conversation and experiencing the space alongside her.
+
+The project encountered some logistical constraints, which were navigated to ensure a strong final outcome. Director Samantha Moore and Warren Wilson were chosen to contribute on-camera testimonials to highlight the significance and benefits of the project. Filming their segments required adjustments due to location and setup limitations, resulting in minor audio and lighting variations. Despite these challenges, the final video effectively conveyed its message while a warm and approachable style.
