@@ -1,9 +1,9 @@
 ---
 layout: project
-title: "VINSON: 4892"
-date: 2024-01-22
-subtitle: Travel Video
-image: '/images/project-1.jpg'
+title: THE ART OF HEALING
+date: 2025-09-01
+subtitle: Mini-Documentary
+image: '/images/project-9.jpg'
 ---
 
 In January 2024, I finally wrapped up a long-standing mountaineering obsession: the Seven Summits, which involved climbing the tallest mountain on every continent, including Mount Everest. Vinson Massif in Antarctica was the final peak and certainly an unforgettable trip that ended the entire journey.
@@ -12,7 +12,7 @@ I’ve been filming my expeditions ever since my very first summit on Mount Kili
 
 ***
 
-<p><iframe src="https://www.youtube.com/embed/3pg6HIm6g8s" loading="lazy" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="https://www.youtube.com/embed/XSB7PYmY5rc" loading="lazy" allowfullscreen style="border: 0;"></iframe></p>
 
 ***
 
@@ -24,9 +24,9 @@ To that end, I avoided flashy match cuts, elaborate transitions, and heavy-hande
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-1a.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-1b.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-1c.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-9a.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-9b.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-9c.jpg" loading="lazy" alt="Project">
   </div>
 </div>
 
