@@ -32,3 +32,5 @@ The concept of the film drew from a wide range of inspirations. rom story elemen
 </div>
 
 The production lasted over seven months. Through our fundraising campaign, we managed to raise more than £2,500, but as a student project, we still faced significant limitations. I was responsible for managing a wide range of creative and logistical responsibilities for the film from start to finish.
+
+AVAILABLE SHORTLY
