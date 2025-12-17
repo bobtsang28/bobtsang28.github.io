@@ -12,8 +12,8 @@ One evening after work, I grabbed my camera and headed out for a night shoot in 
 
 <div class="gallery-box">
   <div class="gallery">
+    <img src="/images/project-example-8a.jpg" loading="lazy" alt="Project">
     <img src="/images/project-example-8b.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-8c.jpg" loading="lazy" alt="Project">
   </div>
 </div>
 
@@ -21,9 +21,9 @@ In post-production, I experimented with different colour grades, searching for a
 
 <div class="gallery-box">
   <div class="gallery">
+    <img src="/images/project-example-8c.jpg" loading="lazy" alt="Project">
     <img src="/images/project-example-8d.jpg" loading="lazy" alt="Project">
     <img src="/images/project-example-8e.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-8f.jpg" loading="lazy" alt="Project">
   </div>
 </div>
 
