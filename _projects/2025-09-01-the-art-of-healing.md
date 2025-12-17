@@ -6,7 +6,7 @@ subtitle: Mini-Documentary
 image: '/images/project-9.jpg'
 ---
 
-Maki moved to the UK over 20 years ago, looking to experience a new culture. It is there that she discovered a love for pottery and eventually studied under her late mentor, studio potter David White. She eventually settled in Yorkshire, where she opened her own studio. Now, she not only sells her work but also runs workshops that focus on healing and self-care. 
+Maki moved to the UK over 20 years ago, looking to experience a new culture. It is there that she discovered a love for pottery and studied under her late mentor, studio potter David White. She eventually settled in Yorkshire, where she opened her own studio. Now, she not only sells her work but also runs workshops that focus on healing and self-care. 
 
 ***
 

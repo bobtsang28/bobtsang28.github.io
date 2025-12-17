@@ -7,7 +7,9 @@ image: '/images/project-3.jpg'
 ---
 *Photo by HKDL*
 
-As part of my internship at Disneyland Hong Kong as a broadcast marketing intern, I took on a variety of responsibilities, including producing social media shorts for the park’s annual Duffy and Friends Friendversary events, a celebration of the bond between the Duffy and Friends characters and the park’s guests.
+Duffy and Friends has become a brand closely associated with Hong Kong Disneyland in recent years. Originally created for Tokyo DisneySea, it has since expanded across Disney parks in Southeast Asia, offering guests unique Duffy-themed festivals, merchandise, and dedicated playhouses.
+
+With the franchise continuing to grow, Hong Kong Disneyland now hosts an annual Friendversary event for each of the Duffy characters, celebrating the friendship between the characters and the park’s guests.
 
 ***
 
@@ -17,7 +19,7 @@ As part of my internship at Disneyland Hong Kong as a broadcast marketing intern
 
 ***
 
-Although this project was quite different from my previous work, I approached it in more or less the same way, starting with storyboarding and brainstorming ideas that would immediately capture the audience’s attention. Since these were social videos, my main focus was on audience retention, which relies heavily on visuals and editing. For the three videos I produced, I treated each one differently, experimenting with various transition styles. Whether they be a simple graphic match cut or picture-in-picture, my goal was to make each short feel fresh and distinct while maintaining a consistent overall tone.
+Although the project differed from many of my previous works, a similar approach was applied, beginning with storyboarding and brainstorming concepts, this time with the aim of immediately engaging the viewers. Given the social media format, audience retention was a primary focus, which relies heavily on the pacing of the edit. For the three videos produced, each was treated uniquely, experimenting with different transition styles, from simple graphic match cuts to picture-in-picture, ensuring each short felt fresh and distinct while maintaining a consistent overall tone.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -27,4 +29,4 @@ Although this project was quite different from my previous work, I approached it
     </div>
 </div>
 
-Since these were Disneyland shorts, I not only had to follow Disney’s high editing standards and stylistic guidelines, but also highlight the guests’ enjoyment and their interactions with the characters. With multiple camera operators on each shoot, I planned ahead, identifying which parts of the day would best capture guest reactions and prioritising coverage based on the activities, whether it was the parade, a drawing session, or a photoshoot. Navigating Disney’s strict character guidelines alongside the tight event schedule was certainly challenging, but seeing the final footage made it all the more rewarding.
+Working within Disneyland’s high editing standards and stylistic guidelines, the content also needed to highlight guest interactions and enjoyment specifically. With multiple camera operators on each shoot, careful planning helped identify key moments of engagement between the Duffy characters and guests, whether during the parade, a drawing session, or a photoshoot. Balancing strict character guidelines with a tight event schedule presented numerous challenges, but the final footage delivered a polished result, one that captures why Disneyland holds such a special place for so many visitors.
