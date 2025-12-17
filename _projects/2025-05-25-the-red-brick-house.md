@@ -8,12 +8,6 @@ image: '/images/project-8.jpg'
 
 In the summer of 2024, I was approached by the Chair of UWCGO Hong Kong, Elizabeth Fung, to lead the development of a promotional video for Li Po Chun United World College's fundraising project, "Vision 2052: Together Shaping the Next 30 Years of LPC." This transformative initiative aims to shape the future of UWC Hong Kong and empower generations of students to come. The investments are intended to serve as a cornerstone for enhancing the college’s ability to deliver an even stronger academic program, equipping students with the tools and knowledge to tackle the urgent challenges facing both our local and global communities.
 
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="/images/project-example-8a.jpg" loading="lazy" alt="Project">
-  </div>
-</div>
-
 One evening after work, I grabbed my camera and headed out for a night shoot in Mong Kok, one of Hong Kong’s busiest districts and one synonymous with the neon glow the city is known for. I didn't really have a plan; I simply wandered for hours, filming places I remembered fondly from my childhood. What I didn’t expect was how strongly it would stir my memories.
 
 <div class="gallery-box">
