@@ -5,10 +5,6 @@
       <div class="col col-12">
         <div class="contaniner__inner">
 
-          <div class="section__info">
-            <h2 class="section__title">Photography</h2>
-          </div>
-
           <div class="row">
             {% assign sorted = site.photography | sort: 'date' | reverse %}
             {% for photo in sorted %}
