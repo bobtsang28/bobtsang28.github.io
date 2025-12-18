@@ -11,6 +11,12 @@ Duffy and Friends has become a brand closely associated with Hong Kong Disneylan
 
 With the franchise continuing to grow, Hong Kong Disneyland now hosts an annual Friendversary event for each of the Duffy characters, celebrating the friendship between the characters and the park’s guests.
 
+***
+
+<p><iframe src="https://www.instagram.com/p/C-mIg3IPfFZ/embed/" loading="lazy" allowfullscreen style="border: 0;"></iframe></p>
+
+***
+
 <div class="gallery-box">
   <div class="gallery">
     <img src="/images/project-example-3e.jpg" loading="lazy" alt="Project">
