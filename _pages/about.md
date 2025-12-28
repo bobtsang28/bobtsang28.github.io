@@ -30,23 +30,22 @@ I view every project like a jigsaw puzzle, balancing logistical considerations w
 
 | Title | Production Company | Date | Role |
 |-------|---------------------|------|------|
-| Summer's End | Personal Project | Jul 2025 - Aug 2025 | Producer/ Director/ Writer/ Editor |
-| Enhanced Audio Description | Personal Project | Sep 2025 | Producer/ Director/ Editor |
-| The Art of Healing | Personal Project | Sep 2025 | Producer/ Director/ Editor |
-| The Harbour I Remember | Personal Project | Jun 2025 | Producer/ Director/ Editor |
-| The Red Brick House | Personal Project | May 2025 | Producer/ Director/ Editor |
-| LPCUWC Vision 2052 | Personal Project | Feb 2025 | Producer/ Director/ Editor |
-| A Taste of Japan | Personal Project | Jan 2025 | Producer/ Director/ Editor |
-| I Cycled 800km Across Japan | Personal Project | Dec 2024 | Producer/ Director/ Editor |
-| Duffy and Friends Friendversary | Hong Kong Disneyland | Aug 2024 | Videographer/ Editor |
-| Mong Kok at Night | Personal Project | Jan 2024 | Producer/ Director/ Editor |
-| Vinson 4892 | Personal Project | Jan 2024 | Producer/ Director/ Editor |
-| Project Title | Production Company | Date | Role |
-| Project Title | Production Company | Date | Role |
-| Project Title | Production Company | Date | Role |
-| Project Title | Production Company | Date | Role |
-| Project Title | Production Company | Date | Role |
-| Project Title | Production Company | Date | Role |
-| Project Title | Production Company | Date | Role |
-| Project Title | Production Company | Date | Role |
-| Project Title | Production Company | Date | Role |
+| Summer's End | Personal Project | Nov 2025 | Producer/ Director/ Writer/ Camera Operator/ Editor |
+| Merry Christmas Aubrey Flint | Shush Films | Nov 2025 | Camera Trainee |
+| Enhanced Audio Description Promo | University of York School of Physics, Engineering and Technology | Sep 2025 | Director/ Camera Operator/ Editor |
+| The Art of Healing | Personal Project | Sep 2025 | Producer/ Director/ Camera Operator/Editor |
+| The Harbour I Remember | Personal Project | Jun 2025 | Producer/ Director/ Camera Operator/Editor |
+| Blueberry Inn | Dancing Fox Entertainment | May 2025 | Unit Stills Student Photographer/ Videographer |
+| The Red Brick House | University of York | May 2025 | Director |
+| LPCUWC Vision 2052 Promo | Li Po Chun United World College| Feb 2025 | Director/ Camera Operator/ Editor |
+| A Taste of Japan | Personal Project | Jan 2025 | Producer/ Director/ Camera Operator/Editor |
+| I Cycled 800km Across Japan | Personal Project | Dec 2024 | Producer/ Director/ Camera Operator/ Editor |
+| Duffy and Friends Friendversary Social Media Videos | Hong Kong Disneyland | Aug 2024 | Camera Operator/ Editor |
+| 2024 Christmas Social Media Promos | Hong Kong Disneyland | Aug 2024 | Production Assistant/ Escort |
+| 2024 Halloween TVC | Hong Kong Disneyland | Aug 2024 | Production Assistant/ Escort |
+| Mong Kok at Night | Personal Project | Jan 2024 | Producer/ Director/ Camera Operator/ Editor |
+| Vinson 4892 | Personal Project | Jan 2024 | Producer/ Director/ Camera Operator/ Editor |
+| In My Life | University of York | Jan 2024 | Director/ Writer/ Editor |
+| I.SWIM | Makerville | Oct 2021 | Production Assistant/ Camera Trainee |
+
+and more...
