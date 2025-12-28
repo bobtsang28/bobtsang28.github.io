@@ -2,7 +2,7 @@
 layout: project
 title: "Behind-the-scenes Photography"
 date: 2024-01-01
-order: 5
+order: 6
 image: '/images/bts-1.jpg'
 ---
 

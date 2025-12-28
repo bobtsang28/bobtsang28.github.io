@@ -2,7 +2,7 @@
 layout: project
 title: "Portrait Photography"
 date: 2024-01-04
-order: 2
+order: 4
 image: '/images/portrait-1.jpg'
 ---
 
