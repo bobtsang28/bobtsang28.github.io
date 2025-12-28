@@ -3,7 +3,7 @@ layout: project
 title: "Landscape Photography"
 date: 2024-01-02
 order: 5
-image: '/images/landscape-1.jpg'
+image: '/images/landscape.jpg'
 ---
 
 Capturing the beauty and majesty of the natural world.
