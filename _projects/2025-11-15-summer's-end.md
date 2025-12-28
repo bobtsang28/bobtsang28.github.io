@@ -6,7 +6,11 @@ subtitle: Short Film
 image: '/images/project-11.jpg'
 ---
 
-While awareness of accessibility in film and television has grown in recent years, it remains an area where the industry still has significant gaps. The Enhancing Audio Description project explores how sound design and spatial audio can create more inclusive experiences for visually impaired audiences. The project expands the concept of media accessibility and enhances both the quality and availability of audio description services, offering cutting-edge techniques to the UK cultural sector.
+"You know, I keep thinking... what if this is the last time we meet?"
+
+Years ago, a man left his hometown for the city. Now, a couple of summers later than he planned, he comes back hoping to find the girl who had once been everything. Over the years, their text messages dwindled into empty exchanges, until they quietly slipped out of each other’s lives.
+
+He waits at the old bus stop, and wonders if he will ever see her again. As the afternoon drifts by, and the sun is setting in the distance, the man's thoughts return to the last time the two of them spoke, walking side by side on a warm summer day, unaware that the encounter would become their final goodbye.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -15,9 +19,9 @@ While awareness of accessibility in film and television has grown in recent year
   </div>
 </div>
 
-Corporate videos often carry the reputation of being either overly sterile or overloaded with information. From the outset, discussions with Mariana López, the principal investigator of the project, focused on creating a video that felt more casual and intimate, taking an approach that contrasted with typical corporate styles and drawing inspiration from Apple’s Behind the Mac commercials.
+The concept for this film grew out of a larger idea I first developed while directing another short as part of an assessment during my filmmaking course. Unfortunately, unforeseen circumstances required that earlier project to be heavily altered in post-production, resulting in many of its original story elements being lost in the final cut.
 
-This approach informed the cinematography and sound design, resulting in softer, mood-driven lighting across the main scenes, a restrained and unobtrusive background music, and a greater reliance on close-ups and handheld camera work. In terms of audio, the enhanced audio description technique was woven directly into the narrative track, allowing visually impaired viewers to fully apprehend the on-screen action without the use of a separate voice-over.
+This film revisits those abandoned ideas, reshaping and combining them into a new standalone piece. Shot over the course of a single afternoon, the entire production was completed within 48 hours, with an original score added in a later cut to complete the film.
 
 <div class="gallery-box">
   <div class="gallery">
@@ -28,4 +32,8 @@ This approach informed the cinematography and sound design, resulting in softer,
 </div>
 
 
-The project encountered some logistical constraints, which were navigated to ensure a strong final outcome. Director Samantha Moore and Warren Wilson were chosen to contribute on-camera testimonials to highlight the significance and benefits of the project. Filming their segments required adjustments due to location and setup limitations, resulting in minor audio and lighting variations. Despite these challenges, the final video effectively conveyed its message while a warm and approachable style.
+The entire film was shot with a minimalist, guerrilla-style approach that shaped both the film’s look and the way its narrative is constructed. With just a simple outline and a couple of lines of dialogue, I worked with the actors during the voice-over recording to peice together the backstory of the two characters that would inform their dialogue and their delivery. While a handful of images were envisioned in advance, many of the scenes emerged organically in the moment.
+
+By relying entirely on natural ambient light, the film aims to achieve an intimate, nostalgic tone with a documentary-like quality, while also reducing the need for traditional lighting setups and allowing the environment to shape the visual language.
+
+A conscious decision was made to avoid showing the actors’ faces, both for logistical reasons and to heighten the sense of isolation. While many filmmakers prioritise close-ups to draw attention to micro-expressions, by removing the audience’s ability to read the characters’ emotions directly, the characters become more distant and inaccessible. No matter how much the viewer wants to connect with them, there is a persistent barrier, reinforcing the feeling of emotional separation at the heart of the story.
