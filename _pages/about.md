@@ -5,19 +5,6 @@ permalink: /about/
 image: '/images/01-2.jpg'
 ---
 
-Leverage agile frameworks to provide a robust Hugo Sousa synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-
-Collaboratively administrate turnkey channels whereas virtual e-tailers. Objectively seize scalable metrics whereas proactive e-services. Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources.
-
-<div class="gallery-box">
-  <div class="gallery">
-    <img src="/images/100.jpg" loading="lazy">
-    <img src="/images/105.jpg" loading="lazy">
-    <img src="/images/103.jpg" loading="lazy">
-  </div>
-  <em>Gallery / <a href="https://unsplash.com/" target="_blank">Unsplash</a></em>
-</div>
-
 Hello there! My name is Bob. I was raised in Hong Kong and have moved to the UK in pursuit of studying film production. 
 
 My passion for the art stems from my background in mountaineering. I began filming and editing travel videos years ago as a way to document my experience climbing various mountains across the globe. Since then, I've worked on feature films, TV dramas, mini-documentaries, and more. 
