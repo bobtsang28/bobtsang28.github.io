@@ -11,7 +11,7 @@ image: '/images/lifestyle-0.jpg'
     <img src="/images/lifestyle-1.jpg" loading="lazy" alt="Lifestyle">
     <img src="/images/lifestyle-2.jpg" loading="lazy" alt="Lifestyle">
     <img src="/images/lifestyle-3.jpg" loading="lazy" alt="Lifestyle">
-    <img src="/images/lifestyle-4.jpg" loading="lazy" alt="Lifestyle">
+    <img src="/images/lifestyle-4a.jpg" loading="lazy" alt="Lifestyle">
     <img src="/images/lifestyle-5.jpg" loading="lazy" alt="Lifestyle">
     <img src="/images/lifestyle-6.jpg" loading="lazy" alt="Lifestyle">
     <img src="/images/lifestyle-7.jpg" loading="lazy" alt="Lifestyle">
