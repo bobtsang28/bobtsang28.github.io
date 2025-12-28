@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  Remember that happiness is a way of travel, not a destination
-description: Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that. Capitalize on low hanging fruit to identify a ballpark value activity to beta test. Override the digital divide with additional.
-date:   2024-04-24 15:01:35 +0300
+title:  How to Climb Mount Fuji
+description: Everything you need to know about reaching the peak of Japan
+date:   2025-10-20
 image:  '/images/14.jpg'
-tags:   [fashion, workflow, rest]
+tags:   [mountaineering, guide, travel]
 ---
 
 In qua quid est boni praeter summam voluptatem, et eam sempiternam? Cur post Tarentum ad Archytam? Qua ex cognitione facilior facta est investigatio rerumano occultissimarum. Negat enim tenuissimo victu, id est contemptissimis escis et sed potionibus, minorem voluptatem. Ego quoque, inquit, didicerim libentius si quiduse.

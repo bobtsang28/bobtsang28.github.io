@@ -7,6 +7,10 @@ image:  '/images/post-1.jpg'
 tags:   [mountaineering, nature, travel]
 ---
 
+<div style="text-align: center; margin: 20px 0;">
+  <a href="https://filmmakingbob.substack.com/p/how-i-survived-climbing-mount-fuji?r=6lxj2i" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #FF6719; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;">Read on Substack</a>
+</div>
+
 ## How It All Went Wrong (Before It Even Began)
 
 If you look at a map, although travelling to Japan from Europe or America is so damn far you might as well visit the moon instead, one of the benefits of growing up in Hong Kong is that you can visit the neon-lit streets in Tokyo or the bustling shopping districts of Osaka in just over four hours. This, combined with the weak yen, meant that since the early 2000s, Japan has been one of the top tourism destinations amongst Hong Kongers.
