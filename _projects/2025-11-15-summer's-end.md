@@ -37,3 +37,5 @@ The entire film was shot with a minimalist, guerrilla-style approach that shaped
 By relying entirely on natural ambient light, the film aims to achieve an intimate, nostalgic tone with a documentary-like quality, while also reducing the need for traditional lighting setups and allowing the environment to shape the visual language.
 
 A conscious decision was made to avoid showing the actors’ faces, both for logistical reasons and to heighten the sense of isolation. While many filmmakers prioritise close-ups to draw attention to micro-expressions, by removing the audience’s ability to read the characters’ emotions directly, the characters become more distant and inaccessible. No matter how much the viewer wants to connect with them, there is a persistent barrier, reinforcing the feeling of emotional separation at the heart of the story.
+
+AVALIABLE SOON
