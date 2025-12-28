@@ -26,4 +26,4 @@ From our earliest conversations, it was clear that the idea of memory would play
   </div>
 </div>
 
-The camera work was intentionally restrained. It was paired with a warm-hued colour grade and a 4:3 aspect ratio to evoke a sense of nostalgia and invite reflection from the audience. The sound design aimed to reinforce this atmosphere, weaving in ambient street sounds from Hong Kong alongside subtle retro effects to immerse viewers in the experience.
+The camera work is intentionally restrained. It is paired with a warm-hued colour grade and a 4:3 aspect ratio to evoke a sense of nostalgia and invite reflection from the audience. The sound design aimed to reinforce this atmosphere, weaving in ambient street sounds from Hong Kong alongside subtle retro effects to immerse viewers in the experience.
