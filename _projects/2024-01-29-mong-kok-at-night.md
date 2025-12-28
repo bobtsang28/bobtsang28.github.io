@@ -20,8 +20,8 @@ Having spent the summer of 2023 back in Hong Kong, I made an effort to see the c
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-7a.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-7b.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-7a.jpg" loading="lazy" alt="MONG KOK AT NIGHT">
+    <img src="/images/project-example-7b.jpg" loading="lazy" alt="MONG KOK AT NIGHT">
   </div>
 </div>
 
@@ -31,9 +31,9 @@ In post-production, various colour grades were experimented to capture Mong Kokâ
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-7c.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-7d.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-7e.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-7c.jpg" loading="lazy" alt="MONG KOK AT NIGHT">
+    <img src="/images/project-example-7d.jpg" loading="lazy" alt="MONG KOK AT NIGHT">
+    <img src="/images/project-example-7e.jpg" loading="lazy" alt="MONG KOK AT NIGHT">
   </div>
 </div>
 

@@ -12,8 +12,8 @@ At the inn, Milo embarks on a journey into the past, revisiting moments in his f
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-8a.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-8b.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-8a.jpg" loading="lazy" alt="THE RED BRICK HOUSE">
+    <img src="/images/project-example-8b.jpg" loading="lazy" alt="THE RED BRICK HOUSE">
   </div>
 </div>
 
@@ -23,9 +23,9 @@ The concept of the film drew from a wide variety of inspirations. From story ele
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-8c.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-8d.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-8e.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-8c.jpg" loading="lazy" alt="THE RED BRICK HOUSE">
+    <img src="/images/project-example-8d.jpg" loading="lazy" alt="THE RED BRICK HOUSE">
+    <img src="/images/project-example-8e.jpg" loading="lazy" alt="THE RED BRICK HOUSE">
   </div>
 </div>
 

@@ -20,9 +20,9 @@ This approach informed the cinematography and sound design, resulting in softer,
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-10a.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-10b.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-10c.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-10a.jpg" loading="lazy" alt="ENHANCED AUDIO DESCRIPTION">
+    <img src="/images/project-example-10b.jpg" loading="lazy" alt="ENHANCED AUDIO DESCRIPTION">
+    <img src="/images/project-example-10c.jpg" loading="lazy" alt="ENHANCED AUDIO DESCRIPTION">
   </div>
 </div>
 

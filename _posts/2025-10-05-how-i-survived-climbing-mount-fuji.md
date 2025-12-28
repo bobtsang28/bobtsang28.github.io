@@ -97,7 +97,7 @@ I think you can probably guess what happened next.
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/post-1a.jpg" loading="lazy" alt="Project">
+    <img src="/images/post-1a.jpg" loading="lazy" alt="How I Survived Climbing Mount Fuji">
   </div>
 </div>
 
@@ -117,7 +117,7 @@ And off we go! Only about an hour in, and we’ve made it to the sixth station. 
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/post-1b.jpg" loading="lazy" alt="Project">
+    <img src="/images/post-1b.jpg" loading="lazy" alt="How I Survived Climbing Mount Fuji">
   </div>
 </div>
 
@@ -159,7 +159,7 @@ If anything, it felt like yet another souvenir for climbers to get to prove that
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/post-1c.jpg" loading="lazy" alt="Project">
+    <img src="/images/post-1c.jpg" loading="lazy" alt="How I Survived Climbing Mount Fuji">
   </div>
 </div>
 
@@ -175,7 +175,7 @@ By the final stretch, everyone was looking equally depressed. Every step felt li
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/post-1d.jpg" loading="lazy" alt="Project">
+    <img src="/images/post-1d.jpg" loading="lazy" alt="How I Survived Climbing Mount Fuji">
   </div>
 </div>
 

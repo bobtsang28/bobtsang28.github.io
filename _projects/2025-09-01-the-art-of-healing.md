@@ -20,9 +20,9 @@ Her story is not an easy one to approach. Maki experienced a deeply traumatic ch
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-9a.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-9b.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-9c.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-9a.jpg" loading="lazy" alt="THE ART OF HEALING">
+    <img src="/images/project-example-9b.jpg" loading="lazy" alt="THE ART OF HEALING">
+    <img src="/images/project-example-9c.jpg" loading="lazy" alt="THE ART OF HEALING">
   </div>
 </div>
 

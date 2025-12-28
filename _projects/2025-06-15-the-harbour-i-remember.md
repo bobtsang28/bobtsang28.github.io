@@ -20,9 +20,9 @@ From our earliest conversations, it was clear that the idea of memory would play
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-6a.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-6b.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-6c.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-6a.jpg" loading="lazy" alt="THE HARBOUR I REMEMBER">
+    <img src="/images/project-example-6b.jpg" loading="lazy" alt="THE HARBOUR I REMEMBER">
+    <img src="/images/project-example-6c.jpg" loading="lazy" alt="THE HARBOUR I REMEMBER">
   </div>
 </div>
 

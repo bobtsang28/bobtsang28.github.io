@@ -18,8 +18,8 @@ In my final year of university, my focus shifted toward projects beyond the stan
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-5a.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-5b.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-5a.jpg" loading="lazy" alt="A TASTE OF JAPAN">
+    <img src="/images/project-example-5b.jpg" loading="lazy" alt="A TASTE OF JAPAN">
   </div>
 </div>
 
@@ -27,9 +27,9 @@ At the early stages of development, with the idea of filming something food-rela
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-5c.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-5d.jpg" loading="lazy" alt="Project">
-    <img src="/images/project-example-5e.jpg" loading="lazy" alt="Project">
+    <img src="/images/project-example-5c.jpg" loading="lazy" alt="A TASTE OF JAPAN">
+    <img src="/images/project-example-5d.jpg" loading="lazy" alt="A TASTE OF JAPAN">
+    <img src="/images/project-example-5e.jpg" loading="lazy" alt="A TASTE OF JAPAN">
   </div>
 </div>
 
