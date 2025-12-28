@@ -36,3 +36,11 @@
   margin-top: 16px;
   text-align: center;
 }
+
+.section.photography {
+  padding-top: 32px;
+
+  @media only screen and (max-width: $desktop) {
+    padding-top: 24px;
+  }
+}
