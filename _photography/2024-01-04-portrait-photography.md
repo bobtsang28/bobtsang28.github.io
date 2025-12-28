@@ -14,8 +14,5 @@ image: '/images/portrait-1.jpg'
     <img src="/images/portrait-4.jpg" loading="lazy" alt="Portrait">
     <img src="/images/portrait-5.jpg" loading="lazy" alt="Portrait">
     <img src="/images/portrait-6.jpg" loading="lazy" alt="Portrait">
-    <img src="/images/portrait-7.jpg" loading="lazy" alt="Portrait">
-    <img src="/images/portrait-8.jpg" loading="lazy" alt="Portrait">
-    <img src="/images/portrait-9.jpg" loading="lazy" alt="Portrait">
   </div>
 </div>
