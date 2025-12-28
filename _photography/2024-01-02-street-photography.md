@@ -3,7 +3,7 @@ layout: project
 title: "Street Photography"
 date: 2024-01-03
 order: 2
-image: '/images/street.jpg'
+image: '/images/street-0.jpg'
 ---
 
 <div class="gallery-box">

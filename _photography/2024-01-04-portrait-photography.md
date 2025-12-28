@@ -3,7 +3,7 @@ layout: project
 title: "Portrait Photography"
 date: 2024-01-04
 order: 4
-image: '/images/portrait.jpg'
+image: '/images/portrait-0.jpg'
 ---
 
 <div class="gallery-box">

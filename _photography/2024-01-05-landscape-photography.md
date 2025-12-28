@@ -3,7 +3,7 @@ layout: project
 title: "Landscape Photography"
 date: 2024-01-02
 order: 5
-image: '/images/landscape.jpg'
+image: '/images/landscape-0.jpg'
 ---
 
 

@@ -3,7 +3,7 @@ layout: project
 title: "Lifestyle Photography"
 date: 2024-01-04
 order: 3
-image: '/images/lifestyle.jpg'
+image: '/images/lifestyle-0.jpg'
 ---
 
 <div class="gallery-box">

@@ -3,7 +3,7 @@ layout: project
 title: "Behind-the-scenes Photography"
 date: 2024-01-01
 order: 6
-image: '/images/bts.jpg'
+image: '/images/bts-0.jpg'
 ---
 
 <div class="gallery-box">

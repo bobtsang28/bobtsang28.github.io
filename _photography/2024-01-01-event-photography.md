@@ -3,7 +3,7 @@ layout: project
 title: "Event Photography"
 date: 2024-01-05
 order: 1
-image: '/images/event.jpg'
+image: '/images/event-0.jpg'
 ---
 
 <div class="gallery-box">
