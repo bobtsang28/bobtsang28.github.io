@@ -6,8 +6,6 @@ order: 1
 image: '/images/event-1.jpg'
 ---
 
-Capturing the energy and emotion of special moments.
-
 <div class="gallery-box">
   <div class="gallery">
     <img src="/images/event-1.jpg" loading="lazy" alt="Event">

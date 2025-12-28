@@ -6,8 +6,6 @@ order: 4
 image: '/images/portrait-1.jpg'
 ---
 
-Telling stories through faces and expressions.
-
 <div class="gallery-box">
   <div class="gallery">
     <img src="/images/portrait-1.jpg" loading="lazy" alt="Portrait">

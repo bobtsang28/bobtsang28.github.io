@@ -6,8 +6,6 @@ order: 6
 image: '/images/bts-1.jpg'
 ---
 
-A glimpse into the creative process and what happens when the camera turns around.
-
 <div class="gallery-box">
   <div class="gallery">
     <img src="/images/bts-1.jpg" loading="lazy" alt="Behind-the-scenes">

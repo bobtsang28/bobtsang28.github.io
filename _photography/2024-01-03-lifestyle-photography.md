@@ -6,8 +6,6 @@ order: 3
 image: '/images/lifestyle.jpg'
 ---
 
-Capturing authentic moments and stories from everyday life.
-
 <div class="gallery-box">
   <div class="gallery">
     <img src="/images/lifestyle-1.jpg" loading="lazy" alt="Lifestyle">

@@ -6,8 +6,6 @@ order: 2
 image: '/images/street.jpg'
 ---
 
-Documenting everyday life and candid moments in urban environments.
-
 <div class="gallery-box">
   <div class="gallery">
     <img src="/images/street-1.jpg" loading="lazy" alt="Street">

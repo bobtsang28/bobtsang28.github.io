@@ -6,7 +6,6 @@ order: 5
 image: '/images/landscape.jpg'
 ---
 
-Capturing the beauty and majesty of the natural world.
 
 <div class="gallery-box">
   <div class="gallery">
