@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  Is Mount Fuji in Winter Too Dangerous to Climb?
-description: How I lived through my second encounter with the tallest mountain in Japan
-date:   2025-11-11
-image:  '/images/post-3.jpg'
+title:  Hong Kong’s Most Breathtaking Hikes
+description: A short list of some of my favourite hikes in Hong Kong
+date:   2025-11-25
+image:  '/images/post-4.jpg'
 tags:   [mountaineering, nature, travel]
 ---
 
