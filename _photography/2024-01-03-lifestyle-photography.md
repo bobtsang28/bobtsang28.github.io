@@ -13,8 +13,5 @@ Capturing authentic moments and stories from everyday life.
     <img src="/images/lifestyle-1.jpg" loading="lazy" alt="Lifestyle">
     <img src="/images/lifestyle-2.jpg" loading="lazy" alt="Lifestyle">
     <img src="/images/lifestyle-3.jpg" loading="lazy" alt="Lifestyle">
-    <img src="/images/lifestyle-4.jpg" loading="lazy" alt="Lifestyle">
-    <img src="/images/lifestyle-5.jpg" loading="lazy" alt="Lifestyle">
-    <img src="/images/lifestyle-6.jpg" loading="lazy" alt="Lifestyle">
   </div>
 </div>
