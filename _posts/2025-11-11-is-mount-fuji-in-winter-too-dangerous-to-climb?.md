@@ -1,11 +1,15 @@
 ---
 layout: post
-title:  Everything has beauty, but not everyone can see
-description: Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that. Capitalize on low hanging fruit to identify a ballpark value activity to beta test. Override the digital divide with additional.
-date:   2024-05-29 18:05:55 +0300
-image:  '/images/12.jpg'
-tags:   [fashion, technology, study]
+title:  Is Mount Fuji in Winter Too Dangerous to Climb?
+description: How I lived through my second encounter with the tallest mountain in Japan
+date:   2025-11-11
+image:  '/images/post-3.jpg'
+tags:   [mountaineering, nature, travel]
 ---
+
+<div style="text-align: center; margin: 20px 0;">
+  <a href="https://filmmakingbob.substack.com/p/can-you-survive-mount-fuji-in-the?r=6lxj2i" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #FF6719; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;">Read on Substack</a>
+</div>
 
 In qua quid est boni praeter summam voluptatem, et eam sempiternam? Cur post Tarentum ad Archytam? Qua ex cognitione facilior facta est investigatio rerumano occultissimarum. Negat enim tenuissimo victu, id est contemptissimis escis et sed potionibus, minorem voluptatem. Ego quoque, inquit, didicerim libentius si quiduse.
 
