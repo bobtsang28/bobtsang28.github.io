@@ -26,5 +26,4 @@ This approach informed the cinematography and sound design, resulting in softer,
   </div>
 </div>
 
-
-The project encountered some logistical constraints, which were navigated to ensure a strong final outcome. Director Samantha Moore and Warren Wilson were chosen to contribute on-camera testimonials to highlight the significance and benefits of the project. Filming their segments required adjustments due to location and setup limitations, resulting in minor audio and lighting variations. Despite these challenges, the final video effectively conveyed its message while a warm and approachable style.
+Much of the editing process focused on finding the right balance between conveying enough information and avoiding an overly heavy-handed approach for the viewer. Two contributors, director Samantha Moore and Warren Wilson, were selected to provide on-camera testimonials, helping to highlight the project’s significance and benefits while also giving it a more personal, human perspective.
