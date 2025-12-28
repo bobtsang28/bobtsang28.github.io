@@ -9,7 +9,7 @@ image: '/images/project-3.jpg'
 
 Duffy and Friends has become a brand closely associated with Hong Kong Disneyland in recent years. Originally created for Tokyo DisneySea, it has since expanded across Disney parks in Southeast Asia, offering guests unique Duffy-themed festivals, merchandise, and dedicated playhouses.
 
-With the franchise continuing to grow, Hong Kong Disneyland now hosts an annual Friendversary event for each of the Duffy characters, celebrating the friendship between the characters and the park's guests. I was tasked with filming and editing a series of [short videos](https://www.instagram.com/p/C-mIg3IPfFZ/) capturing the event.
+With the franchise continuing to grow, Hong Kong Disneyland now hosts an annual Friendversary event for each of the Duffy characters, celebrating the friendship between the characters and the park's guests. I was tasked with filming and editing a series of [**<u>short videos</u>**](https://www.instagram.com/p/C-mIg3IPfFZ/) capturing the event.
 
 <div class="gallery-box">
   <div class="gallery">

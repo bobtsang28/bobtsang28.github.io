@@ -33,6 +33,7 @@ I view every project like a jigsaw puzzle, balancing logistical considerations w
 | Mong Kok at Night | Personal Project | Jan 2024 | Producer/ Director/ Camera Operator/ Editor |
 | Vinson 4892 | Personal Project | Jan 2024 | Producer/ Director/ Camera Operator/ Editor |
 | In My Life | University of York | Jan 2024 | Director/ Writer/ Editor |
+| What Climbing Mount Fuji is Like | Personal Project | Aug 2023 | Producer/ Director/ Camera Operator/ Editor |
 | I.SWIM | Makerville | Oct 2021 | Production Assistant/ Camera Trainee |
 
 and more...
