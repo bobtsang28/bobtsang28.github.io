@@ -3,7 +3,7 @@ layout: project
 title: "Behind-the-scenes Photography"
 date: 2024-01-01
 order: 6
-image: '/images/bts-1.jpg'
+image: '/images/bts.jpg'
 ---
 
 <div class="gallery-box">
@@ -14,5 +14,8 @@ image: '/images/bts-1.jpg'
     <img src="/images/bts-4.jpg" loading="lazy" alt="Behind-the-scenes">
     <img src="/images/bts-5.jpg" loading="lazy" alt="Behind-the-scenes">
     <img src="/images/bts-6.jpg" loading="lazy" alt="Behind-the-scenes">
+    <img src="/images/bts-7.jpg" loading="lazy" alt="Behind-the-scenes">
+    <img src="/images/bts-8.jpg" loading="lazy" alt="Behind-the-scenes">
+    <img src="/images/bts-9.jpg" loading="lazy" alt="Behind-the-scenes">
   </div>
 </div>
