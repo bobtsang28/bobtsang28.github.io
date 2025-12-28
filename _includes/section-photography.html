@@ -8,7 +8,7 @@
           <div class="row">
             {% assign sorted = site.photography | sort: 'order' %}
             {% for photo in sorted %}
-            <article class="project col col-12">
+            <article class="project col col-6">
               <div class="project__content">
                 <a href="{{ photo.url }}" class="project__image">
                   <img class="lazy" data-src="{{ photo.image }}" alt="{{ photo.title }}">
