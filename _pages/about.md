@@ -18,22 +18,35 @@ Collaboratively administrate turnkey channels whereas virtual e-tailers. Objecti
   <em>Gallery / <a href="https://unsplash.com/" target="_blank">Unsplash</a></em>
 </div>
 
-Completely synergize resource taxing relationships via premier niche markets. Cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+Hello there! My name is Bob. I was raised in Hong Kong and have moved to the UK in pursuit of studying film production. 
 
-> The longer I live, the more I realize that I am never wrong about anything, and that all the pains I have so humbly taken to verify my notions have only wasted my time!
+My passion for the art stems from my background in mountaineering. I began filming and editing travel videos years ago as a way to document my experience climbing various mountains across the globe. Since then, I've worked on feature films, TV dramas, mini-documentaries, and more. 
 
-Globally incubate standards compliant channels before scalable benefits. Quickly disseminate superior deliverables whereas web-enabled applications. Quickly drive clicks-and-mortar catalysts for change before vertical architectures.
+Now based in London, I work as a freelance filmmaker, camera trainee and content creator across photography and video projects. Alongside client work, I am developing a personal passion project: a mini-documentary series focused on creatives and entrepreneurs in the UK with connections to South Asian culture, exploring how memory and cultural identity shape an individual’s pursuit of their aspirations.
 
-![Sea]({{site.baseurl}}/images/106.jpg)
-*Photo by [Alyssa Strohmann](https://unsplash.com/photos/2r2RUsEU1Aw) on [Unsplash](https://unsplash.com/)*
-
-Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
-
-Credibly reintermediate backend ideas for cross-platform models. Continually reintermediate integrated processes through technically sound intellectual capital. Holistically foster superior methodologies without market-driven best practices.
-
+I view every project like a jigsaw puzzle, balancing logistical considerations with creative goals. Before beginning any work, I prioritise in-depth conversations with each member of the team to gain a clear understanding of the project’s objectives, visual tone, and narrative, allowing me to identify the most appropriate cinematic language to tell the story.
 
 ## Credits
 
 | Title | Production Company | Date | Role |
 |-------|---------------------|------|------|
-|       |                     |      |      |
+| Summer's End | Personal Project | Jul 2025 - Aug 2025 | Producer/ Director/ Writer/ Editor |
+| Enhanced Audio Description | Personal Project | Sep 2025 | Producer/ Director/ Editor |
+| The Art of Healing | Personal Project | Sep 2025 | Producer/ Director/ Editor |
+| The Harbour I Remember | Personal Project | Jun 2025 | Producer/ Director/ Editor |
+| The Red Brick House | Personal Project | May 2025 | Producer/ Director/ Editor |
+| LPCUWC Vision 2052 | Personal Project | Feb 2025 | Producer/ Director/ Editor |
+| A Taste of Japan | Personal Project | Jan 2025 | Producer/ Director/ Editor |
+| I Cycled 800km Across Japan | Personal Project | Dec 2024 | Producer/ Director/ Editor |
+| Duffy and Friends Friendversary | Hong Kong Disneyland | Aug 2024 | Videographer/ Editor |
+| Mong Kok at Night | Personal Project | Jan 2024 | Producer/ Director/ Editor |
+| Vinson 4892 | Personal Project | Jan 2024 | Producer/ Director/ Editor |
+| Project Title | Production Company | Date | Role |
+| Project Title | Production Company | Date | Role |
+| Project Title | Production Company | Date | Role |
+| Project Title | Production Company | Date | Role |
+| Project Title | Production Company | Date | Role |
+| Project Title | Production Company | Date | Role |
+| Project Title | Production Company | Date | Role |
+| Project Title | Production Company | Date | Role |
+| Project Title | Production Company | Date | Role |
