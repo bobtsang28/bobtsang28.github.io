@@ -7,7 +7,7 @@ image: '/images/01-2.jpg'
 
 Hello there! My name is Bob. I was raised in Hong Kong and have moved to the UK in pursuit of a career in film and television production.
 
-My passion for the art stems from my background in mountaineering. I began filming and editing travel videos years ago as a way to document my experience climbing various mountains across the globe. Since then, I've worked on feature films, TV dramas, mini-documentaries, and more. 
+My passion for the art stems from my background in mountaineering. I began filming and editing travel videos years ago as a way to document my experience climbing various mountains across the globe. Since then, I’ve completed the Seven Summits, climbing the highest mountain on every continent, including Mount Everest, and have gone on to work across feature films, TV dramas, mini-documentaries, and more.
 
 Now based in London, I work as a freelance filmmaker, camera trainee and content creator across photography and video projects. Alongside client work, I am developing a personal passion project: a mini-documentary series focused on creatives and entrepreneurs in the UK with connections to South Asian culture, exploring how memory and cultural identity shape an individual’s pursuit of their aspirations.
 
