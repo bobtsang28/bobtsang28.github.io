@@ -146,5 +146,5 @@ Whichever route you end up taking, consider spending an extra day or two explori
 Anything you still have questions about, let me know in the comments below!
 
 <div style="text-align: center; margin: 20px 0;">
-  <a href="https://filmmakingbob.substack.com/p/how-to-climb-mount-fuji?r=6lxj2i" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #FF6719; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;">Read on Substack</a>
+  <a href="https://filmmakingbob.substack.com/p/how-to-climb-mount-fuji?r=6lxj2i" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #a0d149; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;">Read on Substack</a>
 </div>
