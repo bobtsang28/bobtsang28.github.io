@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     return;
   }
   
-  // Set horizontal bars based on number of headings
-  const bars = '▬'.repeat(headings.length);
-  tocIcon.textContent = bars;
+  // Create stacked horizontal lines based on number of headings
+  const lines = Array(headings.length).fill('─').join('<br>');
+  tocIcon.innerHTML = lines;
   
   // Generate TOC items
   headings.forEach((heading, index) => {
