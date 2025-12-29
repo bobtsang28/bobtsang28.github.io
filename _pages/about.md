@@ -5,7 +5,7 @@ permalink: /about/
 image: '/images/01-2.jpg'
 ---
 
-Hello there! My name is Bob. I was raised in Hong Kong and have moved to the UK in pursuit of studying film production. 
+Hello there! My name is Bob. I was raised in Hong Kong and have moved to the UK in pursuit of a career in film and television production. 
 
 My passion for the art stems from my background in mountaineering. I began filming and editing travel videos years ago as a way to document my experience climbing various mountains across the globe. Since then, I've worked on feature films, TV dramas, mini-documentaries, and more. 
 
