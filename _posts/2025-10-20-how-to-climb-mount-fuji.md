@@ -7,7 +7,7 @@ image:  '/images/post-2.jpg'
 tags:   [mountaineering, guide, travel]
 ---
 
-<div style="text-align: center; margin: 20px 0;">
+<div style="text-align: center; margin: 20px 0 40px 0;">
   <a href="https://filmmakingbob.substack.com/p/how-to-climb-mount-fuji?r=6lxj2i" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #a0d149; color: #181818; text-decoration: none; border-radius: 4px; font-weight: 700; font-family: 'Inter', Helvetica Neue, Helvetica, Arial, sans-serif;">Read on Substack</a>
 </div>
 
