@@ -6,7 +6,7 @@ subtitle: Cinematic Video
 image: '/images/project-7.jpg'
 ---
 
-Perhaps one of the most recognisable iconographies of Hong Kong is that of cage homes and, by extension, the Kowloon Walled City. Type “Hong Kong” online and you’ll find an abundance of content dedicated to romanticising this once lawless neighbourhood.
+Perhaps one of the most recognisable iconographies of Hong Kong is that of cage homes and, by extension, the Kowloon Walled City. Type 'Hong Kong' online and you'll find an abundance of content dedicated to romanticising this once lawless neighbourhood.
 
 It wasn’t until I had lived abroad that I began to realise how many people’s impressions of the city lean toward this dystopian, cyberpunk vision.
 
