@@ -18,9 +18,9 @@ Corporate videos often carry the reputation of being either overly sterile or ov
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-10a.jpg" loading="lazy" alt="ENHANCED AUDIO DESCRIPTION">
-    <img src="/images/project-example-10b.jpg" loading="lazy" alt="ENHANCED AUDIO DESCRIPTION">
-    <img src="/images/project-example-10c.jpg" loading="lazy" alt="ENHANCED AUDIO DESCRIPTION">
+    <div class="gallery__image"><img src="/images/project-example-10a.jpg" loading="lazy" alt="ENHANCED AUDIO DESCRIPTION"></div>
+    <div class="gallery__image"><img src="/images/project-example-10b.jpg" loading="lazy" alt="ENHANCED AUDIO DESCRIPTION"></div>
+    <div class="gallery__image"><img src="/images/project-example-10c.jpg" loading="lazy" alt="ENHANCED AUDIO DESCRIPTION"></div>
   </div>
 </div>
 

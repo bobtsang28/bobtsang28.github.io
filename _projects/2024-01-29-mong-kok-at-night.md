@@ -18,8 +18,8 @@ It wasn’t until I had lived abroad that I began to realise how many people’s
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-7a.jpg" loading="lazy" alt="MONG KOK AT NIGHT">
-    <img src="/images/project-example-7b.jpg" loading="lazy" alt="MONG KOK AT NIGHT">
+    <div class="gallery__image"><img src="/images/project-example-7a.jpg" loading="lazy" alt="MONG KOK AT NIGHT"></div>
+    <div class="gallery__image"><img src="/images/project-example-7b.jpg" loading="lazy" alt="MONG KOK AT NIGHT"></div>
   </div>
 </div>
 
@@ -29,9 +29,9 @@ One evening after work, I grabbed my camera and headed out for a night shoot in 
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-7c.jpg" loading="lazy" alt="MONG KOK AT NIGHT">
-    <img src="/images/project-example-7d.jpg" loading="lazy" alt="MONG KOK AT NIGHT">
-    <img src="/images/project-example-7e.jpg" loading="lazy" alt="MONG KOK AT NIGHT">
+    <div class="gallery__image"><img src="/images/project-example-7c.jpg" loading="lazy" alt="MONG KOK AT NIGHT"></div>
+    <div class="gallery__image"><img src="/images/project-example-7d.jpg" loading="lazy" alt="MONG KOK AT NIGHT"></div>
+    <div class="gallery__image"><img src="/images/project-example-7e.jpg" loading="lazy" alt="MONG KOK AT NIGHT"></div>
   </div>
 </div>
 
