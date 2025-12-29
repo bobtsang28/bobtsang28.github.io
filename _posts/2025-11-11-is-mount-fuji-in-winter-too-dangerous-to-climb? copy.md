@@ -7,6 +7,11 @@ image:  '/images/post-3.jpg'
 tags:   [mountaineering, nature, travel]
 ---
 
+<div style="text-align: center; margin: 20px 0;">
+  <a href="https://filmmakingbob.substack.com/p/can-you-survive-mount-fuji-in-the?r=6lxj2i" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #a0d149; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;">Read on Substack</a>
+</div>
+
+
 ## The Calm Before The Storm
 
 Do you know it’s actually possible to climb Mount Fuji in the winter?
@@ -188,7 +193,3 @@ To this day, I’m still not sure if I was just hallucinating from exhaustion, h
 My memories of those final hours are a bit fuzzy, but what I do remember is the overwhelming joy and relief I felt when I spotted our car in the distance. Tears streamed down my face as I summoned every last bit of energy to make my way to it.
 
 Despite all the suffering and pain, this expedition was undoubtedly one of the most unique and eye‑opening experiences I’ve had as a child. Sitting in the back of the car on the way back to our hostel, I didn’t grumble about how tough the climb was, like I normally would. Instead, I gazed up at the towering trees blanketed in snow, and found myself thinking back to the question I’d asked myself a few days ago: What is it that drives me to climb?
-
-<div style="text-align: center; margin: 20px 0;">
-  <a href="https://filmmakingbob.substack.com/p/can-you-survive-mount-fuji-in-the?r=6lxj2i" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #a0d149; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;">Read on Substack</a>
-</div>

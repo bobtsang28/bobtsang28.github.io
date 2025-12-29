@@ -7,6 +7,9 @@ image:  '/images/post-2.jpg'
 tags:   [mountaineering, guide, travel]
 ---
 
+<div style="text-align: center; margin: 20px 0;">
+  <a href="https://filmmakingbob.substack.com/p/how-to-climb-mount-fuji?r=6lxj2i" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #a0d149; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;">Read on Substack</a>
+</div>
 Having climbed Mount Fuji multiple times throughout the past 15 years, a lot of people have asked me questions about the routes and various other aspects of the climb. I hope you’d find this guide helpful in answering some of those queries.
 
 ## Watch Before You Climb
@@ -144,7 +147,3 @@ Whichever route you end up taking, consider spending an extra day or two explori
 ## Best of Luck!
 
 Anything you still have questions about, let me know in the comments below!
-
-<div style="text-align: center; margin: 20px 0;">
-  <a href="https://filmmakingbob.substack.com/p/how-to-climb-mount-fuji?r=6lxj2i" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #a0d149; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;">Read on Substack</a>
-</div>
