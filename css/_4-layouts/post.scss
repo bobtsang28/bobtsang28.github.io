@@ -201,12 +201,9 @@
     border: none;
     text-decoration: none;
   }
-}
 
-// Override for project pages only - full width gallery images
-.project-content {
-  .gallery-box img,
-  .gallery img {
+  // Override for galleries with multiple images - use full width
+  .gallery img:not(:only-child) {
     max-width: none;
     margin-left: 24px;
     margin-right: 0;
