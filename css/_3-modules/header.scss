@@ -3,13 +3,14 @@
   .header__inner {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 60px $base-spacing-unit;
 
     @media only screen and (max-width: $desktop) {
       padding: 40px $base-spacing-unit;
+      justify-content: space-between;
     }
 
     @media only screen and (max-width: $mobile) {
@@ -19,6 +20,15 @@
 }
 
 /* Logo */
+.logo {
+  position: absolute;
+  left: $base-spacing-unit;
+  
+  @media only screen and (max-width: $desktop) {
+    position: static;
+  }
+}
+
 .logo__link {
   padding: 8px 0;
   font-family: $heading-font-family;
