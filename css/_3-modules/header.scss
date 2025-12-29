@@ -374,11 +374,18 @@
 }
 
 .nav-button {
+  position: absolute;
+  right: $base-spacing-unit;
   display: flex;
   align-items: center;
   font-size: 21px;
   color: var(--link-color);
   border-radius: 50%;
+
+  @media only screen and (max-width: $desktop) {
+    position: static;
+    margin-left: auto;
+  }
 
   .icon__menu {
     display: none;
@@ -398,7 +405,6 @@
   @media only screen and (max-width: $desktop) {
     display: flex;
     align-items: center;
-    margin-left: auto;
     font-size: 24px;
 
     .icon__menu {
