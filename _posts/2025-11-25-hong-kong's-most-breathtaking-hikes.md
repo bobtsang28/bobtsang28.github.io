@@ -8,11 +8,11 @@ tags:   [mountaineering, nature, travel]
 ---
 
 <div style="text-align: center; margin: 20px 0 40px 0;">
-  <a href="https://filmmakingbob.substack.com/p/can-you-survive-mount-fuji-in-the?r=6lxj2i" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #a0d149; color: #181818; text-decoration: none; border-radius: 4px; font-weight: 700; font-family: 'Inter', Helvetica Neue, Helvetica, Arial, sans-serif;">Read on Substack</a>
+  <a href="https://filmmakingbob.substack.com/p/hong-kongs-most-breathtaking-hikes?r=6lxj2i" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #a0d149; color: #181818; text-decoration: none; border-radius: 4px; font-weight: 700; font-family: 'Inter', Helvetica Neue, Helvetica, Arial, sans-serif;">Read on Substack</a>
 </div>
 
 
-## The Calm Before The Storm
+## Ngong Ping 360
 
 Do you know it’s actually possible to climb Mount Fuji in the winter?
 
