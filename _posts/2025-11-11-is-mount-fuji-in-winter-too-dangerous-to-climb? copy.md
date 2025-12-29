@@ -8,7 +8,7 @@ tags:   [mountaineering, nature, travel]
 ---
 
 <div style="text-align: center; margin: 20px 0;">
-  <a href="https://filmmakingbob.substack.com/p/can-you-survive-mount-fuji-in-the?r=6lxj2i" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #a0d149; color: white; text-decoration: none; border-radius: 4px; font-weight: 500;">Read on Substack</a>
+  <a href="https://filmmakingbob.substack.com/p/can-you-survive-mount-fuji-in-the?r=6lxj2i" target="_blank" style="display: inline-block; padding: 12px 24px; background-color: #a0d149; color: white; text-decoration: none; border-radius: 4px; font-weight: 500; font-family: 'Inter', Helvetica Neue, Helvetica, Arial, sans-serif;">Read on Substack</a>
 </div>
 
 
