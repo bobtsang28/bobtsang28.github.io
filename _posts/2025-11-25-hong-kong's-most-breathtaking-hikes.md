@@ -4,7 +4,7 @@ title:  Hong Kong’s Most Breathtaking Hikes
 description: A short list of some of my favourite hikes in Hong Kong
 date:   2025-11-25
 image:  '/images/post-4.jpg'
-tags:   [mountaineering, nature, travel]
+tags:   [hiking, nature, travel]
 ---
 
 <div style="text-align: center; margin: 20px 0 40px 0;">

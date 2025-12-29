@@ -2,19 +2,19 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>/about/</loc>
-<lastmod>2025-12-29T09:15:36+00:00</lastmod>
+<lastmod>2025-12-29T09:26:55+00:00</lastmod>
 </url>
 <url>
 <loc>/contact/</loc>
-<lastmod>2025-12-29T09:15:36+00:00</lastmod>
+<lastmod>2025-12-29T09:26:55+00:00</lastmod>
 </url>
 <url>
 <loc>/elements/</loc>
-<lastmod>2025-12-29T09:15:36+00:00</lastmod>
+<lastmod>2025-12-29T09:26:55+00:00</lastmod>
 </url>
 <url>
 <loc>/tags/</loc>
-<lastmod>2025-12-29T09:15:36+00:00</lastmod>
+<lastmod>2025-12-29T09:26:55+00:00</lastmod>
 </url>
 <url>
 <loc>/photo/behind-the-scenes-photography</loc>
@@ -41,10 +41,6 @@
 <lastmod>2024-01-05T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>/blog/the-way-to-get-started-is-to-quit-talking-and-begin-doing</loc>
-<lastmod>2024-04-23T13:01:35+01:00</lastmod>
-</url>
-<url>
 <loc>/blog/how-i-survived-climbing-mount-fuji</loc>
 <lastmod>2025-10-05T00:00:00+01:00</lastmod>
 </url>
@@ -59,6 +55,10 @@
 <url>
 <loc>/blog/hong-kong-s-most-breathtaking-hikes</loc>
 <lastmod>2025-11-25T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>/blog/a-guide-to-hiking-in-hong-kong</loc>
+<lastmod>2025-12-10T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>/project/vinson-4892</loc>
