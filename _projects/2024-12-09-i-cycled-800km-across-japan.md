@@ -18,7 +18,7 @@ Having done quite a few bikepacking trips in Japan, in the summer of 2024, I emb
 
 <div class="gallery-box">
   <div class="gallery">
-    <div class="gallery__image"><img src="/images/project-example-4a.jpg" loading="lazy" alt="I CYCLED 800KM ACROSS JAPAN"></div>
+    <img src="/images/project-example-4a.jpg" loading="lazy" alt="I CYCLED 800KM ACROSS JAPAN">
   </div>
 </div>
 
@@ -26,9 +26,9 @@ The second half of the route took me through some of Japan’s most mountainous 
 
 <div class="gallery-box">
   <div class="gallery">
-    <div class="gallery__image"><img src="/images/project-example-4b.jpg" loading="lazy" alt="I CYCLED 800KM ACROSS JAPAN"></div>
-    <div class="gallery__image"><img src="/images/project-example-4c.jpg" loading="lazy" alt="I CYCLED 800KM ACROSS JAPAN"></div>
-    <div class="gallery__image"><img src="/images/project-example-4d.jpg" loading="lazy" alt="I CYCLED 800KM ACROSS JAPAN"></div>
+    <img src="/images/project-example-4b.jpg" loading="lazy" alt="I CYCLED 800KM ACROSS JAPAN">
+    <img src="/images/project-example-4c.jpg" loading="lazy" alt="I CYCLED 800KM ACROSS JAPAN">
+    <img src="/images/project-example-4d.jpg" loading="lazy" alt="I CYCLED 800KM ACROSS JAPAN">
   </div>
 </div>
 

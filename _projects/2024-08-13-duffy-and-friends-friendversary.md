@@ -13,7 +13,7 @@ With the franchise continuing to grow, Hong Kong Disneyland now hosts an annual 
 
 <div class="gallery-box">
   <div class="gallery">
-    <div class="gallery__image"><img src="/images/project-example-3e.jpg" loading="lazy" alt="DUFFY AND FRIENDS FRIENDVERSARY"></div>
+    <img src="/images/project-example-3e.jpg" loading="lazy" alt="DUFFY AND FRIENDS FRIENDVERSARY">
     </div>
 </div>
 

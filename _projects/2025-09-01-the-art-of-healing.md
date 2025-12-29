@@ -18,9 +18,9 @@ I first came across Maki online, but it wasn’t until I spoke with her that I t
 
 <div class="gallery-box">
   <div class="gallery">
-    <div class="gallery__image"><img src="/images/project-example-9a.jpg" loading="lazy" alt="THE ART OF HEALING"></div>
-    <div class="gallery__image"><img src="/images/project-example-9b.jpg" loading="lazy" alt="THE ART OF HEALING"></div>
-    <div class="gallery__image"><img src="/images/project-example-9c.jpg" loading="lazy" alt="THE ART OF HEALING"></div>
+    <img src="/images/project-example-9a.jpg" loading="lazy" alt="THE ART OF HEALING">
+    <img src="/images/project-example-9b.jpg" loading="lazy" alt="THE ART OF HEALING">
+    <img src="/images/project-example-9c.jpg" loading="lazy" alt="THE ART OF HEALING">
   </div>
 </div>
 

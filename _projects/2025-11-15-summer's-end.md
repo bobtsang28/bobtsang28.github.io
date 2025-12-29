@@ -14,8 +14,8 @@ He waits at the old bus stop, and wonders if he will ever see her again. As the 
 
 <div class="gallery-box">
   <div class="gallery">
-    <div class="gallery__image"><img src="/images/project-example-11a.jpg" loading="lazy" alt="SUMMER'S END"></div>
-    <div class="gallery__image"><img src="/images/project-example-11b.jpg" loading="lazy" alt="SUMMER'S END"></div>
+    <img src="/images/project-example-11a.jpg" loading="lazy" alt="SUMMER'S END">
+    <img src="/images/project-example-11b.jpg" loading="lazy" alt="SUMMER'S END">
   </div>
 </div>
 
@@ -25,9 +25,9 @@ This film revisits those abandoned ideas, reshaping and combining them into a ne
 
 <div class="gallery-box">
   <div class="gallery">
-    <div class="gallery__image"><img src="/images/project-example-11c.jpg" loading="lazy" alt="SUMMER'S END"></div>
-    <div class="gallery__image"><img src="/images/project-example-11d.jpg" loading="lazy" alt="SUMMER'S END"></div>
-    <div class="gallery__image"><img src="/images/project-example-11e.jpg" loading="lazy" alt="SUMMER'S END"></div>
+    <img src="/images/project-example-11c.jpg" loading="lazy" alt="SUMMER'S END">
+    <img src="/images/project-example-11d.jpg" loading="lazy" alt="SUMMER'S END">
+    <img src="/images/project-example-11e.jpg" loading="lazy" alt="SUMMER'S END">
   </div>
 </div>
 

@@ -18,9 +18,9 @@ I met Martin while videographing an art exhibition at my university, where he wa
 
 <div class="gallery-box">
   <div class="gallery">
-    <div class="gallery__image"><img src="/images/project-example-6a.jpg" loading="lazy" alt="THE HARBOUR I REMEMBER"></div>
-    <div class="gallery__image"><img src="/images/project-example-6b.jpg" loading="lazy" alt="THE HARBOUR I REMEMBER"></div>
-    <div class="gallery__image"><img src="/images/project-example-6c.jpg" loading="lazy" alt="THE HARBOUR I REMEMBER"></div>
+    <img src="/images/project-example-6a.jpg" loading="lazy" alt="THE HARBOUR I REMEMBER">
+    <img src="/images/project-example-6b.jpg" loading="lazy" alt="THE HARBOUR I REMEMBER">
+    <img src="/images/project-example-6c.jpg" loading="lazy" alt="THE HARBOUR I REMEMBER">
   </div>
 </div>
 
