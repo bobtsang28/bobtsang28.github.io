@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "THE HARBOUR I REMEMBER"
+title: "The Harbour I Remember"
 date: 2025-06-15
 subtitle: Mini-Documentary
 image: '/images/project-6.jpg'

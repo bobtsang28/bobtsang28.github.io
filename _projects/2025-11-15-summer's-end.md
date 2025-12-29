@@ -1,6 +1,6 @@
 ---
 layout: project
-title: SUMMER'S END
+title: Summer's End
 date: 2025-11-15
 subtitle: Short Film
 image: '/images/project-11.jpg'

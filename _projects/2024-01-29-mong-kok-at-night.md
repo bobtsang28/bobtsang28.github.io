@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "MONG KOK AT NIGHT"
+title: "Mong Kok at Night"
 date: 2024-01-29
 subtitle: Cinematic Video
 image: '/images/project-7.jpg'

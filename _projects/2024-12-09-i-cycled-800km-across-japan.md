@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "I CYCLED 800KM ACROSS JAPAN"
+title: "I Cycled 800km Across Japan"
 date: 2024-12-09
 subtitle: Travel Video
 image: '/images/project-4.jpg'

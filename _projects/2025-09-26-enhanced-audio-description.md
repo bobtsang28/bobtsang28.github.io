@@ -1,6 +1,6 @@
 ---
 layout: project
-title: ENHANCED AUDIO DESCRIPTION
+title: Enhanced Audio Description
 date: 2025-09-26
 subtitle: Corporate Video
 image: '/images/project-10.jpg'

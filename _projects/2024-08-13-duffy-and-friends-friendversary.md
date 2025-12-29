@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "DUFFY AND FRIENDS FRIENDVERSARY"
+title: "Duffy and Friends Friendversary"
 date: 2024-08-13
 subtitle: Social Video
 image: '/images/project-3.jpg'

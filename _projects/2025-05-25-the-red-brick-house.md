@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "THE RED BRICK HOUSE"
+title: "The Red Brick House"
 date: 2025-05-25
 subtitle: Short Film
 image: '/images/project-8.jpg'

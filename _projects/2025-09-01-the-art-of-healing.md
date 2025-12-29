@@ -1,6 +1,6 @@
 ---
 layout: project
-title: THE ART OF HEALING
+title: The Art of Healing
 date: 2025-09-01
 subtitle: Mini-Documentary
 image: '/images/project-9.jpg'
