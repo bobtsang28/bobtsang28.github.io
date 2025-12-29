@@ -45,19 +45,21 @@ layout: default
 
 <!-- begin post -->
 <div class="container animate">
-  <div class="post-wrapper">
-    <aside class="post-toc">
-      <nav class="toc-nav">
-        <h4 class="toc-title">Contents</h4>
-        <ul class="toc-list" id="toc-list"></ul>
-      </nav>
-    </aside>
+  
+  <div class="toc-compact" id="toc-compact">
+    <button class="toc-toggle" id="toc-toggle">
+      <span class="toc-icon" id="toc-icon"></span>
+    </button>
+    <nav class="toc-dropdown" id="toc-dropdown">
+      <ul class="toc-list" id="toc-list"></ul>
+    </nav>
+  </div>
 
-    <article class="post">
+  <article class="post">
 
-      <div class="post__content">
-        {{ content }}
-      </div>
+    <div class="post__content">
+      {{ content }}
+    </div>
 
     <div class="post__share">
       <ul class="share__list list-reset">
@@ -81,7 +83,6 @@ layout: default
     </div>
 
   </article>
-  </div>
 </div>
 <!-- end post -->
 

@@ -1,6 +1,10 @@
 // Table of Contents Generator
 document.addEventListener('DOMContentLoaded', function() {
   const tocList = document.getElementById('toc-list');
+  const tocCompact = document.getElementById('toc-compact');
+  const tocToggle = document.getElementById('toc-toggle');
+  const tocDropdown = document.getElementById('toc-dropdown');
+  const tocIcon = document.getElementById('toc-icon');
   const content = document.querySelector('.post__content');
   
   if (!tocList || !content) return;
@@ -10,10 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
   
   if (headings.length === 0) {
     // Hide TOC if no headings
-    const tocNav = document.querySelector('.post-toc');
-    if (tocNav) tocNav.style.display = 'none';
+    if (tocCompact) tocCompact.style.display = 'none';
     return;
   }
+  
+  // Set hyphens based on number of headings
+  const hyphens = '—'.repeat(headings.length);
+  tocIcon.textContent = hyphens;
   
   // Generate TOC items
   headings.forEach((heading, index) => {
@@ -32,7 +39,25 @@ document.addEventListener('DOMContentLoaded', function() {
     tocList.appendChild(li);
   });
   
-  // Smooth scroll
+  // Toggle dropdown
+  let isOpen = false;
+  tocToggle.addEventListener('click', function(e) {
+    e.stopPropagation();
+    isOpen = !isOpen;
+    tocDropdown.classList.toggle('is-open', isOpen);
+    tocToggle.classList.toggle('is-active', isOpen);
+  });
+  
+  // Close dropdown when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!tocCompact.contains(e.target) && isOpen) {
+      isOpen = false;
+      tocDropdown.classList.remove('is-open');
+      tocToggle.classList.remove('is-active');
+    }
+  });
+  
+  // Smooth scroll and close dropdown on link click
   document.querySelectorAll('.toc-link').forEach(link => {
     link.addEventListener('click', function(e) {
       e.preventDefault();
@@ -40,6 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // Close dropdown
+        isOpen = false;
+        tocDropdown.classList.remove('is-open');
+        tocToggle.classList.remove('is-active');
       }
     });
   });
