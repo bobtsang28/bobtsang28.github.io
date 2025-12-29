@@ -16,13 +16,13 @@
   grid-template-columns: repeat(3, auto);
   justify-content: center;
   align-content: center;
-  margin-left: -12px;
-  margin-bottom: -12px;
+  margin-left: -8px;
+  margin-bottom: -8px;
 
   img {
-    margin-left: 12px;
-    margin-bottom: 12px;
-    width: calc(100% - 12px);
+    margin-left: 8px;
+    margin-bottom: 8px;
+    width: calc(100% - 8px);
   }
 
   .gallery__image {
@@ -37,13 +37,13 @@
   }
 
   @media only screen and (max-width: $desktop) {
-    margin-left: -8px;
-    margin-bottom: -8px;
+    margin-left: -4px;
+    margin-bottom: -4px;
 
     img {
-      margin-left: 8px;
-      margin-bottom: 8px;
-      width: calc(100% - 8px);
+      margin-left: 4px;
+      margin-bottom: 4px;
+      width: calc(100% - 4px);
     }
   }
 }
