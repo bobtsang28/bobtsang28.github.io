@@ -357,8 +357,8 @@
   align-items: center;
   justify-content: center;
   width: 40px;
-  height: 40px;
-  padding: 0;
+  min-height: 40px;
+  padding: 8px 0;
   background: var(--background-color);
   border: 2px solid var(--border-color);
   border-radius: 8px;
@@ -382,10 +382,10 @@
 }
 
 .toc-icon {
-  font-size: 10px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 900;
   color: var(--text-color);
-  line-height: 0.6;
+  line-height: 0.7;
   letter-spacing: 0;
   transition: color 0.2s ease;
   display: block;
@@ -395,7 +395,7 @@
 .toc-dropdown {
   position: absolute;
   left: 56px;
-  top: 0;
+  top: 50%;
   min-width: 240px;
   max-width: 320px;
   background: var(--background-color);
@@ -405,13 +405,13 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   opacity: 0;
   visibility: hidden;
-  transform: translateX(-8px);
+  transform: translate(-8px, -50%);
   transition: all 0.2s ease;
 
   &.is-open {
     opacity: 1;
     visibility: visible;
-    transform: translateX(0);
+    transform: translate(0, -50%);
   }
 }
 
