@@ -382,12 +382,14 @@
 }
 
 .toc-icon {
-  font-size: 14px;
+  font-size: 8px;
   font-weight: 700;
   color: var(--text-color);
-  line-height: 1;
-  letter-spacing: -2px;
+  line-height: 0.8;
+  letter-spacing: 0;
   transition: color 0.2s ease;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
 }
 
 .toc-dropdown {
