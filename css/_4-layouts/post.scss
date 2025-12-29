@@ -101,6 +101,9 @@
   transform: translate(0);
   padding-top: 56.25%;
   margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 85%;
   min-height: 280px;
   border-radius: 8px;
   overflow: hidden;
@@ -114,6 +117,14 @@
     height: 100%;
     object-fit: cover;
     user-select: none;
+  }
+
+  @media only screen and (max-width: $desktop) {
+    max-width: 90%;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    max-width: 100%;
   }
 }
 
