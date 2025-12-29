@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     return;
   }
   
-  // Set hyphens based on number of headings
-  const hyphens = '—'.repeat(headings.length);
-  tocIcon.textContent = hyphens;
+  // Set horizontal bars based on number of headings
+  const bars = '▬'.repeat(headings.length);
+  tocIcon.textContent = bars;
   
   // Generate TOC items
   headings.forEach((heading, index) => {
