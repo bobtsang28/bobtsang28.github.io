@@ -5,8 +5,8 @@
         <description>Bob Tsang is a freelance filmmaker and photographer based in the UK (who also loves mountaineering and travelling).</description>
         <link>/</link>
         <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Sat, 21 Feb 2026 16:21:06 +0000</pubDate>
-        <lastBuildDate>Sat, 21 Feb 2026 16:21:06 +0000</lastBuildDate>
+        <pubDate>Sat, 21 Feb 2026 16:34:38 +0000</pubDate>
+        <lastBuildDate>Sat, 21 Feb 2026 16:34:38 +0000</lastBuildDate>
         <generator>Jekyll v4.4.1</generator>
         
             <item>
@@ -305,7 +305,7 @@
 
 &lt;div class=&quot;gallery-box&quot;&gt;
   &lt;div class=&quot;gallery&quot;&gt;
-    &lt;img src=&quot;/images/post-6c.jpg&quot; loading=&quot;lazy&quot; alt=&quot;Cycling Across Japan’s Subtropical Paradise&quot; /&gt;
+    &lt;img src=&quot;/images/post-6c.jpg&quot; loading=&quot;lazy&quot; alt=&quot;Cycling Across Japan’s Subtropical Paradise&quot; style=&quot;width:80%; height:auto;&quot; /&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
