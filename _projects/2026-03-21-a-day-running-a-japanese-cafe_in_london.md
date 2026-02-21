@@ -1,14 +1,14 @@
 ---
 layout: project
 title: "A Day Running a Japanese Cafe in London"
-date: 2025-06-15
+date: 2026-03-21
 subtitle: Mini-Documentary
 image: '/images/project-12.jpg'
 ---
 
 ***
 
-<p><iframe src="https://www.youtube.com/embed/WBiczukBxnY" loading="lazy" allowfullscreen style="border: 0;"></iframe></p>
+<p><iframe title="YouTube video player" src="https://www.youtube.com/embed/WBiczukBxnY" loading="lazy" allowfullscreen style="border: 0;"></iframe></p>
 
 ***
 
@@ -18,9 +18,9 @@ While attending Japan Matsuri 2026 in London as an event photographer, I discove
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-12a.jpg" loading="lazy" alt="THE HARBOUR I REMEMBER">
-    <img src="/images/project-example-12b.jpg" loading="lazy" alt="THE HARBOUR I REMEMBER">
-    <img src="/images/project-example-12c.jpg" loading="lazy" alt="THE HARBOUR I REMEMBER">
+    <img src="/images/project-example-12a.jpg" loading="lazy" alt="A DAY AT KAIHO">
+    <img src="/images/project-example-12b.jpg" loading="lazy" alt="A DAY AT KAIHO">
+    <img src="/images/project-example-12c.jpg" loading="lazy" alt="A DAY AT KAIHO">
   </div>
 </div>
 
