@@ -102,7 +102,7 @@ While I’ve heard stories in Japan where people tried to recruit foreigners int
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/post-6c.jpg" loading="lazy" alt="Cycling Across Japan’s Subtropical Paradise" style="width:80%; height:auto;">
+    <img src="/images/post-6c.jpg" loading="lazy" alt="Cycling Across Japan’s Subtropical Paradise" style="width:75%; height:auto;">
   </div>
 </div>
 
