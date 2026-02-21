@@ -2,7 +2,6 @@
 layout: project
 title: "A Day Running a Japanese Cafe in London"
 permalink: /project/a-day-running-a-japanese-cafe-in-london
-published: true
 subtitle: Mini-Documentary
 image: '/images/project-12.jpg'
 ---
@@ -19,12 +18,13 @@ While attending Japan Matsuri 2026 in London as an event photographer, I discove
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-12a.jpg" loading="lazy" alt="A DAY AT KAIHO">
-    <img src="/images/project-example-12b.jpg" loading="lazy" alt="A DAY AT KAIHO">
-    <img src="/images/project-example-12c.jpg" loading="lazy" alt="A DAY AT KAIHO">
+    <img src="/images/project-example-12a.jpg" loading="lazy" alt="A Day Running a Japanese Cafe in London">
+    <img src="/images/project-example-12b.jpg" loading="lazy" alt="A Day Running a Japanese Cafe in London">
+    <img src="/images/project-example-12c.jpg" loading="lazy" alt="A Day Running a Japanese Cafe in London">
   </div>
 </div>
 
 Before long, it became clear that Yuki’s story was uniquely compelling, shaped by his artistic background in Japan and his roots in southern Japan. His laid-back personality inspired the desire to create a film that reflects this relaxed, easygoing character, without heavy exposition or narration. From this emerged the concept of a day-in-the-life format, offering viewers an intimate glimpse into how Yuki juggles the many responsibilities of running a café and bar.
 
 Drawing inspiration from Perfect Days (2023), this observational mini-documentary follows Yuki throughout his day, preparing food, serving customers, and managing the café, capturing the routines that define his life behind the counter.
+
