@@ -1,7 +1,7 @@
 ---
 layout: project
 title: "A Day Running a Japanese Cafe in London"
-date: 2026-03-21
+permalink: /project/a-day-running-a-japanese-cafe-in-london
 subtitle: Mini-Documentary
 image: '/images/project-12.jpg'
 ---
