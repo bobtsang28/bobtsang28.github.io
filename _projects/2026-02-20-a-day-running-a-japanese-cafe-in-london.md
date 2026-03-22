@@ -19,9 +19,9 @@ While attending Japan Matsuri 2026 in London as an event photographer, I discove
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/project-example-12a.jpg" loading="lazy" alt="A DAY AT KAIHO">
-    <img src="/images/project-example-12b.jpg" loading="lazy" alt="A DAY AT KAIHO">
-    <img src="/images/project-example-12c.jpg" loading="lazy" alt="A DAY AT KAIHO">
+    <img src="/images/project-example-12a.jpg" loading="lazy" alt="A Day Running a Japanese Cafe in London">
+    <img src="/images/project-example-12b.jpg" loading="lazy" alt="A Day Running a Japanese Cafe in London">
+    <img src="/images/project-example-12c.jpg" loading="lazy" alt="A Day Running a Japanese Cafe in London">
   </div>
 </div>
 
