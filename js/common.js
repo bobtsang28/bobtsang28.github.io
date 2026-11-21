@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function() {
   if (header) {
     let lastScrollY = window.scrollY;
     let downwardDistance = 0;
+    let upwardDistance = 0;
+    const coarsePointer = window.matchMedia("(pointer: coarse)");
     const revealHeader = () => header.classList.remove("is-hidden");
     const interactionKeepsHeaderVisible = () => (
       header.contains(document.activeElement) ||
@@ -23,13 +25,22 @@ document.addEventListener("DOMContentLoaded", function() {
     );
 
     const handleHeaderScroll = () => {
-      const currentScrollY = Math.max(0, window.scrollY);
+      const maxScrollY = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+      const currentScrollY = Math.max(0, Math.min(window.scrollY, maxScrollY));
       const delta = currentScrollY - lastScrollY;
 
-      if (currentScrollY <= 2 || delta < 0) {
+      if (currentScrollY <= 2) {
         downwardDistance = 0;
+        upwardDistance = 0;
         revealHeader();
+      } else if (delta < 0) {
+        upwardDistance -= delta;
+        if (!coarsePointer.matches || upwardDistance >= 3) {
+          downwardDistance = 0;
+          revealHeader();
+        }
       } else if (delta > 0) {
+        upwardDistance = 0;
         downwardDistance += delta;
         if (downwardDistance >= 100 && !interactionKeepsHeaderVisible()) {
           header.classList.add("is-hidden");

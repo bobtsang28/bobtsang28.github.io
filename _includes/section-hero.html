@@ -6,6 +6,7 @@
       src="https://www.youtube.com/embed/gYODj4Rj_Rk?autoplay=1&amp;mute=1&amp;playsinline=1&amp;loop=1&amp;playlist=gYODj4Rj_Rk&amp;controls=0&amp;modestbranding=1&amp;rel=0&amp;iv_load_policy=3&amp;cc_load_policy=0&amp;enablejsapi=1"
       title="Featured video"
       allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+      allowfullscreen
       referrerpolicy="strict-origin-when-cross-origin"
       loading="eager">
     </iframe>
@@ -15,6 +16,9 @@
     <button class="hero__fullscreen-control" type="button" aria-label="Play with sound in full screen" title="Full screen">
       <i class="fa-solid fa-expand" aria-hidden="true"></i>
     </button>
+    <a class="hero__fullscreen-fallback" href="https://www.youtube.com/watch?v=gYODj4Rj_Rk" target="_blank" rel="noopener noreferrer" aria-label="Open video on YouTube; full screen is unavailable here" title="Open on YouTube" hidden>
+      <i class="fa-solid fa-expand" aria-hidden="true"></i>
+    </a>
     <button class="hero__unmute-control" type="button" aria-label="Unmute video">Unmute</button>
   </div>
 <script>
@@ -25,6 +29,7 @@
     const playbackControl = hero?.querySelector(".hero__playback-control");
     const playbackIcon = hero?.querySelector(".hero__playback-icon");
     const fullscreenControl = hero?.querySelector(".hero__fullscreen-control");
+    const fullscreenFallback = hero?.querySelector(".hero__fullscreen-fallback");
     const unmuteControl = hero?.querySelector(".hero__unmute-control");
     const header = document.querySelector(".header");
 
@@ -43,6 +48,19 @@
 
     let player = null;
     let playerReady = false;
+    let wasFullscreen = false;
+    let openedFallback = false;
+
+    const currentFullscreenElement = () => document.fullscreenElement || document.webkitFullscreenElement;
+    const showFullscreenFallback = () => {
+      fullscreenControl.hidden = true;
+      fullscreenFallback.hidden = false;
+    };
+
+    if ((!video.requestFullscreen || document.fullscreenEnabled === false) &&
+        !video.webkitRequestFullscreen) {
+      showFullscreenFallback();
+    }
 
     window.onYouTubeIframeAPIReady = () => {
       player = new YT.Player("homepage-showreel", {
@@ -50,6 +68,7 @@
           onReady: () => {
             playerReady = true;
             player.mute();
+            if (currentFullscreenElement() === video) unmuteControl.classList.add("is-visible");
             updatePlaybackState();
           },
           onStateChange: event => updatePlaybackState(event.data)
@@ -83,31 +102,56 @@
     });
 
     const enterFullscreen = async () => {
-      if (!video) return;
-      if (document.fullscreenElement || document.webkitFullscreenElement) {
+      if (currentFullscreenElement() === video) {
         if (document.exitFullscreen) await document.exitFullscreen();
         else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
         return;
       }
       try {
-        if (video.requestFullscreen) await video.requestFullscreen();
-        else if (video.webkitRequestFullscreen) video.webkitRequestFullscreen();
-
         if (playerReady) {
           player.unMute();
           player.playVideo();
+        }
+        if (video.requestFullscreen && document.fullscreenEnabled !== false) {
+          await video.requestFullscreen();
+        } else if (video.webkitRequestFullscreen) {
+          await video.webkitRequestFullscreen();
+        } else {
+          throw new Error("Fullscreen is unavailable in this browser");
+        }
+
+        if (playerReady) {
           window.setTimeout(() => {
-            if (playerReady && document.fullscreenElement === video && player.isMuted?.()) {
+            if (currentFullscreenElement() === video && player.isMuted()) {
               unmuteControl?.classList.add("is-visible");
             }
           }, 300);
         }
-      } catch (_) {
-        unmuteControl?.classList.add("is-visible");
+      } catch (error) {
+        console.warn("Could not enter fullscreen:", error);
+        if (playerReady) player.mute();
+        showFullscreenFallback();
       }
     };
 
     fullscreenControl?.addEventListener("click", enterFullscreen);
+
+    fullscreenFallback?.addEventListener("click", () => {
+      if (!playerReady) return;
+      const time = Math.floor(player.getCurrentTime());
+      fullscreenFallback.href = `https://www.youtube.com/watch?v=gYODj4Rj_Rk&t=${time}s`;
+      player.mute();
+      player.pauseVideo();
+      openedFallback = true;
+    });
+
+    document.addEventListener("visibilitychange", () => {
+      if (openedFallback && !document.hidden && playerReady) {
+        openedFallback = false;
+        player.mute();
+        player.playVideo();
+      }
+    });
 
     unmuteControl?.addEventListener("click", () => {
       if (!playerReady) return;
@@ -116,25 +160,19 @@
       unmuteControl.classList.remove("is-visible");
     });
 
-    document.addEventListener("fullscreenchange", () => {
-      const inFullscreen = document.fullscreenElement === video;
+    const updateFullscreen = () => {
+      const inFullscreen = currentFullscreenElement() === video;
       hero.classList.toggle("is-fullscreen", inFullscreen);
       fullscreenControl?.setAttribute("aria-label", inFullscreen ? "Exit full screen" : "Play with sound in full screen");
 
-      if (!inFullscreen && playerReady) {
+      if (wasFullscreen && !inFullscreen && playerReady) {
         player.mute();
         unmuteControl?.classList.remove("is-visible");
       }
-    });
-
-    document.addEventListener("webkitfullscreenchange", () => {
-      const inFullscreen = document.webkitFullscreenElement === video;
-      hero.classList.toggle("is-fullscreen", inFullscreen);
-      if (!inFullscreen && playerReady) {
-        player.mute();
-        unmuteControl?.classList.remove("is-visible");
-      }
-    });
+      wasFullscreen = inFullscreen;
+    };
+    document.addEventListener("fullscreenchange", updateFullscreen);
+    document.addEventListener("webkitfullscreenchange", updateFullscreen);
 
     document.addEventListener("keydown", event => {
       if (event.key === "Escape" && document.fullscreenElement === video) {

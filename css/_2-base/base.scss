@@ -225,6 +225,14 @@ hr {
   overflow-x: auto;
 }
 
+@media only screen and (max-width: $mobile) {
+  .page__content table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
 table {
   font-size: 12px;
   color: var(--dark);

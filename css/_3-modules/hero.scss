@@ -20,6 +20,14 @@
   @supports (height: 100dvh) {
     --hero-height: calc(100dvh - var(--header-height));
   }
+
+  @media only screen and (max-width: $tablet) and (orientation: portrait) {
+    --hero-height: min(calc(100vh - var(--header-height)), calc(100vw * 3 / 4));
+
+    @supports (height: 100dvh) {
+      --hero-height: min(calc(100dvh - var(--header-height)), calc(100vw * 3 / 4));
+    }
+  }
 }
 
 .hero__video {
@@ -41,6 +49,7 @@
 
 .hero__playback-control,
 .hero__fullscreen-control,
+.hero__fullscreen-fallback,
 .hero__unmute-control {
   position: absolute;
   z-index: 2;
@@ -91,7 +100,8 @@
   }
 }
 
-.hero__fullscreen-control {
+.hero__fullscreen-control,
+.hero__fullscreen-fallback {
   right: 24px;
   bottom: 24px;
   display: grid;
@@ -100,6 +110,8 @@
   place-items: center;
   border-radius: 50%;
   opacity: 0;
+  color: #fff;
+  text-decoration: none;
   transition: opacity .25s ease, background-color .25s ease, transform .25s ease;
 
   &:hover,
@@ -114,8 +126,15 @@
 }
 
 .hero__video:hover .hero__fullscreen-control,
-.hero__fullscreen-control:focus-visible {
+.hero__video:hover .hero__fullscreen-fallback,
+.hero__fullscreen-control:focus-visible,
+.hero__fullscreen-fallback:focus-visible {
   opacity: 1;
+}
+
+.hero__fullscreen-control[hidden],
+.hero__fullscreen-fallback[hidden] {
+  display: none;
 }
 
 .hero__unmute-control {

@@ -165,8 +165,8 @@
     padding-bottom: 0;
 
     > .project {
-      flex-basis: 400px;
-      width: 400px;
+      flex-basis: min(84vw, 470.4px);
+      width: min(84vw, 470.4px);
     }
   }
 

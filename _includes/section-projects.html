@@ -51,6 +51,7 @@
     const pauseTimers = new Map();
     const touchPointers = new Set();
     let previousFrameTime = null;
+    let scrollRemainder = 0;
     let cycleWidth = 0;
     let loopActive = false;
     let dragging = false;
@@ -112,7 +113,10 @@
       gallery.style.scrollBehavior = behavior;
     }, { passive: false });
 
-    gallery.addEventListener("scroll", normalizeLoopPosition, { passive: true });
+    gallery.addEventListener("scroll", () => {
+      if (pauseReasons.has("touch") && touchPointers.size === 0) pauseFor("touch", 1000);
+      normalizeLoopPosition();
+    }, { passive: true });
 
     gallery.addEventListener("pointerenter", event => {
       if (event.pointerType === "mouse") setPaused("hover", true);
@@ -129,6 +133,8 @@
 
     gallery.addEventListener("pointerdown", event => {
       if (event.pointerType === "touch") {
+        window.clearTimeout(pauseTimers.get("touch"));
+        pauseTimers.delete("touch");
         touchPointers.add(event.pointerId);
         setPaused("touch", true);
         return;
@@ -226,7 +232,10 @@
 
     const animate = time => {
       if (previousFrameTime !== null && pauseReasons.size === 0 && !document.hidden) {
-        gallery.scrollLeft += 30 * (time - previousFrameTime) / 1000;
+        const distance = 30 * (time - previousFrameTime) / 1000 + scrollRemainder;
+        const previousPosition = gallery.scrollLeft;
+        gallery.scrollLeft = previousPosition + distance;
+        scrollRemainder = distance - (gallery.scrollLeft - previousPosition);
         normalizeLoopPosition();
       }
       previousFrameTime = time;
