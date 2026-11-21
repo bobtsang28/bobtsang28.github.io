@@ -6,15 +6,15 @@
         <div class="contaniner__inner">
 
           <div class="section__info">
-            <h2 class="section__title">{{ site.data.settings.projects__settings.projects__title }}</h2>
+            <h2 class="section__title" id="latest-works-heading">{{ site.data.settings.projects__settings.projects__title }}</h2>
             {% if site.data.settings.projects__settings.projects__description %}
               <p class="section__description">{{ site.data.settings.projects__settings.projects__description }}</p>
             {% endif %}
           </div>
 
-          <div class="row">
+          <div class="row projects__gallery" role="region" aria-labelledby="latest-works-heading" tabindex="0">
             {% assign sorted = site.projects | sort: 'date' | reverse %}
-            {% for project in sorted limit:3 %}
+            {% for project in sorted %}
             <article class="project col col-4 col-d-6 col-t-12">
               <div class="project__content">
                 <a href="{{ project.url }}" class="project__image">
@@ -40,4 +40,77 @@
     <a href="{{ '/projects' | relative_url }}" class="button button--primary section-button">See all</a>
   </div>
 </section>
+<script>
+  (() => {
+    const gallery = document.querySelector(".projects__gallery");
+    if (!gallery) return;
+
+    gallery.addEventListener("wheel", event => {
+      if (event.shiftKey || Math.abs(event.deltaX) >= Math.abs(event.deltaY) || event.deltaY === 0) {
+        return;
+      }
+
+      const maxScroll = gallery.scrollWidth - gallery.clientWidth;
+      const currentScroll = gallery.scrollLeft;
+      if (maxScroll <= 0 || (event.deltaY < 0 && currentScroll <= 0) || (event.deltaY > 0 && currentScroll >= maxScroll)) return;
+
+      const unit = event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? gallery.clientWidth : 1;
+      event.preventDefault();
+      const behavior = gallery.style.scrollBehavior;
+      gallery.style.scrollBehavior = "auto";
+      gallery.scrollLeft = Math.max(0, Math.min(maxScroll, currentScroll + event.deltaY * unit));
+      gallery.style.scrollBehavior = behavior;
+    }, { passive: false });
+
+    let pointerStartX = 0;
+    let scrollStart = 0;
+    let dragging = false;
+    let moved = false;
+    let clickedLink = false;
+    let suppressClick = false;
+
+    gallery.addEventListener("pointerdown", event => {
+      if (event.pointerType !== "mouse" || event.button !== 0) return;
+
+      dragging = true;
+      moved = false;
+      clickedLink = Boolean(event.target.closest("a"));
+      pointerStartX = event.clientX;
+      scrollStart = gallery.scrollLeft;
+    });
+
+    window.addEventListener("pointermove", event => {
+      if (!dragging) return;
+
+      const distance = event.clientX - pointerStartX;
+      if (!moved && Math.abs(distance) < 5) return;
+
+      moved = true;
+      gallery.classList.add("is-dragging");
+      gallery.scrollLeft = scrollStart - distance;
+      if (event.cancelable) event.preventDefault();
+    }, { passive: false });
+
+    const endDrag = () => {
+      if (!dragging) return;
+
+      dragging = false;
+      gallery.classList.remove("is-dragging");
+      if (moved && clickedLink) {
+        suppressClick = true;
+        window.setTimeout(() => { suppressClick = false; }, 0);
+      }
+    };
+
+    window.addEventListener("pointerup", endDrag);
+    window.addEventListener("pointercancel", endDrag);
+
+    gallery.addEventListener("click", event => {
+      if (!suppressClick) return;
+      event.preventDefault();
+      event.stopPropagation();
+      suppressClick = false;
+    }, true);
+  })();
+</script>
 <!-- end projects -->
