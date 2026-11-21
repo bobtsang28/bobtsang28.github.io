@@ -45,7 +45,58 @@
     const gallery = document.querySelector(".projects__gallery");
     if (!gallery) return;
 
+    const originalCards = Array.from(gallery.querySelectorAll(":scope > .project"));
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const pauseReasons = new Set();
+    const pauseTimers = new Map();
+    const touchPointers = new Set();
+    if (document.hidden) pauseReasons.add("hidden");
+    let previousFrameTime = null;
+    let cycleWidth = 0;
+    let loopActive = false;
+    let dragging = false;
+    let moved = false;
+    let clickedLink = false;
+    let dragPointerId = null;
+    let pointerStartX = 0;
+    let scrollStart = 0;
+    let suppressClick = false;
+
+    const setPaused = (reason, paused) => {
+      const wasPaused = pauseReasons.size > 0;
+      if (paused) pauseReasons.add(reason);
+      else pauseReasons.delete(reason);
+      if (wasPaused !== (pauseReasons.size > 0)) previousFrameTime = null;
+    };
+
+    const pauseFor = (reason, duration) => {
+      setPaused(reason, true);
+      window.clearTimeout(pauseTimers.get(reason));
+      pauseTimers.set(reason, window.setTimeout(() => {
+        pauseTimers.delete(reason);
+        setPaused(reason, false);
+      }, duration));
+    };
+
+    const setScrollPosition = position => {
+      const behavior = gallery.style.scrollBehavior;
+      gallery.style.scrollBehavior = "auto";
+      gallery.scrollLeft = position;
+      gallery.style.scrollBehavior = behavior;
+    };
+
+    const normalizeLoopPosition = () => {
+      if (!loopActive || cycleWidth <= 0) return;
+
+      let position = gallery.scrollLeft;
+      while (position >= cycleWidth * 2) position -= cycleWidth;
+      while (position <= 0) position += cycleWidth;
+
+      if (Math.abs(position - gallery.scrollLeft) > 0.5) setScrollPosition(position);
+    };
+
     gallery.addEventListener("wheel", event => {
+      if (event.deltaX !== 0 || event.deltaY !== 0) pauseFor("wheel", 1000);
       if (event.shiftKey || Math.abs(event.deltaX) >= Math.abs(event.deltaY) || event.deltaY === 0) {
         return;
       }
@@ -62,19 +113,34 @@
       gallery.style.scrollBehavior = behavior;
     }, { passive: false });
 
-    let pointerStartX = 0;
-    let scrollStart = 0;
-    let dragging = false;
-    let moved = false;
-    let clickedLink = false;
-    let suppressClick = false;
+    gallery.addEventListener("scroll", normalizeLoopPosition, { passive: true });
+
+    gallery.addEventListener("pointerenter", event => {
+      if (event.pointerType === "mouse") setPaused("hover", true);
+    });
+
+    gallery.addEventListener("pointerleave", event => {
+      if (event.pointerType === "mouse") setPaused("hover", false);
+    });
+
+    gallery.addEventListener("focusin", () => setPaused("focus", true));
+    gallery.addEventListener("focusout", event => {
+      if (!gallery.contains(event.relatedTarget)) setPaused("focus", false);
+    });
 
     gallery.addEventListener("pointerdown", event => {
+      if (event.pointerType === "touch") {
+        touchPointers.add(event.pointerId);
+        setPaused("touch", true);
+        return;
+      }
       if (event.pointerType !== "mouse" || event.button !== 0) return;
 
+      setPaused("drag", true);
       dragging = true;
       moved = false;
       clickedLink = Boolean(event.target.closest("a"));
+      dragPointerId = event.pointerId;
       pointerStartX = event.clientX;
       scrollStart = gallery.scrollLeft;
     });
@@ -91,19 +157,22 @@
       if (event.cancelable) event.preventDefault();
     }, { passive: false });
 
-    const endDrag = () => {
-      if (!dragging) return;
+    const endPointer = event => {
+      if (touchPointers.delete(event.pointerId) && touchPointers.size === 0) pauseFor("touch", 1000);
+      if (!dragging || event.pointerId !== dragPointerId) return;
 
       dragging = false;
+      dragPointerId = null;
       gallery.classList.remove("is-dragging");
+      setPaused("drag", false);
       if (moved && clickedLink) {
         suppressClick = true;
         window.setTimeout(() => { suppressClick = false; }, 0);
       }
     };
 
-    window.addEventListener("pointerup", endDrag);
-    window.addEventListener("pointercancel", endDrag);
+    window.addEventListener("pointerup", endPointer);
+    window.addEventListener("pointercancel", endPointer);
 
     gallery.addEventListener("click", event => {
       if (!suppressClick) return;
@@ -111,6 +180,62 @@
       event.stopPropagation();
       suppressClick = false;
     }, true);
+
+    if (prefersReducedMotion.matches || originalCards.length < 2) return;
+
+    const makeCopy = () => originalCards.map(card => {
+      const copy = card.cloneNode(true);
+      copy.classList.add("projects__gallery-copy");
+      copy.setAttribute("aria-hidden", "true");
+      copy.querySelectorAll("a, button, input, select, textarea, [tabindex]").forEach(element => {
+        element.setAttribute("tabindex", "-1");
+      });
+      return copy;
+    });
+
+    const leadingCopies = makeCopy();
+    const trailingCopies = makeCopy();
+    gallery.append(...leadingCopies, ...trailingCopies);
+    gallery.classList.add("is-auto-scrolling");
+    loopActive = true;
+
+    const originalStart = originalCards[0];
+    const copyStart = leadingCopies[0];
+    const updateCycleWidth = () => {
+      const measuredWidth = copyStart.getBoundingClientRect().left - originalStart.getBoundingClientRect().left;
+      if (measuredWidth <= 0) return;
+
+      if (cycleWidth === 0) {
+        cycleWidth = measuredWidth;
+        setScrollPosition(cycleWidth);
+        return;
+      }
+
+      if (Math.abs(measuredWidth - cycleWidth) < 0.5) return;
+      const phase = ((gallery.scrollLeft - cycleWidth) % cycleWidth + cycleWidth) % cycleWidth;
+      const progress = phase / cycleWidth;
+      cycleWidth = measuredWidth;
+      setScrollPosition(cycleWidth + progress * cycleWidth);
+    };
+
+    updateCycleWidth();
+    if ("ResizeObserver" in window) new ResizeObserver(updateCycleWidth).observe(gallery);
+    window.addEventListener("resize", updateCycleWidth, { passive: true });
+
+    document.addEventListener("visibilitychange", () => {
+      setPaused("hidden", document.hidden);
+    });
+
+    const animate = time => {
+      if (previousFrameTime !== null && pauseReasons.size === 0 && !document.hidden) {
+        gallery.scrollLeft += 30 * (time - previousFrameTime) / 1000;
+        normalizeLoopPosition();
+      }
+      previousFrameTime = time;
+      window.requestAnimationFrame(animate);
+    };
+
+    window.requestAnimationFrame(animate);
   })();
 </script>
 <!-- end projects -->

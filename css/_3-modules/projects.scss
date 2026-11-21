@@ -94,6 +94,10 @@
   -ms-overflow-style: none;
   cursor: grab;
 
+  &.is-auto-scrolling {
+    scroll-behavior: auto;
+  }
+
   &::-webkit-scrollbar {
     display: none;
   }
