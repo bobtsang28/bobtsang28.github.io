@@ -1,4 +1,8 @@
 /* Projects */
+.projects {
+  overflow: hidden;
+}
+
 .projects-page {
   margin-bottom: 68px;
 
@@ -88,6 +92,11 @@
   flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
+  width: 100vw;
+  max-width: none;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  border: 0;
   padding-bottom: 66px;
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -110,8 +119,8 @@
 
   > .project {
     position: relative;
-    flex: 0 0 33.333333%;
-    width: 33.333333%;
+    flex: 0 0 400px;
+    width: 400px;
   }
 
   .project__image {
@@ -147,8 +156,8 @@
 
   @media only screen and (max-width: $desktop) {
     > .project {
-      flex-basis: 50%;
-      width: 50%;
+      flex-basis: 360px;
+      width: 360px;
     }
   }
 
@@ -156,8 +165,8 @@
     padding-bottom: 0;
 
     > .project {
-      flex-basis: 84%;
-      width: 84%;
+      flex-basis: 400px;
+      width: 400px;
     }
   }
 

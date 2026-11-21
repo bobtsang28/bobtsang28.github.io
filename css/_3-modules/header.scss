@@ -1,5 +1,29 @@
 /* Header */
 .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  background: var(--background-color);
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: transform 300ms ease, opacity 300ms ease;
+  will-change: transform, opacity;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  &.is-pinned,
+  &:focus-within {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate3d(0, 0, 0);
+  }
+
   .header__inner {
     position: relative;
     display: flex;
@@ -16,6 +40,24 @@
     @media only screen and (max-width: $mobile) {
       padding: 32px $base-spacing-unit;
     }
+  }
+}
+
+.content {
+  padding-top: 148px;
+
+  @media only screen and (max-width: $desktop) {
+    padding-top: 124px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding-top: 108px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header {
+    transition: none;
   }
 }
 

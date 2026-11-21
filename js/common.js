@@ -8,6 +8,42 @@ document.addEventListener("DOMContentLoaded", function() {
     toggleTheme = document.querySelector(".toggle-theme-js"),
     btnScrollToTop = document.querySelector(".top");
 
+  /* =======================================================
+  // Scroll-Responsive Header
+  ======================================================= */
+  const header = document.querySelector(".header");
+  if (header) {
+    let lastScrollY = window.scrollY;
+    let downwardDistance = 0;
+    const revealHeader = () => header.classList.remove("is-hidden");
+    const interactionKeepsHeaderVisible = () => (
+      header.contains(document.activeElement) ||
+      header.querySelector(".main-nav.is-open") ||
+      Boolean(Array.from(header.querySelectorAll(".nav__item.dropdown")).find(item => item.matches(":hover")))
+    );
+
+    const handleHeaderScroll = () => {
+      const currentScrollY = Math.max(0, window.scrollY);
+      const delta = currentScrollY - lastScrollY;
+
+      if (currentScrollY <= 2 || delta < 0) {
+        downwardDistance = 0;
+        revealHeader();
+      } else if (delta > 0) {
+        downwardDistance += delta;
+        if (downwardDistance >= 100 && !interactionKeepsHeaderVisible()) {
+          header.classList.add("is-hidden");
+        }
+      }
+
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleHeaderScroll, { passive: true });
+    header.addEventListener("focusin", revealHeader);
+    header.addEventListener("pointerenter", revealHeader);
+  }
+
 
   /* =======================================================
   // Menu + Theme Switcher

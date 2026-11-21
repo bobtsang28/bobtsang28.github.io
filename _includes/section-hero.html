@@ -2,16 +2,30 @@
 <section class="hero hero--video">
   <div class="hero__video">
     <iframe
-      src="https://www.youtube.com/embed/gYODj4Rj_Rk?autoplay=1&amp;mute=1&amp;playsinline=1&amp;loop=1&amp;playlist=gYODj4Rj_Rk&amp;controls=0&amp;modestbranding=1&amp;rel=0&amp;iv_load_policy=3"
+      id="homepage-showreel"
+      src="https://www.youtube.com/embed/gYODj4Rj_Rk?autoplay=1&amp;mute=1&amp;playsinline=1&amp;loop=1&amp;playlist=gYODj4Rj_Rk&amp;controls=0&amp;modestbranding=1&amp;rel=0&amp;iv_load_policy=3&amp;cc_load_policy=0&amp;enablejsapi=1"
       title="Featured video"
       allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
       referrerpolicy="strict-origin-when-cross-origin"
       loading="eager">
     </iframe>
+    <button class="hero__playback-control" type="button" aria-label="Play video" aria-pressed="false">
+      <span class="hero__playback-icon" aria-hidden="true"></span>
+    </button>
+    <button class="hero__fullscreen-control" type="button" aria-label="Play with sound in full screen" title="Full screen">
+      <i class="fa-solid fa-expand" aria-hidden="true"></i>
+    </button>
+    <button class="hero__unmute-control" type="button" aria-label="Unmute video">Unmute</button>
   </div>
 <script>
   (() => {
     const hero = document.querySelector(".hero--video");
+    const video = hero?.querySelector(".hero__video");
+    const playerFrame = document.querySelector("#homepage-showreel");
+    const playbackControl = hero?.querySelector(".hero__playback-control");
+    const playbackIcon = hero?.querySelector(".hero__playback-icon");
+    const fullscreenControl = hero?.querySelector(".hero__fullscreen-control");
+    const unmuteControl = hero?.querySelector(".hero__unmute-control");
     const header = document.querySelector(".header");
 
     if (!hero || !header) return;
@@ -26,6 +40,111 @@
     if ("ResizeObserver" in window) {
       new ResizeObserver(updateHeaderHeight).observe(header);
     }
+
+    let player = null;
+    let playerReady = false;
+
+    window.onYouTubeIframeAPIReady = () => {
+      player = new YT.Player("homepage-showreel", {
+        events: {
+          onReady: () => {
+            playerReady = true;
+            player.mute();
+            updatePlaybackState();
+          },
+          onStateChange: event => updatePlaybackState(event.data)
+        }
+      });
+    };
+
+    if (!window.YT?.Player) {
+      const api = document.createElement("script");
+      api.src = "https://www.youtube.com/iframe_api";
+      document.head.appendChild(api);
+    } else {
+      window.onYouTubeIframeAPIReady();
+    }
+
+    const updatePlaybackState = state => {
+      if (!playbackControl) return;
+      if (!window.YT?.PlayerState) return;
+      const playing = state === window.YT.PlayerState.PLAYING ||
+        (playerReady && player?.getPlayerState() === window.YT.PlayerState.PLAYING);
+      playbackControl.setAttribute("aria-label", playing ? "Pause video" : "Play video");
+      playbackControl.setAttribute("aria-pressed", playing ? "true" : "false");
+      playbackIcon?.classList.toggle("is-playing", playing);
+    };
+
+    playbackControl?.addEventListener("click", () => {
+      if (!playerReady) return;
+      const state = player.getPlayerState();
+      if (state === YT.PlayerState.PLAYING) player.pauseVideo();
+      else player.playVideo();
+    });
+
+    const enterFullscreen = async () => {
+      if (!video) return;
+      if (document.fullscreenElement || document.webkitFullscreenElement) {
+        if (document.exitFullscreen) await document.exitFullscreen();
+        else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+        return;
+      }
+      try {
+        if (video.requestFullscreen) await video.requestFullscreen();
+        else if (video.webkitRequestFullscreen) video.webkitRequestFullscreen();
+
+        if (playerReady) {
+          player.unMute();
+          player.playVideo();
+          window.setTimeout(() => {
+            if (playerReady && document.fullscreenElement === video && player.isMuted?.()) {
+              unmuteControl?.classList.add("is-visible");
+            }
+          }, 300);
+        }
+      } catch (_) {
+        unmuteControl?.classList.add("is-visible");
+      }
+    };
+
+    fullscreenControl?.addEventListener("click", enterFullscreen);
+
+    unmuteControl?.addEventListener("click", () => {
+      if (!playerReady) return;
+      player.unMute();
+      player.playVideo();
+      unmuteControl.classList.remove("is-visible");
+    });
+
+    document.addEventListener("fullscreenchange", () => {
+      const inFullscreen = document.fullscreenElement === video;
+      hero.classList.toggle("is-fullscreen", inFullscreen);
+      fullscreenControl?.setAttribute("aria-label", inFullscreen ? "Exit full screen" : "Play with sound in full screen");
+
+      if (!inFullscreen && playerReady) {
+        player.mute();
+        unmuteControl?.classList.remove("is-visible");
+      }
+    });
+
+    document.addEventListener("webkitfullscreenchange", () => {
+      const inFullscreen = document.webkitFullscreenElement === video;
+      hero.classList.toggle("is-fullscreen", inFullscreen);
+      if (!inFullscreen && playerReady) {
+        player.mute();
+        unmuteControl?.classList.remove("is-visible");
+      }
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape" && document.fullscreenElement === video) {
+        document.exitFullscreen?.();
+      }
+    });
+
+    playerFrame?.addEventListener("load", () => {
+      if (playerReady) updatePlaybackState();
+    });
   })();
 </script>
 </section>
