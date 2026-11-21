@@ -1,47 +1,48 @@
 /* Contact */
-.form-box {
-  margin-bottom: 100px;
+.contact-page {
+  padding-top: clamp(24px, 4vw, 56px);
+  padding-bottom: clamp(80px, 10vw, 140px);
 
-  @media only screen and (max-width: $mobile) {
-    margin-bottom: 80px;
+  .page-title {
+    margin-bottom: clamp(48px, 6vw, 80px);
+    text-align: left;
   }
 }
 
-.contact-head {
-  margin-bottom: 32px;
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 48px 24px;
 
-  .contact-description {
-    font-family: 'Inter', Helvetica Neue, Helvetica, Arial, sans-serif;
+  @media only screen and (max-width: $tablet) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-.form__group {
-  margin-bottom: 20px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
+.contact-links__heading {
+  margin: 0;
+  font-size: 24px;
 }
 
-.form__input {
-  width: 100%;
-  padding: 20px;
-  font-size: 16px;
-  font-weight: 400;
-  border: 2px solid transparent;
-  border-radius: 12px;
-  outline: 0;
-  transition: .2s ease-in-out;
-  resize: vertical;
+.contact-links__link {
+  display: inline-flex;
+  min-height: 44px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
   color: var(--heading-font-color);
-  background-color: var(--background-alt-color);
+  transition: color .2s ease;
 
-  &::placeholder {
-    color: var(--heading-font-color);
+  &:hover {
+    color: var(--brand-color);
   }
 
-  &:focus {
-    border-color: var(--brand-color);
-    background-color: transparent;
+  &:focus-visible {
+    outline: 2px solid var(--brand-color);
+    outline-offset: 6px;
+  }
+
+  i {
+    font-size: 30px;
   }
 }
