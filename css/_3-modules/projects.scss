@@ -97,7 +97,7 @@
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   border: 0;
-  padding-bottom: 66px;
+  padding-bottom: 0;
   scroll-behavior: smooth;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -121,6 +121,7 @@
     position: relative;
     flex: 0 0 400px;
     width: 400px;
+    margin-bottom: 0;
   }
 
   .project__image {
@@ -128,12 +129,9 @@
   }
 
   .project__info {
-    position: absolute;
-    top: calc(100% + 8px);
-    right: 12px;
-    left: 12px;
+    position: static;
     z-index: 1;
-    margin-top: 0;
+    margin-top: 8px;
     opacity: 0;
     visibility: hidden;
     transform: translateY(4px);
@@ -142,6 +140,19 @@
 
   .project__title {
     margin-bottom: 8px;
+    font-size: 28px;
+
+    @media only screen and (max-width: $desktop) {
+      font-size: 26.5px;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      font-size: 21px;
+    }
+  }
+
+  .project__subtitle {
+    font-size: 11px;
   }
 
   > .project:hover,
@@ -162,8 +173,6 @@
   }
 
   @media only screen and (max-width: $tablet) {
-    padding-bottom: 0;
-
     > .project {
       flex-basis: min(84vw, 470.4px);
       width: min(84vw, 470.4px);
@@ -171,7 +180,6 @@
   }
 
   @media (hover: none) {
-    padding-bottom: 0;
     cursor: auto;
 
     .project__image {
