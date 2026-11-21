@@ -27,10 +27,10 @@
 
   <script>
     {% if site.data.settings.color_scheme == "auto" %}
-    if (localStorage.getItem("theme") === "dark") {
-      document.documentElement.setAttribute("dark", "");
-      document.documentElement.classList.add('dark-mode');
-    }
+    const savedTheme = localStorage.getItem("theme");
+    const theme = savedTheme === "light" ? "light" : "dark";
+    document.documentElement.setAttribute(theme, "");
+    document.documentElement.classList.add(`${theme}-mode`);
     {% elsif site.data.settings.color_scheme == "light" %}
       document.documentElement.setAttribute("light", "");
       document.documentElement.classList.add('light-mode');
@@ -38,10 +38,10 @@
       document.documentElement.setAttribute("dark", "");
       document.documentElement.classList.add('dark-mode');
     {% else %}
-    if (localStorage.getItem("theme") === "dark") {
-      document.documentElement.setAttribute("dark", "");
-      document.documentElement.classList.add('dark-mode');
-    }
+    const savedTheme = localStorage.getItem("theme");
+    const theme = savedTheme === "light" ? "light" : "dark";
+    document.documentElement.setAttribute(theme, "");
+    document.documentElement.classList.add(`${theme}-mode`);
     {% endif %}
   </script>
 

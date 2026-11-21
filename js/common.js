@@ -39,11 +39,15 @@ document.addEventListener("DOMContentLoaded", function() {
   function darkMode() {
     if (html.classList.contains('dark-mode')) {
       html.classList.remove('dark-mode');
-      localStorage.removeItem("theme");
+      html.classList.add('light-mode');
+      localStorage.setItem("theme", "light");
       document.documentElement.removeAttribute("dark");
+      document.documentElement.setAttribute("light", "");
     } else {
+      html.classList.remove('light-mode');
       html.classList.add('dark-mode');
       localStorage.setItem("theme", "dark");
+      document.documentElement.removeAttribute("light");
       document.documentElement.setAttribute("dark", "");
     }
   }
