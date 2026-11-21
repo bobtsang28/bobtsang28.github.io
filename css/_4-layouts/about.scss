@@ -1,0 +1,69 @@
+/* About */
+.page.about-page {
+  max-width: none;
+}
+
+.about-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 45fr) minmax(0, 55fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: start;
+
+  @media only screen and (max-width: $tablet) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.about-intro__portrait img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.about-intro__biography p:last-child {
+  margin-bottom: 0;
+}
+
+.about-credits {
+  margin-top: clamp(56px, 7vw, 96px);
+}
+
+.about-credits__list {
+  margin: 0 0 32px;
+  padding: 0;
+  list-style: none;
+}
+
+.about-credits__entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 6px 24px;
+  margin: 0;
+  padding: 24px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.about-credits__title {
+  margin: 0;
+  font-size: 20px;
+}
+
+.about-credits__date,
+.about-credits__company,
+.about-credits__role {
+  margin: 0;
+  color: var(--text-alt-color);
+  font-size: 0.9375rem;
+}
+
+.about-credits__date {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.about-credits__company,
+.about-credits__role {
+  grid-column: 1 / -1;
+}

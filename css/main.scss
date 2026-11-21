@@ -38,6 +38,7 @@
     4.1-Post
     4.2-Project
     4.3-Tags Page
+    4.4-About
 <<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
@@ -116,3 +117,5 @@
 {% include_relative _4-layouts/project.scss %}
 /* >>>>>>>>>>>>>> 4.3-Tags Page <<<<<<<<<<<<<<< */
 {% include_relative _4-layouts/tags-page.scss %}
+/* >>>>>>>>>>>>>> 4.4-About <<<<<<<<<<<<<<< */
+{% include_relative _4-layouts/about.scss %}

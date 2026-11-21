@@ -1,39 +1,88 @@
 ---
-layout: page
+layout: about
 title: About
 permalink: /about/
 image: '/images/01-2.jpg'
+credits:
+  - title: "Summer's End"
+    company: Personal Project
+    date: Nov 2025
+    role: Producer/ Director/ Writer/ Camera Operator/ Editor
+  - title: Merry Christmas Aubrey Flint
+    company: Shush Films
+    date: Nov 2025
+    role: Camera Trainee
+  - title: Enhanced Audio Description Promo
+    company: University of York School of Physics, Engineering and Technology
+    date: Sep 2025
+    role: Director/ Camera Operator/ Editor
+  - title: The Art of Healing
+    company: Personal Project
+    date: Sep 2025
+    role: Producer/ Director/ Camera Operator/Editor
+  - title: The Harbour I Remember
+    company: Personal Project
+    date: Jun 2025
+    role: Producer/ Director/ Camera Operator/Editor
+  - title: Blueberry Inn
+    company: Dancing Fox Entertainment
+    date: May 2025
+    role: Unit Stills Student Photographer/ Videographer
+  - title: The Red Brick House
+    company: University of York
+    date: May 2025
+    role: Director
+  - title: LPCUWC Vision 2052 Promo
+    company: Li Po Chun United World College
+    date: Feb 2025
+    role: Director/ Camera Operator/ Editor
+  - title: A Taste of Japan
+    company: Personal Project
+    date: Jan 2025
+    role: Producer/ Director/ Camera Operator/Editor
+  - title: I Cycled 800km Across Japan
+    company: Personal Project
+    date: Dec 2024
+    role: Producer/ Director/ Camera Operator/ Editor
+  - title: Duffy and Friends Friendversary Social Media Videos
+    company: Hong Kong Disneyland
+    date: Aug 2024
+    role: Camera Operator/ Editor
+  - title: 2024 Christmas Social Media Promos
+    company: Hong Kong Disneyland
+    date: Aug 2024
+    role: Production Assistant/ Escort
+  - title: 2024 Halloween TVC
+    company: Hong Kong Disneyland
+    date: Aug 2024
+    role: Production Assistant/ Escort
+  - title: Mong Kok at Night
+    company: Personal Project
+    date: Jan 2024
+    role: Producer/ Director/ Camera Operator/ Editor
+  - title: Vinson 4892
+    company: Personal Project
+    date: Jan 2024
+    role: Producer/ Director/ Camera Operator/ Editor
+  - title: In My Life
+    company: University of York
+    date: Jan 2024
+    role: Director/ Writer/ Editor
+  - title: What Climbing Mount Fuji is Like
+    company: Personal Project
+    date: Aug 2023
+    role: Producer/ Director/ Camera Operator/ Editor
+  - title: I.SWIM
+    company: Makerville
+    date: Oct 2021
+    role: Production Assistant/ Camera Trainee
+credits_footer: "and more..."
 ---
 
 Hello there! My name is Bob. I was raised in Hong Kong and have moved to the UK in pursuit of a career in film and television production.
 
 My passion for the art stems from my background in mountaineering. I began filming and editing travel videos years ago as a way to document my experience climbing various mountains across the globe. Since then, I’ve completed the Seven Summits, climbing the highest mountain on every continent, including Mount Everest, and have gone on to work across feature films, TV dramas, mini-documentaries, and more.
 
-Now based in London, I work as a freelance filmmaker, camera trainee and content creator across photography and video projects. Alongside client work, I am developing a personal passion project: a mini-documentary series focused on creatives and entrepreneurs in the UK with connections to South Asian culture, exploring how memory and cultural identity shape an individual’s pursuit of their aspirations.
+Now based in London, I work as a freelance filmmaker, camera assistant and photographer across a wide range of projects. Alongside client work, I develop short films and mini-documentaries as personal passion projects, exploring the connection between people and nature, as well as how memory and cultural identity shape individuals and their pursuit of personal aspirations.
 
-I view every project like a jigsaw puzzle, balancing logistical considerations with creative goals. Before beginning any work, I prioritise in-depth conversations with each member of the team to gain a clear understanding of the project’s objectives, visual tone, and narrative, allowing me to identify the most appropriate cinematic language to tell the story.
-
-## Credits
-
-| Title | Production Company | Date | Role |
-|-------|---------------------|------|------|
-| Summer's End | Personal Project | Nov 2025 | Producer/ Director/ Writer/ Camera Operator/ Editor |
-| Merry Christmas Aubrey Flint | Shush Films | Nov 2025 | Camera Trainee |
-| Enhanced Audio Description Promo | University of York School of Physics, Engineering and Technology | Sep 2025 | Director/ Camera Operator/ Editor |
-| The Art of Healing | Personal Project | Sep 2025 | Producer/ Director/ Camera Operator/Editor |
-| The Harbour I Remember | Personal Project | Jun 2025 | Producer/ Director/ Camera Operator/Editor |
-| Blueberry Inn | Dancing Fox Entertainment | May 2025 | Unit Stills Student Photographer/ Videographer |
-| The Red Brick House | University of York | May 2025 | Director |
-| LPCUWC Vision 2052 Promo | Li Po Chun United World College| Feb 2025 | Director/ Camera Operator/ Editor |
-| A Taste of Japan | Personal Project | Jan 2025 | Producer/ Director/ Camera Operator/Editor |
-| I Cycled 800km Across Japan | Personal Project | Dec 2024 | Producer/ Director/ Camera Operator/ Editor |
-| Duffy and Friends Friendversary Social Media Videos | Hong Kong Disneyland | Aug 2024 | Camera Operator/ Editor |
-| 2024 Christmas Social Media Promos | Hong Kong Disneyland | Aug 2024 | Production Assistant/ Escort |
-| 2024 Halloween TVC | Hong Kong Disneyland | Aug 2024 | Production Assistant/ Escort |
-| Mong Kok at Night | Personal Project | Jan 2024 | Producer/ Director/ Camera Operator/ Editor |
-| Vinson 4892 | Personal Project | Jan 2024 | Producer/ Director/ Camera Operator/ Editor |
-| In My Life | University of York | Jan 2024 | Director/ Writer/ Editor |
-| What Climbing Mount Fuji is Like | Personal Project | Aug 2023 | Producer/ Director/ Camera Operator/ Editor |
-| I.SWIM | Makerville | Oct 2021 | Production Assistant/ Camera Trainee |
-
-and more...
+My cinematographic approach focuses on naturalistic images, considered compositions and restrained camera movement. I favour wide, deliberate compositions, natural lighting, earthy tones and organic textures, allowing interactions to unfold naturally. Through an emphasis on observation, I aim to create immersive, intimate and poetic imagery that captures the beauty of everyday life.

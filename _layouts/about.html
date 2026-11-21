@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="container">
+  <div class="page-head">
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+  </div>
+
+  <article class="page about-page">
+    <div class="about-intro">
+      <div class="about-intro__portrait">
+        <img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+      </div>
+      <div class="page__content about-intro__biography">
+        {{ content }}
+      </div>
+    </div>
+
+    <section class="about-credits" aria-labelledby="credits-heading">
+      <h2 id="credits-heading">Credits</h2>
+      <ul class="about-credits__list">
+        {% for credit in page.credits %}
+        <li class="about-credits__entry">
+          <h3 class="about-credits__title">{{ credit.title | escape }}</h3>
+          <span class="about-credits__date">{{ credit.date | escape }}</span>
+          <p class="about-credits__company">{{ credit.company | escape }}</p>
+          <p class="about-credits__role">{{ credit.role | escape }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      {{ page.credits_footer | markdownify }}
+    </section>
+  </article>
+</div>
