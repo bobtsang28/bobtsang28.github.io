@@ -195,12 +195,13 @@
 
     const leadingCopies = makeCopy();
     const trailingCopies = makeCopy();
-    gallery.append(...leadingCopies, ...trailingCopies);
+    gallery.prepend(...leadingCopies);
+    gallery.append(...trailingCopies);
     gallery.classList.add("is-auto-scrolling");
     loopActive = true;
 
     const originalStart = originalCards[0];
-    const copyStart = leadingCopies[0];
+    const copyStart = trailingCopies[0];
     const updateCycleWidth = () => {
       const measuredWidth = copyStart.getBoundingClientRect().left - originalStart.getBoundingClientRect().left;
       if (measuredWidth <= 0) return;
