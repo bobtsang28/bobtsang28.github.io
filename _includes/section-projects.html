@@ -50,7 +50,6 @@
     const pauseReasons = new Set();
     const pauseTimers = new Map();
     const touchPointers = new Set();
-    if (document.hidden) pauseReasons.add("hidden");
     let previousFrameTime = null;
     let cycleWidth = 0;
     let loopActive = false;
@@ -223,9 +222,7 @@
     if ("ResizeObserver" in window) new ResizeObserver(updateCycleWidth).observe(gallery);
     window.addEventListener("resize", updateCycleWidth, { passive: true });
 
-    document.addEventListener("visibilitychange", () => {
-      setPaused("hidden", document.hidden);
-    });
+    document.addEventListener("visibilitychange", () => { previousFrameTime = null; });
 
     const animate = time => {
       if (previousFrameTime !== null && pauseReasons.size === 0 && !document.hidden) {
