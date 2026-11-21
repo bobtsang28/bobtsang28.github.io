@@ -1,20 +1,32 @@
 <!-- begin hero -->
 <section class="hero hero--video">
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-        <div class="hero__video">
-          <iframe
-            src="https://www.youtube.com/embed/gYODj4Rj_Rk?autoplay=1&amp;mute=1&amp;playsinline=1&amp;controls=0&amp;modestbranding=1&amp;rel=0"
-            title="Featured video"
-            allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
-            referrerpolicy="strict-origin-when-cross-origin"
-            loading="eager"
-            allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-    </div>
+  <div class="hero__video">
+    <iframe
+      src="https://www.youtube.com/embed/gYODj4Rj_Rk?autoplay=1&amp;mute=1&amp;playsinline=1&amp;loop=1&amp;playlist=gYODj4Rj_Rk&amp;controls=0&amp;modestbranding=1&amp;rel=0&amp;iv_load_policy=3"
+      title="Featured video"
+      allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+      referrerpolicy="strict-origin-when-cross-origin"
+      loading="eager">
+    </iframe>
   </div>
+<script>
+  (() => {
+    const hero = document.querySelector(".hero--video");
+    const header = document.querySelector(".header");
+
+    if (!hero || !header) return;
+
+    const updateHeaderHeight = () => {
+      hero.style.setProperty("--header-height", `${header.getBoundingClientRect().height}px`);
+    };
+
+    updateHeaderHeight();
+    window.addEventListener("resize", updateHeaderHeight, { passive: true });
+
+    if ("ResizeObserver" in window) {
+      new ResizeObserver(updateHeaderHeight).observe(header);
+    }
+  })();
+</script>
 </section>
 <!-- end hero -->
