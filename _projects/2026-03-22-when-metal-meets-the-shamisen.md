@@ -1,5 +1,7 @@
 ---
 layout: project
+description: "Project description to be added. This section will provide a brief introduction to the film, its subject and the creative approach."
+role: "Role to be confirmed"
 title: "When Metal Meets the Shamisen"
 permalink: /project/when-metal-meets-the-shamisen
 published: true

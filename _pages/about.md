@@ -79,10 +79,12 @@ credits:
 credits_footer: "and more..."
 ---
 
-Hello there! My name is Bob. I was raised in Hong Kong and have moved to the UK in pursuit of a career in film and television production.
+Hello there! My name is Bob. I was raised in Hong Kong before moving to the UK to pursue a career in film and television production.
 
-My passion for the art stems from my background in mountaineering. I began filming and editing travel videos years ago as a way to document my experience climbing various mountains across the globe. Since then, I’ve completed the Seven Summits, climbing the highest mountain on every continent, including Mount Everest, and have gone on to work across feature films, TV dramas, mini-documentaries, and more.
+My passion for filmmaking stems from my background in mountaineering. I began filming and editing travel videos years ago to document my experiences climbing mountains around the world. Since then, I’ve completed the Seven Summits, reaching the highest peak on every continent, including Mount Everest, and have gone on to work across feature films, television dramas, mini-documentaries and other productions.
 
-Now based in London, I work as a freelance filmmaker, camera assistant and photographer across a wide range of projects. Alongside client work, I develop short films and mini-documentaries as personal passion projects, exploring the connection between people and nature, as well as how memory and cultural identity shape individuals and their pursuit of personal aspirations.
+Now based in London, I work as a freelance filmmaker, camera assistant, photographer and expedition leader, with experience in remote, extreme and physically demanding environments. Alongside client work, I develop short films and mini-documentaries as personal projects, exploring the relationship between people and nature, and how memory and cultural identity shape individuals and their pursuit of personal aspirations.
 
-My cinematographic approach focuses on naturalistic images, considered compositions and restrained camera movement. I favour wide, deliberate compositions, natural lighting, earthy tones and organic textures, allowing interactions to unfold naturally. Through an emphasis on observation, I aim to create immersive, intimate and poetic imagery that captures the beauty of everyday life.
+My cinematographic approach emphasises naturalistic imagery and restrained camera movement. I favour wide, deliberate framing, natural lighting, earthy tones and organic textures, allowing moments and interactions to unfold naturally. Through an observational approach, I aim to create immersive, intimate and poetic imagery that captures the beauty of everyday life.
+
+Available for productions across the UK and internationally.

@@ -1,5 +1,7 @@
 ---
 layout: project
+description: "Project description to be added. This section will provide a brief introduction to the film, its subject and the creative approach."
+role: "Role to be confirmed"
 title: "A Day Running a Japanese Cafe in London"
 permalink: /project/a-day-running-a-japanese-cafe-in-london
 published: true

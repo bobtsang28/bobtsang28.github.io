@@ -1,5 +1,7 @@
 ---
 layout: project
+description: "Project description to be added. This section will provide a brief introduction to the film, its subject and the creative approach."
+role: "Role to be confirmed"
 title: "Duffy and Friends Friendversary"
 date: 2024-08-13
 subtitle: Social Video

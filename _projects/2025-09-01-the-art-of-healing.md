@@ -1,5 +1,7 @@
 ---
 layout: project
+description: "Project description to be added. This section will provide a brief introduction to the film, its subject and the creative approach."
+role: "Role to be confirmed"
 title: The Art of Healing
 date: 2025-09-01
 subtitle: Mini-Documentary

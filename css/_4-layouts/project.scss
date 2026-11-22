@@ -25,6 +25,48 @@
   }
 }
 
+.project-details {
+  max-width: 85%;
+  margin: 0 auto 60px;
+  color: var(--text-color);
+  font-family: 'Spectral', Georgia, serif;
+
+  @media only screen and (max-width: $desktop) {
+    max-width: 90%;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    max-width: 100%;
+  }
+}
+
+.project-details__inner {
+  max-width: 650px;
+}
+
+.project-details__credit {
+  margin-top: 32px;
+
+  a {
+    font-weight: 500;
+    border-bottom: 1px solid var(--border-color);
+
+    &:hover {
+      color: var(--link-color);
+      border-bottom-color: var(--link-color-hover);
+    }
+  }
+}
+
+.project-details__role {
+  margin-bottom: 4px;
+  font-family: $base-font-family;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
 /* Project Navigation */
 .project__nav {
   max-width: 780px;

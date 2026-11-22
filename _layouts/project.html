@@ -31,6 +31,26 @@ layout: default
   </div>
   {% endif %}
 
+  {% if page.description or page.role %}
+  <div class="row">
+    <div class="col col-12">
+      <div class="project-details animate">
+        <div class="project-details__inner">
+          {% if page.description %}
+          <p>{{ page.description | escape }}</p>
+          {% endif %}
+          {% if page.role %}
+          <div class="project-details__credit">
+            <p class="project-details__role">{{ page.role | escape }}</p>
+            <a href="https://www.instagram.com/filmmaking_bob/" target="_blank" rel="noopener noreferrer">Bob Tsang</a>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
   <div class="project-content animate">
     {{ content }}
   </div>

@@ -1,5 +1,7 @@
 ---
 layout: project
+description: "Project description to be added. This section will provide a brief introduction to the film, its subject and the creative approach."
+role: "Role to be confirmed"
 title: "The Harbour I Remember"
 date: 2025-06-15
 subtitle: Mini-Documentary

@@ -1,5 +1,7 @@
 ---
 layout: project
+description: "Project description to be added. This section will provide a brief introduction to the film, its subject and the creative approach."
+role: "Role to be confirmed"
 title: "I Cycled 800km Across Japan"
 date: 2024-12-09
 subtitle: Travel Video
