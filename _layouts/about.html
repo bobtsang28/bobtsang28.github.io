@@ -33,7 +33,7 @@ layout: default
             </div>
             <div>
               <p class="about-credits__label">Producer</p>
-              <p class="about-credits__collaborator">{{ credit.producer | escape }}</p>
+              <p class="about-credits__collaborator">{% for producer in credit.producers %}{% if producer.url %}<a href="{{ producer.url | escape }}" target="_blank" rel="noopener noreferrer">{{ producer.name | escape }}</a>{% else %}{{ producer.name | escape }}{% endif %}{% unless forloop.last %}; {% endunless %}{% endfor %}</p>
             </div>
           </div>
         </li>

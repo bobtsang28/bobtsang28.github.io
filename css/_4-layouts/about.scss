@@ -101,3 +101,9 @@
 .about-credits__role {
   font-weight: 600;
 }
+
+.about-credits__collaborator a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
