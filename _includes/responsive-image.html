@@ -3,6 +3,8 @@
   {% assign image_data = site.data.photography_variants[include.src] %}
 {% elsif include.footer_gallery %}
   {% assign image_data = site.data.footer_gallery_variants[include.src] %}
+{% elsif include.project_gallery %}
+  {% assign image_data = site.data.project_variants[include.src] %}
 {% endif %}
 {% assign widths = include.widths | split: ',' %}
 {% assign avif_srcset = '' %}
@@ -10,20 +12,24 @@
 {% assign jpeg_srcset = '' %}
 {% assign full_avif_srcset = '' %}
 {% for width in widths %}
+  {% assign candidate_width = width %}
+  {% if width == 'full' %}{% assign candidate_width = image_data.full_width | append: '' %}{% endif %}
+  {% assign duplicate_width = false %}
+  {% if width == 'full' and widths contains candidate_width %}{% assign duplicate_width = true %}{% endif %}
   {% if image_data.avif %}
-    {% assign variant_path = image_data.avif[width] %}
+    {% assign variant_path = image_data.avif[candidate_width] %}
     {% if variant_path %}
-      {% capture candidate %}{{ variant_path | relative_url }}?v={{ image_data.version }} {{ width }}w{% endcapture %}
+      {% capture candidate %}{{ variant_path | relative_url }}?v={{ image_data.version }} {{ candidate_width }}w{% endcapture %}
       {% if avif_srcset != '' %}{% assign avif_srcset = avif_srcset | append: ', ' %}{% endif %}
       {% assign avif_srcset = avif_srcset | append: candidate %}
     {% endif %}
-    {% if image_data.jpeg %}
-      {% assign variant_path = image_data.jpeg[width] %}
-      {% if variant_path %}
-        {% capture candidate %}{{ variant_path | relative_url }}?v={{ image_data.version }} {{ width }}w{% endcapture %}
-        {% if jpeg_srcset != '' %}{% assign jpeg_srcset = jpeg_srcset | append: ', ' %}{% endif %}
-        {% assign jpeg_srcset = jpeg_srcset | append: candidate %}
-      {% endif %}
+  {% endif %}
+  {% if image_data.jpeg and duplicate_width == false %}
+    {% assign variant_path = image_data.jpeg[candidate_width] %}
+    {% if variant_path %}
+      {% capture candidate %}{{ variant_path | relative_url }}?v={{ image_data.version }} {{ candidate_width }}w{% endcapture %}
+      {% if jpeg_srcset != '' %}{% assign jpeg_srcset = jpeg_srcset | append: ', ' %}{% endif %}
+      {% assign jpeg_srcset = jpeg_srcset | append: candidate %}
     {% endif %}
   {% endif %}
   {% if image_data.png %}
@@ -60,6 +66,9 @@
   {% assign fallback_src = image_data.jpeg['800'] | default: full_src %}
 {% elsif include.footer_gallery %}
   {% assign fallback_src = image_data.jpeg['800'] | default: include.src %}
+{% elsif include.project_gallery %}
+  {% assign project_full_width = image_data.full_width | append: '' %}
+  {% assign fallback_src = image_data.jpeg['1280'] | default: image_data.jpeg['800'] | default: image_data.jpeg[project_full_width] | default: include.src %}
 {% endif %}
 <picture class="responsive-image">
   {% if avif_srcset != '' %}

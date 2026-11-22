@@ -21,15 +21,32 @@ seo_description: "Explore film projects by Bob Tsang, including documentaries, n
   <div class="projects-grid">
     {% for project in site.projects reversed %}
       {% assign project_position = forloop.index %}
-      <article class="project-card{% if site.data.projects.featured_positions contains project_position %} project-card--featured{% endif %}">
+      {% assign project_loading = 'lazy' %}
+      {% assign project_priority = nil %}
+      {% if forloop.index <= 2 %}
+        {% assign project_loading = 'eager' %}
+      {% endif %}
+      {% if forloop.first %}
+        {% assign project_priority = 'high' %}
+      {% endif %}
+      <article class="project-card{% if site.data.projects.featured_positions contains project_position %} project-card--featured{% elsif project_position < 6 %} project-card--group-a{% else %} project-card--group-b{% endif %}">
         <a href="{{ project.url }}" class="project-card__link">
           <span class="project-card__image">
-            <img
-              src="{{ project.image | relative_url }}"
-              alt="{{ project.title | escape }}"
-              loading="{% if forloop.index <= 2 %}eager{% else %}lazy{% endif %}"
-              decoding="async"
-              {% if forloop.first %}fetchpriority="high"{% endif %}>
+            {% if site.data.projects.featured_positions contains project_position %}
+              {% assign project_sizes = '(max-width: 700px) calc(100vw - 48px), (max-width: 1440px) calc(67.3vw - 9px), 960px' %}
+            {% else %}
+              {% assign project_sizes = '(max-width: 700px) calc(100vw - 48px), (max-width: 1024px) calc((67.3vw - 33px) / 2), (max-width: 1440px) calc((67.3vw - 45px) / 2), 462px' %}
+            {% endif %}
+            {% include responsive-image.html
+              src=project.image
+              alt=project.title
+              widths="400,800,1280,full"
+              sizes=project_sizes
+              loading=project_loading
+              fetchpriority=project_priority
+              project_gallery=true
+            %}
+            <span class="project-card__view" aria-hidden="true">View project <span class="project-card__arrow">↗</span></span>
           </span>
           <div class="project-card__info">
             <h2 class="project-card__title">{{ project.title }}</h2>

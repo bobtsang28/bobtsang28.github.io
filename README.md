@@ -21,6 +21,10 @@ Without `--photography-only`, the script also scans project covers and stills, t
 
 The four shared footer images are listed in `_data/settings.yml`. After adding or replacing a source image, run `python3 scripts/optimize_images.py --footer-only` on macOS and commit the source, `_data/footer_gallery_variants.yml`, and the generated 400/800-pixel AVIF and JPEG variants. Source hashes invalidate stale variants and version their URLs. Normal builds use the committed delivery assets without running the optimizer.
 
+### Project cover images
+
+After adding or replacing a project cover, run `python3 scripts/optimize_images.py --projects-only` on macOS and commit `_data/project_variants.yml` and the generated JPEG variants for that cover. The Projects overview uses JPEG variants because some larger AVIFs produced by `sips` decode as blank in browsers. Source hashes version the URLs, and normal builds use the committed variants without running the optimizer.
+
 ### Publishing
 
 GitHub Pages must use the GitHub Actions source. The Pages workflow builds with Ruby 3.2.9 and the locked Bundler dependencies, then resizes legacy JPEGs **in the generated site only** to a maximum 2560-pixel long edge at JPEG quality 93. This keeps their URLs and source originals intact, but the published versions no longer provide their original full resolution. The workflow verifies Photography delivery assets and fails if the site exceeds 800 MiB.

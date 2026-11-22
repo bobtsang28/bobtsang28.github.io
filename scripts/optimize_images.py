@@ -18,8 +18,10 @@ VARIANT_ROOT = ROOT / "images" / "optimized"
 MANIFEST_PATH = ROOT / "_data" / "image_variants.yml"
 PHOTOGRAPHY_MANIFEST_PATH = ROOT / "_data" / "photography_variants.yml"
 FOOTER_MANIFEST_PATH = ROOT / "_data" / "footer_gallery_variants.yml"
+PROJECT_MANIFEST_PATH = ROOT / "_data" / "project_variants.yml"
 
 COVER_WIDTHS = (400, 640, 800, 1280, 2000)
+PROJECT_DELIVERY_WIDTHS = (400, 800, 1280, 2000)
 GALLERY_WIDTHS = (400, 800, 1600)
 GALLERY_LONG_EDGE = 2560
 WIDE_GALLERY_WIDTHS = (400, 800, 1280, 1600, 2000)
@@ -57,8 +59,25 @@ def footer_references():
     return references
 
 
-def collect_assets(photography_only=False, footer_only=False):
+def project_references():
+    references = []
+    for path in sorted((ROOT / "_projects").glob("*.md")):
+        references.extend(references_matching(
+            path.read_text(encoding="utf-8"),
+            r"""^image:\s*['"]?(/images/[^'"\s]+?\.(?:jpe?g|png))""",
+        ))
+    if not references:
+        raise RuntimeError("No project cover images found")
+    return references
+
+
+def collect_assets(photography_only=False, footer_only=False, projects_only=False):
     assets = {}
+
+    if not photography_only and not footer_only:
+        add_references(assets, project_references(), PROJECT_DELIVERY_WIDTHS, "jpeg")
+        if projects_only:
+            return assets
 
     if not photography_only:
         footer_images = footer_references()
@@ -248,9 +267,14 @@ def main():
         action="store_true",
         help="Generate the footer gallery variants without updating the other image manifests.",
     )
+    group.add_argument(
+        "--projects-only",
+        action="store_true",
+        help="Generate project cover JPEG variants without updating the other image manifests.",
+    )
     args = parser.parse_args()
 
-    assets = collect_assets(args.photography_only, args.footer_only)
+    assets = collect_assets(args.photography_only, args.footer_only, args.projects_only)
     if any(asset["avif"] for asset in assets.values()):
         ensure_avif_support()
 
@@ -260,11 +284,13 @@ def main():
     previous_versions = read_manifest_versions(
         (MANIFEST_PATH, PHOTOGRAPHY_MANIFEST_PATH, FOOTER_MANIFEST_PATH)
     )
+    cover_avif_versions = read_manifest_versions((MANIFEST_PATH,))
+    project_versions = read_manifest_versions((PROJECT_MANIFEST_PATH,))
+    project_images = set(project_references()) if not args.photography_only and not args.footer_only else set()
     for reference, asset in sorted(assets.items()):
         source = ROOT / reference.lstrip("/")
         width, height = image_dimensions(source)
         version = source_version(source)
-        force = previous_versions.get(reference) != version
         original_bytes += source.stat().st_size
         metadata = {
             "width": width,
@@ -280,10 +306,23 @@ def main():
             if width < 400:
                 asset["avif"].add(width)
             asset["jpeg"].add(full_width)
+        if reference in project_images:
+            metadata["full_width"] = min(width, max(PROJECT_DELIVERY_WIDTHS))
+            asset["jpeg"].add(metadata["full_width"])
         variants[reference] = metadata
         for output_format in ("avif", "jpeg", "png"):
+            versions = (
+                project_versions if reference in project_images and output_format == "jpeg"
+                else cover_avif_versions if reference in project_images and output_format == "avif"
+                else previous_versions
+            )
+            force = versions.get(reference) != version
             for target_width in sorted(asset[output_format]):
-                if target_width > width or (target_width == width and not metadata.get("full_width")):
+                if target_width > width or (
+                    target_width == width
+                    and not metadata.get("full_width")
+                    and not (reference in project_images and output_format == "jpeg")
+                ):
                     continue
                 target_height = round(height * target_width / width)
                 target = variant_path(reference, target_width, "jpg" if output_format == "jpeg" else output_format)
@@ -310,20 +349,25 @@ def main():
             results[future.result()] += 1
 
     if not args.dry_run:
-        if not args.footer_only:
+        if not args.footer_only and not args.projects_only:
             photography = {
                 reference: metadata
                 for reference, metadata in variants.items()
                 if reference.startswith("/images/Photographs/")
             }
             write_manifest(PHOTOGRAPHY_MANIFEST_PATH, photography)
-        if not args.photography_only:
+        if not args.photography_only and not args.projects_only:
             footer_images = footer_references()
             write_manifest(
                 FOOTER_MANIFEST_PATH,
                 {reference: variants[reference] for reference in footer_images},
             )
         if not args.photography_only and not args.footer_only:
+            write_manifest(
+                PROJECT_MANIFEST_PATH,
+                {reference: {**variants[reference], "avif": {}} for reference in project_images},
+            )
+        if not args.photography_only and not args.footer_only and not args.projects_only:
             write_manifest(MANIFEST_PATH, variants)
 
     print(
