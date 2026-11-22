@@ -13,6 +13,38 @@
   }
 }
 
+.filmmaker-laurels {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  justify-items: center;
+  gap: 24px;
+  max-width: 720px;
+  margin: 0 auto 40px;
+  padding: 0;
+  list-style: none;
+
+  @media only screen and (max-width: $mobile) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.filmmaker-laurels__image {
+  display: block;
+  width: 120px;
+  max-width: 100%;
+  height: auto;
+}
+
+.filmmaker-laurels__image--light,
+.light-mode .filmmaker-laurels__image--dark {
+  display: none;
+}
+
+.light-mode .filmmaker-laurels__image--light {
+  display: block;
+}
+
 .filmmaker-intro__text {
   max-width: 980px;
   margin: 0 auto 32px;

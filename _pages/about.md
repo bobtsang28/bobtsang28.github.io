@@ -85,6 +85,6 @@ My passion for filmmaking stems from my background in mountaineering. I began fi
 
 Now based in London, I work as a freelance filmmaker, camera assistant, photographer and expedition leader, with experience in remote, extreme and physically demanding environments. Alongside client work, I develop short films and mini-documentaries as personal projects, exploring the relationship between people and nature, and how memory and cultural identity shape individuals and their pursuit of personal aspirations.
 
-My cinematographic approach emphasises naturalistic imagery and restrained camera movement. I favour wide, deliberate framing, natural lighting, earthy tones and organic textures, allowing moments and interactions to unfold naturally. Through an observational approach, I aim to create immersive, intimate and poetic imagery that captures the beauty of everyday life.
+My cinematographic approach emphasises naturalistic imagery and restrained camera movement. I favour wide, deliberate framing, natural lighting, earthy tones and organic textures, allowing moments to unfold naturally. Through an observational approach, I aim to create immersive and intimate imagery that captures the beauty of everyday life.
 
 Available for productions across the UK and internationally.
