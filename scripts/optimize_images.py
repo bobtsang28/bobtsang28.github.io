@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 VARIANT_ROOT = ROOT / "images" / "optimized"
 MANIFEST_PATH = ROOT / "_data" / "image_variants.yml"
 PHOTOGRAPHY_MANIFEST_PATH = ROOT / "_data" / "photography_variants.yml"
+FOOTER_MANIFEST_PATH = ROOT / "_data" / "footer_gallery_variants.yml"
 
 COVER_WIDTHS = (400, 640, 800, 1280, 2000)
 GALLERY_WIDTHS = (400, 800, 1600)
@@ -43,8 +44,28 @@ def references_matching(text, pattern):
     return re.findall(pattern, text, re.IGNORECASE | re.MULTILINE)
 
 
-def collect_assets(photography_only=False):
+def footer_references():
+    settings = (ROOT / "_data" / "settings.yml").read_text(encoding="utf-8")
+    gallery = re.search(r"(?ms)^gallery:\s*\n(.*?)(?=^\S|\Z)", settings)
+    if not gallery:
+        raise RuntimeError("Footer gallery is missing from settings.yml")
+    references = references_matching(
+        gallery.group(1), r"""^\s*url:\s*['"]?(/images/[^'"\s]+?\.(?:jpe?g|png))"""
+    )
+    if not references:
+        raise RuntimeError("Footer gallery contains no image references")
+    return references
+
+
+def collect_assets(photography_only=False, footer_only=False):
     assets = {}
+
+    if not photography_only:
+        footer_images = footer_references()
+        add_references(assets, footer_images, FOOTER_WIDTHS, "avif")
+        add_references(assets, footer_images, FOOTER_WIDTHS, "jpeg")
+        if footer_only:
+            return assets
 
     for project_path in (() if photography_only else sorted((ROOT / "_projects").glob("*.md"))):
         text = project_path.read_text(encoding="utf-8")
@@ -87,16 +108,7 @@ def collect_assets(photography_only=False):
     avatar = references_matching(
         settings_text, r"""author__avatar:\s*['"]?(/images/[^'"\s]+?\.(?:jpe?g|png))"""
     )
-    settings_images = references_matching(
-        settings_text, r"""^\s*url:\s*['"]?(/images/[^'"\s]+?\.(?:jpe?g|png))"""
-    )
     add_references(assets, avatar, FOOTER_WIDTHS, "avif")
-    add_references(
-        assets,
-        (reference for reference in settings_images if reference not in avatar),
-        FOOTER_WIDTHS,
-        "avif",
-    )
 
     about_text = (ROOT / "_pages" / "about.md").read_text(encoding="utf-8")
     about_images = references_matching(
@@ -225,26 +237,34 @@ def main():
         action="store_true",
         help="Report the variants without creating images or the manifest.",
     )
-    parser.add_argument(
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument(
         "--photography-only",
         action="store_true",
         help="Generate the Photography gallery variants without updating the other image manifest.",
     )
+    group.add_argument(
+        "--footer-only",
+        action="store_true",
+        help="Generate the footer gallery variants without updating the other image manifests.",
+    )
     args = parser.parse_args()
 
-    assets = collect_assets(args.photography_only)
+    assets = collect_assets(args.photography_only, args.footer_only)
     if any(asset["avif"] for asset in assets.values()):
         ensure_avif_support()
 
     variants = {}
     jobs = []
     original_bytes = 0
-    previous_versions = read_manifest_versions((MANIFEST_PATH, PHOTOGRAPHY_MANIFEST_PATH))
+    previous_versions = read_manifest_versions(
+        (MANIFEST_PATH, PHOTOGRAPHY_MANIFEST_PATH, FOOTER_MANIFEST_PATH)
+    )
     for reference, asset in sorted(assets.items()):
         source = ROOT / reference.lstrip("/")
         width, height = image_dimensions(source)
         version = source_version(source)
-        force = previous_versions.get(reference) not in (None, version)
+        force = previous_versions.get(reference) != version
         original_bytes += source.stat().st_size
         metadata = {
             "width": width,
@@ -290,13 +310,20 @@ def main():
             results[future.result()] += 1
 
     if not args.dry_run:
-        photography = {
-            reference: metadata
-            for reference, metadata in variants.items()
-            if reference.startswith("/images/Photographs/")
-        }
-        write_manifest(PHOTOGRAPHY_MANIFEST_PATH, photography)
+        if not args.footer_only:
+            photography = {
+                reference: metadata
+                for reference, metadata in variants.items()
+                if reference.startswith("/images/Photographs/")
+            }
+            write_manifest(PHOTOGRAPHY_MANIFEST_PATH, photography)
         if not args.photography_only:
+            footer_images = footer_references()
+            write_manifest(
+                FOOTER_MANIFEST_PATH,
+                {reference: variants[reference] for reference in footer_images},
+            )
+        if not args.photography_only and not args.footer_only:
             write_manifest(MANIFEST_PATH, variants)
 
     print(

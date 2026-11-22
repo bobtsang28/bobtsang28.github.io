@@ -1,6 +1,8 @@
 {% assign image_data = site.data.image_variants[include.src] %}
 {% if include.delivery_only %}
   {% assign image_data = site.data.photography_variants[include.src] %}
+{% elsif include.footer_gallery %}
+  {% assign image_data = site.data.footer_gallery_variants[include.src] %}
 {% endif %}
 {% assign widths = include.widths | split: ',' %}
 {% assign avif_srcset = '' %}
@@ -56,6 +58,8 @@
   {% assign full_width = image_data.full_width | append: '' %}
   {% assign full_src = image_data.jpeg[full_width] %}
   {% assign fallback_src = image_data.jpeg['800'] | default: full_src %}
+{% elsif include.footer_gallery %}
+  {% assign fallback_src = image_data.jpeg['800'] | default: include.src %}
 {% endif %}
 <picture class="responsive-image">
   {% if avif_srcset != '' %}

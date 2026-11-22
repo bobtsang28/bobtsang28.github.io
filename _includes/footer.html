@@ -6,7 +6,14 @@
     <div class="gallery">
       {% for image in site.data.settings.gallery.gallery__images %}
       <div class="gallery__image">
-        <img src="{{site.baseurl}}{{image.url}}" alt="{{image.alt}}" loading="lazy">
+        {% include responsive-image.html
+          src=image.url
+          alt=image.alt
+          widths="400,800"
+          sizes="(max-width: 1024px) 50vw, 25vw"
+          loading="lazy"
+          footer_gallery=true
+        %}
       </div>
       {% endfor %}
     </div>
