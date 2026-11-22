@@ -16,7 +16,7 @@ menu__settings:
       url: '/projects/'
     - title: 'Photography'
       url: '/photography/'
-    - title: 'Pages'
+    - title: 'More'
       submenu:
       - url: '/about/'
         title: 'About'

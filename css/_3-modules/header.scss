@@ -118,7 +118,8 @@
 
         &.dropdown {
           .dropdown-toggle {
-            display: none;
+            display: block;
+            cursor: default;
           }
         }
 

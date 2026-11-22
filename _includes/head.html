@@ -3,22 +3,51 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.data.settings.title }}{% endif %}</title>
-  <meta name='description' content='{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.data.settings.description }}{% endif %}'>
+  {% assign seo_title = page.seo_title | default: '' %}
+  {% if seo_title == '' %}
+    {% if page.url contains '/project/' %}
+      {% capture seo_title %}{{ page.title }} | Film Project — Bob Tsang{% endcapture %}
+    {% elsif page.title %}
+      {% capture seo_title %}{{ page.title }} | Bob Tsang{% endcapture %}
+    {% else %}
+      {% assign seo_title = site.data.settings.title %}
+    {% endif %}
+  {% endif %}
+  {% assign seo_description = page.seo_description | default: page.description | default: '' %}
+  {% if page.url contains '/project/' and seo_description == 'Project description to be added. This section will provide a brief introduction to the film, its subject and the creative approach.' %}
+    {% capture seo_description %}{{ page.title }}{% if page.subtitle %}, {{ page.subtitle | downcase }}{% endif %}, from Bob Tsang's filmmaking portfolio.{% endcapture %}
+  {% endif %}
+  {% if seo_description == '' %}
+    {% if page.title %}
+      {% capture seo_description %}{{ page.title }} | Explore Bob Tsang's filmmaking and photography portfolio.{% endcapture %}
+    {% else %}
+      {% assign seo_description = site.data.settings.description %}
+    {% endif %}
+  {% endif %}
+  {% if paginator.page > 1 %}
+    {% capture seo_title %}{{ seo_title }} — Page {{ paginator.page }}{% endcapture %}
+    {% capture seo_description %}{{ seo_description }} Page {{ paginator.page }}.{% endcapture %}
+  {% endif %}
+  {% assign seo_image = page.image | default: site.data.settings.author.author__avatar %}
+
+  <title>{{ seo_title | strip | escape }}</title>
+  <meta name="description" content="{{ seo_description | strip_html | normalize_whitespace | escape }}">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.data.settings.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{% if page.url == "/" %}{{ site.data.settings.title }}{% else %}{{ page.title }} – {{ site.data.settings.title }}{% endif %}">
-  <meta name="twitter:description" content="{% if page.url == "/" %}{{ site.data.settings.description | strip_html | xml_escape }}{% elsif page.description %}{{ page.description | strip_html | xml_escape }}{% else %}{{ page.excerpt | strip_html | xml_escape }}{% endif %}">
-  <meta name="twitter:image:src" content="{{ page.image | absolute_url }}">
+  <meta name="twitter:title" content="{{ seo_title | strip | escape }}">
+  <meta name="twitter:description" content="{{ seo_description | strip_html | normalize_whitespace | escape }}">
+  <meta name="twitter:image:src" content="{{ seo_image | absolute_url }}">
 
   <!-- Facebook OpenGraph -->
-  <meta property="og:title" content="{% if page.url == "/" %}{{ site.data.settings.title }}{% else %}{{ page.title }} – {{ site.data.settings.title }}{% endif %}">
-  <meta property="og:description" content="{% if page.url == "/" %}{{ site.data.settings.description | strip_html | xml_escape }}{% elsif page.description %}{{ page.description | strip_html | xml_escape }}{% else %}{{ page.excerpt | strip_html | xml_escape }}{% endif %}">
-  <meta property="og:image" content="{{ page.image | absolute_url }}">
+  <meta property="og:title" content="{{ seo_title | strip | escape }}">
+  <meta property="og:description" content="{{ seo_description | strip_html | normalize_whitespace | escape }}">
+  <meta property="og:image" content="{{ seo_image | absolute_url }}">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <meta property="og:type" content="website">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
