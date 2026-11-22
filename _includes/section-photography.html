@@ -1,32 +1,27 @@
-<!-- begin photography -->
-<section class="section photography animate">
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-        <div class="contaniner__inner">
-
-          <div class="row">
-            {% assign sorted = site.photography | sort: 'order' %}
-            {% for photo in sorted %}
-            <article class="project col col-6">
-              <div class="project__content">
-                <a href="{{ photo.url }}" class="project__image">
-                  <img class="lazy" data-src="{{ photo.image }}" alt="{{ photo.title }}">
-                </a>
-                <div class="project__info">
-                  <h3 class="project__title"><a href="{{ photo.url }}">{{ photo.title }}</a></h3>
-                  {% if photo.subtitle %}
-                    <div class="project__subtitle">{{ photo.subtitle }}</div>
-                  {% endif %}
-                </div>
-              </div>
-            </article>
-            {% endfor %}
-          </div>
-
-        </div>
-      </div>
-    </div>
+<section class="photography-overview container" aria-label="Photography gallery">
+  <div class="photography-gallery">
+    {% for photo in site.data.photography_gallery %}
+      <button
+        class="photography-gallery__item{% if photo.wide %} photography-gallery__item--wide{% endif %}"
+        type="button">
+        <img
+          src="{{ photo.image | relative_url }}"
+          width="{{ photo.width }}"
+          height="{{ photo.height }}"
+          alt="{{ photo.alt | escape }}"
+          loading="{% if forloop.index <= 3 %}eager{% else %}lazy{% endif %}"
+          decoding="async"
+          {% if forloop.first %}fetchpriority="high"{% endif %}>
+      </button>
+    {% endfor %}
   </div>
 </section>
-<!-- end photography -->
+
+<dialog class="photo-lightbox" aria-label="Photograph viewer">
+  <div class="photo-lightbox__controls">
+    <button class="photo-lightbox__button photo-lightbox__previous" type="button" aria-label="Previous photograph">‹</button>
+    <button class="photo-lightbox__button photo-lightbox__next" type="button" aria-label="Next photograph">›</button>
+    <button class="photo-lightbox__button photo-lightbox__close" type="button" aria-label="Close photograph viewer">×</button>
+  </div>
+  <img class="photo-lightbox__image" alt="">
+</dialog>

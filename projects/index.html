@@ -18,20 +18,26 @@ seo_description: "Explore film projects by Bob Tsang, including documentaries, n
 </div>
 
 <div class="projects-page container animate">
-  <div class="row">
+  <div class="projects-grid">
     {% for project in site.projects reversed %}
-      <article class="project col col-4 col-d-6 col-t-12">
-        <div class="project__content">
-          <a href="{{ project.url }}" class="project__image">
-            <img class="lazy" data-src="{{ project.image }}" alt="{{ project.title }}">
-          </a>
-          <div class="project__info">
-            <h3 class="project__title"><a href="{{ project.url }}">{{ project.title }}</a></h3>
+      {% assign project_position = forloop.index %}
+      <article class="project-card{% if site.data.projects.featured_positions contains project_position %} project-card--featured{% endif %}">
+        <a href="{{ project.url }}" class="project-card__link">
+          <span class="project-card__image">
+            <img
+              src="{{ project.image | relative_url }}"
+              alt="{{ project.title | escape }}"
+              loading="{% if forloop.index <= 2 %}eager{% else %}lazy{% endif %}"
+              decoding="async"
+              {% if forloop.first %}fetchpriority="high"{% endif %}>
+          </span>
+          <div class="project-card__info">
+            <h2 class="project-card__title">{{ project.title }}</h2>
             {% if project.subtitle %}
-            <div class="project__subtitle">{{ project.subtitle }}</div>
+              <span class="project-card__subtitle">{{ project.subtitle }}</span>
             {% endif %}
           </div>
-        </div>
+        </a>
       </article>
     {% endfor %}
   </div>
