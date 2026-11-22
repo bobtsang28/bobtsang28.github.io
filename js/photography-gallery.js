@@ -5,6 +5,7 @@
 
   const items = Array.from(gallery.querySelectorAll(".photography-gallery__item"));
   const image = lightbox.querySelector(".photo-lightbox__image");
+  const imageSource = lightbox.querySelector(".photo-lightbox__source");
   const previous = lightbox.querySelector(".photo-lightbox__previous");
   const next = lightbox.querySelector(".photo-lightbox__next");
   const closeButton = lightbox.querySelector(".photo-lightbox__close");
@@ -16,11 +17,58 @@
 
   if (!items.length) return;
 
+  const layoutMasonry = () => {
+    gallery.classList.remove("photography-gallery--masonry");
+    items.forEach(item => {
+      item.style.gridColumn = "";
+      item.style.gridRow = "";
+    });
+
+    const styles = getComputedStyle(gallery);
+    const columns = Number(styles.getPropertyValue("--photography-gallery-columns"));
+    const rowGap = parseFloat(styles.rowGap);
+    const columnGap = parseFloat(styles.columnGap);
+    const columnWidth = (gallery.clientWidth - columnGap * (columns - 1)) / columns;
+    if (!columns || !columnWidth) return;
+
+    const rowStride = 1 + rowGap;
+    const columnHeights = Array(columns).fill(0);
+    items.forEach(item => {
+      const source = item.querySelector("img");
+      const width = Number(source.getAttribute("width"));
+      const height = Number(source.getAttribute("height"));
+      const itemHeight = columnWidth * height / width;
+      const rowSpan = Math.max(1, Math.ceil((itemHeight + rowGap) / rowStride));
+      const column = columnHeights.indexOf(Math.min(...columnHeights));
+
+      item.style.gridColumn = String(column + 1);
+      item.style.gridRow = `${columnHeights[column] + 1} / span ${rowSpan}`;
+      columnHeights[column] += rowSpan;
+    });
+    gallery.classList.add("photography-gallery--masonry");
+  };
+
+  let layoutFrame = 0;
+  const scheduleLayout = () => {
+    cancelAnimationFrame(layoutFrame);
+    layoutFrame = requestAnimationFrame(() => {
+      layoutFrame = 0;
+      layoutMasonry();
+    });
+  };
+
+  layoutMasonry();
+  window.addEventListener("resize", scheduleLayout, { passive: true });
+
   const showImage = index => {
     activeIndex = (index + items.length) % items.length;
     const source = items[activeIndex].querySelector("img");
-    image.src = source.currentSrc || source.src;
+    imageSource.srcset = source.dataset.fullAvifSrcset || "";
+    imageSource.sizes = source.dataset.fullSizes || "";
+    image.src = source.dataset.fullSrc || source.currentSrc || source.src;
     image.alt = source.alt;
+    image.width = Number(source.getAttribute("width")) || 0;
+    image.height = Number(source.getAttribute("height")) || 0;
   };
 
   const open = index => {
@@ -61,6 +109,8 @@
     returnFocus?.focus();
     returnFocus = null;
     image.removeAttribute("src");
+    imageSource.removeAttribute("srcset");
+    imageSource.removeAttribute("sizes");
   });
   lightbox.addEventListener("keydown", event => {
     if (event.key === "Escape") {

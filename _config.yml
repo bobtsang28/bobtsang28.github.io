@@ -61,3 +61,7 @@ defaults:
 
 sass:
   style: compressed
+
+exclude:
+  - scripts
+  - images/Photographs

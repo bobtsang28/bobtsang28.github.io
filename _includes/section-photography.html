@@ -1,17 +1,33 @@
 <section class="photography-overview container" aria-label="Photography gallery">
   <div class="photography-gallery">
     {% for photo in site.data.photography_gallery %}
+      {% assign photo_loading = 'lazy' %}
+      {% if forloop.index <= 3 %}
+        {% assign photo_loading = 'eager' %}
+      {% endif %}
+      {% assign photo_priority = nil %}
+      {% if forloop.first %}
+        {% assign photo_priority = 'high' %}
+      {% endif %}
+      {% assign photo_widths = '400,800' %}
+      {% assign photo_data = site.data.photography_variants[photo.image] %}
+      {% if photo_data.width < 400 %}
+        {% assign photo_widths = photo_data.width | append: '' %}
+      {% endif %}
+      {% assign photo_sizes = '(max-width: 360px) calc(100vw - 32px), (max-width: 768px) calc((100vw - 40px) / 2), (max-width: 1200px) calc((100vw - 56px) / 2), 372px' %}
       <button
-        class="photography-gallery__item{% if photo.wide %} photography-gallery__item--wide{% endif %}"
+        class="photography-gallery__item"
         type="button">
-        <img
-          src="{{ photo.image | relative_url }}"
-          width="{{ photo.width }}"
-          height="{{ photo.height }}"
-          alt="{{ photo.alt | escape }}"
-          loading="{% if forloop.index <= 3 %}eager{% else %}lazy{% endif %}"
-          decoding="async"
-          {% if forloop.first %}fetchpriority="high"{% endif %}>
+        {% include responsive-image.html
+          src=photo.image
+          alt=photo.alt
+          widths=photo_widths
+          sizes=photo_sizes
+          full_sizes="(max-width: 768px) calc(100vw - 24px), calc(100vw - clamp(32px, 8vw, 112px))"
+          loading=photo_loading
+          fetchpriority=photo_priority
+          delivery_only=true
+        %}
       </button>
     {% endfor %}
   </div>
@@ -23,5 +39,8 @@
     <button class="photo-lightbox__button photo-lightbox__next" type="button" aria-label="Next photograph">›</button>
     <button class="photo-lightbox__button photo-lightbox__close" type="button" aria-label="Close photograph viewer">×</button>
   </div>
-  <img class="photo-lightbox__image" alt="">
+  <picture class="photo-lightbox__picture">
+    <source class="photo-lightbox__source" type="image/avif">
+    <img class="photo-lightbox__image" alt="">
+  </picture>
 </dialog>

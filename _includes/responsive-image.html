@@ -1,0 +1,81 @@
+{% assign image_data = site.data.image_variants[include.src] %}
+{% if include.delivery_only %}
+  {% assign image_data = site.data.photography_variants[include.src] %}
+{% endif %}
+{% assign widths = include.widths | split: ',' %}
+{% assign avif_srcset = '' %}
+{% assign png_srcset = '' %}
+{% assign jpeg_srcset = '' %}
+{% assign full_avif_srcset = '' %}
+{% for width in widths %}
+  {% if image_data.avif %}
+    {% assign variant_path = image_data.avif[width] %}
+    {% if variant_path %}
+      {% capture candidate %}{{ variant_path | relative_url }}?v={{ image_data.version }} {{ width }}w{% endcapture %}
+      {% if avif_srcset != '' %}{% assign avif_srcset = avif_srcset | append: ', ' %}{% endif %}
+      {% assign avif_srcset = avif_srcset | append: candidate %}
+    {% endif %}
+    {% if image_data.jpeg %}
+      {% assign variant_path = image_data.jpeg[width] %}
+      {% if variant_path %}
+        {% capture candidate %}{{ variant_path | relative_url }}?v={{ image_data.version }} {{ width }}w{% endcapture %}
+        {% if jpeg_srcset != '' %}{% assign jpeg_srcset = jpeg_srcset | append: ', ' %}{% endif %}
+        {% assign jpeg_srcset = jpeg_srcset | append: candidate %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+  {% if image_data.png %}
+    {% assign variant_path = image_data.png[width] %}
+    {% if variant_path %}
+      {% capture candidate %}{{ variant_path | relative_url }}?v={{ image_data.version }} {{ width }}w{% endcapture %}
+      {% if png_srcset != '' %}{% assign png_srcset = png_srcset | append: ', ' %}{% endif %}
+      {% assign png_srcset = png_srcset | append: candidate %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% if png_srcset != '' %}
+  {% assign original_candidate = include.src | relative_url | append: '?v=' | append: image_data.version | append: ' ' | append: image_data.width | append: 'w' %}
+  {% assign png_srcset = png_srcset | append: ', ' | append: original_candidate %}
+{% endif %}
+{% assign full_widths = include.full_widths | split: ',' %}
+{% if image_data.avif %}
+  {% for width in full_widths %}
+    {% assign candidate_width = width %}
+    {% if width == 'full' %}{% assign candidate_width = image_data.full_width | append: '' %}{% endif %}
+    {% assign variant_path = image_data.avif[candidate_width] %}
+    {% if variant_path %}
+      {% capture candidate %}{{ variant_path | relative_url }}?v={{ image_data.version }} {{ candidate_width }}w{% endcapture %}
+      {% if full_avif_srcset != '' %}{% assign full_avif_srcset = full_avif_srcset | append: ', ' %}{% endif %}
+      {% assign full_avif_srcset = full_avif_srcset | append: candidate %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% assign fallback_src = include.src %}
+{% assign full_src = include.src %}
+{% if include.delivery_only %}
+  {% assign full_width = image_data.full_width | append: '' %}
+  {% assign full_src = image_data.jpeg[full_width] %}
+  {% assign fallback_src = image_data.jpeg['800'] | default: full_src %}
+{% endif %}
+<picture class="responsive-image">
+  {% if avif_srcset != '' %}
+    <source type="image/avif" srcset="{{ avif_srcset | escape }}" sizes="{{ include.sizes | default: '100vw' | escape }}">
+  {% endif %}
+  <img
+    src="{{ fallback_src | relative_url }}?v={{ image_data.version }}"
+    {% if jpeg_srcset != '' %}srcset="{{ jpeg_srcset | escape }}" sizes="{{ include.sizes | default: '100vw' | escape }}"{% elsif png_srcset != '' %}srcset="{{ png_srcset | escape }}" sizes="{{ include.sizes | default: '100vw' | escape }}"{% endif %}
+    {% if full_avif_srcset != '' %}
+      data-full-src="{{ full_src | relative_url }}?v={{ image_data.version }}"
+      data-full-avif-srcset="{{ full_avif_srcset | escape }}"
+      data-full-sizes="{{ include.full_sizes | default: include.sizes | default: '100vw' | escape }}"
+    {% elsif include.delivery_only %}
+      data-full-src="{{ full_src | relative_url }}?v={{ image_data.version }}"
+    {% endif %}
+    alt="{{ include.alt | default: '' | escape }}"
+    width="{{ image_data.width }}"
+    height="{{ image_data.height }}"
+    loading="{{ include.loading | default: 'lazy' }}"
+    decoding="async"
+    {% if include.fetchpriority %}fetchpriority="{{ include.fetchpriority }}"{% endif %}
+    {% if include.image_class %}class="{{ include.image_class }}"{% endif %}>
+</picture>

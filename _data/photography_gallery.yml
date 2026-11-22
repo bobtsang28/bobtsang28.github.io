@@ -1,243 +1,76 @@
-- image: /images/event-1.jpg
-  width: 4030
-  height: 6045
-  alt: Event
-- image: /images/street-1.jpg
-  width: 3022
-  height: 4029
-  alt: Street
-- image: /images/lifestyle-1.jpg
-  width: 6089
-  height: 4059
-  alt: Lifestyle
-- image: /images/portrait-1a.jpg
-  width: 4128
-  height: 6192
-  alt: Portrait
-- image: /images/landscape-1.jpg
-  width: 3741
-  height: 5611
-  alt: Landscape
-- image: /images/bts-1.jpg
-  width: 4128
-  height: 6192
-  alt: Unit Stills
-- image: /images/event-2.jpg
-  width: 4128
-  height: 6192
-  alt: Event
-- image: /images/street-2.jpg
-  width: 4284
-  height: 5712
-  alt: Street
-- image: /images/lifestyle-2.jpg
-  width: 6078
-  height: 4052
-  alt: Lifestyle
-- image: /images/portrait-2.jpg
-  width: 4128
-  height: 6192
-  alt: Portrait
-- image: /images/landscape-2.jpg
-  width: 3601
-  height: 5402
-  alt: Landscape
-- image: /images/bts-2.jpg
-  width: 3973
-  height: 5960
-  alt: Unit Stills
-- image: /images/event-3.jpg
-  width: 4128
-  height: 6192
-  alt: Event
-- image: /images/street-3.jpg
-  width: 2899
-  height: 3865
-  alt: Street
-- image: /images/lifestyle-3.jpg
-  width: 6076
-  height: 4051
-  alt: Lifestyle
-- image: /images/portrait-3.jpg
-  width: 4015
-  height: 6023
-  alt: Portrait
-- image: /images/landscape-3.jpg
-  width: 4128
-  height: 6192
-  alt: Landscape
-- image: /images/bts-3.jpg
-  width: 4128
-  height: 6192
-  alt: Unit Stills
-- image: /images/event-4.jpg
-  width: 6192
-  height: 4128
-  alt: Event
-- image: /images/street-4.jpg
-  width: 4113
-  height: 6170
-  alt: Street
-- image: /images/lifestyle-4a.jpg
-  width: 6192
-  height: 4128
-  alt: Lifestyle
-- image: /images/portrait-4.jpg
-  width: 3845
-  height: 5767
-  alt: Portrait
-- image: /images/landscape-4.jpg
-  width: 3971
-  height: 2978
-  alt: Landscape
-- image: /images/bts-4.jpg
-  width: 6192
-  height: 4128
-  alt: Unit Stills
-- image: /images/event-5.jpg
-  width: 6192
-  height: 4128
-  alt: Event
-- image: /images/street-5.jpg
-  width: 3662
-  height: 5493
-  alt: Street
-- image: /images/lifestyle-5.jpg
-  width: 6119
-  height: 4079
-  alt: Lifestyle
-- image: /images/portrait-5.jpg
-  width: 4128
-  height: 6192
-  alt: Portrait
-- image: /images/landscape-5.jpg
-  width: 3738
-  height: 2803
-  alt: Landscape
-- image: /images/bts-5.jpg
-  width: 6157
-  height: 4105
-  alt: Unit Stills
-- image: /images/event-6.jpg
-  width: 6192
-  height: 4128
-  alt: Event
-- image: /images/street-6.jpg
-  width: 4128
-  height: 6192
-  alt: Street
-- image: /images/lifestyle-6.jpg
-  width: 6118
-  height: 4079
-  alt: Lifestyle
-- image: /images/portrait-6a.jpg
-  width: 3889
-  height: 5833
-  alt: Portrait
-- image: /images/landscape-6.jpg
-  width: 5760
-  height: 4320
-  alt: Landscape
-- image: /images/bts-6.jpg
-  width: 6173
-  height: 4115
-  alt: Unit Stills
-- image: /images/event-7.jpg
-  width: 6192
-  height: 4128
-  alt: Event
-- image: /images/street-7.jpg
-  width: 4128
-  height: 6192
-  alt: Street
-- image: /images/lifestyle-7.jpg
-  width: 4128
-  height: 6192
-  alt: Lifestyle
-- image: /images/portrait-7.jpg
-  width: 5504
-  height: 3669
-  alt: Portrait
-- image: /images/landscape-7.jpg
-  width: 3970
-  height: 2239
-  alt: Landscape
-  wide: true
-- image: /images/bts-7a.jpg
-  width: 6192
-  height: 4128
-  alt: Unit Stills
-- image: /images/event-8.jpg
-  width: 6192
-  height: 4128
-  alt: Event
-- image: /images/street-8.jpg
-  width: 4128
-  height: 6192
-  alt: Street
-- image: /images/lifestyle-8.jpg
-  width: 4128
-  height: 6192
-  alt: Lifestyle
-- image: /images/portrait-8.jpg
-  width: 6192
-  height: 4128
-  alt: Portrait
-- image: /images/landscape-8.jpg
-  width: 3197
-  height: 1798
-  alt: Landscape
-  wide: true
-- image: /images/bts-8a.jpg
-  width: 6174
-  height: 4116
-  alt: Unit Stills
-- image: /images/event-9.jpg
-  width: 6192
-  height: 4128
-  alt: Event
-- image: /images/street-9.jpg
-  width: 3669
-  height: 5504
-  alt: Street
-- image: /images/lifestyle-9.jpg
-  width: 3554
-  height: 5331
-  alt: Lifestyle
-- image: /images/portrait-9a.jpg
-  width: 6128
-  height: 4085
-  alt: Portrait
-- image: /images/landscape-9.jpg
-  width: 5472
-  height: 3072
-  alt: Landscape
-  wide: true
-- image: /images/bts-9a.jpg
-  width: 6167
-  height: 4111
-  alt: Unit Stills
-- image: /images/event-10.jpg
-  width: 6142
-  height: 4095
-  alt: Event
-- image: /images/street-10.jpg
-  width: 4052
-  height: 5402
-  alt: Street
-- image: /images/event-11.jpg
-  width: 5991
-  height: 3994
-  alt: Event
-- image: /images/street-11.jpg
-  width: 2005
-  height: 2673
-  alt: Street
-- image: /images/event-12.jpg
-  width: 6192
-  height: 4128
-  alt: Event
-- image: /images/street-12.jpg
-  width: 4015
-  height: 5354
-  alt: Street
+# Curated from bright daylight through sunset and twilight to night; preserve this order.
+# Bright daylight
+- image: /images/Photographs/photograph-32.jpg
+  alt: "Two hikers crossing a snow-covered mountain ridge"
+- image: /images/Photographs/photograph-5.jpg
+  alt: "A lone hiker crossing a snowy mountain slope beneath a pale sky"
+- image: /images/Photographs/photograph-10.jpg
+  alt: "A person walking along a bright blue shoreline"
+- image: /images/Photographs/photograph-16.jpg
+  alt: "A couple sitting on a lawn with Big Ben in the background"
+- image: /images/Photographs/photograph-6.jpg
+  alt: "Sunlight falling across a green park with a person on the path"
+- image: /images/Photographs/photograph-8.jpg
+  alt: "A person walking a dog across a grassy field"
+- image: /images/Photographs/photograph-29.jpg
+  alt: "A man in a pale shirt standing among green foliage"
+- image: /images/Photographs/photograph-30.jpg
+  alt: "Two people walking beneath pink spring blossoms on a residential street"
+
+# Soft daylight
+- image: /images/Photographs/photograph-27.jpg
+  alt: "A footpath through lush hillside vegetation toward a wooden trail marker"
+- image: /images/Photographs/photograph-26.jpg
+  alt: "A cyclist riding beneath a stone bridge in a warm-toned city"
+- image: /images/Photographs/photograph-12.jpg
+  alt: "A costumed performer moving through a crowded street"
+- image: /images/Photographs/photograph-4.jpg
+  alt: "A person standing in a shaded green garden"
+- image: /images/Photographs/photograph-11.jpg
+  alt: "People gathered at a street-food counter in a cool-lit market"
+- image: /images/Photographs/photograph-13.jpg
+  alt: "A person in a red coat standing beside a waterside courtyard"
+- image: /images/Photographs/photograph-31.jpg
+  alt: "A city street lined with tall apartment buildings beneath a pale sky"
+- image: /images/Photographs/photograph-7.jpg
+  alt: "A green mountain landscape seen through a train window"
+
+# Warm afternoon and sunset
+- image: /images/Photographs/photograph-14.jpg
+  alt: "An adult and child walking across a field at sunset"
+- image: /images/Photographs/photograph-15.jpg
+  alt: "Silhouettes walking through a field beneath a golden sunset"
+- image: /images/Photographs/photograph-2.jpg
+  alt: "A city skyline beneath a pink and gold evening sky"
+- image: /images/Photographs/photograph-20.jpg
+  alt: "A singer in a red outfit performing into a microphone through stage haze"
+
+# Twilight
+- image: /images/Photographs/photograph-25.jpg
+  alt: "St Paul's Cathedral reflected in glass beneath a pink twilight sky"
+- image: /images/Photographs/photograph-21.jpg
+  alt: "A wet city street at dusk with shop lights reflected on the pavement"
+- image: /images/Photographs/photograph-24.jpg
+  alt: "A park path winding through a dusky landscape beneath a muted pink sky"
+- image: /images/Photographs/photograph-22.jpg
+  alt: "A city skyline across water beneath a blue-hour sky"
+
+# Night
+- image: /images/Photographs/photograph-19.jpg
+  alt: "A group of drummers performing under warm stage lights"
+- image: /images/Photographs/photograph-28.jpg
+  alt: "A taxi on a dim city street beneath apartment towers"
+- image: /images/Photographs/photograph-23.jpg
+  alt: "A brightly lit burger restaurant against a dark street"
+- image: /images/Photographs/photograph-18.jpg
+  alt: "A musician playing a string instrument under red and violet stage lights"
+- image: /images/Photographs/photograph-17.jpg
+  alt: "A performer under blue stage lights"
+- image: /images/Photographs/photograph-3.jpg
+  alt: "A neon-lit city street at night with a tower in the distance"
+- image: /images/Photographs/photograph-1.jpg
+  alt: "A panoramic city skyline at night viewed from a hillside"
+- image: /images/Photographs/photograph-9.jpg
+  alt: "A dim arched passageway leading toward a distant light"
+- image: /images/Photographs/photograph-33.jpg
+  alt: "A dark temple interior framing a brightly lit doorway"
