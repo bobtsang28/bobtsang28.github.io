@@ -22,30 +22,19 @@ layout: default
       <ul class="about-credits__list">
         {% for credit in page.credits %}
         {% assign roles = credit.role | split: '/' %}
-        {% assign collaborator_title = credit.collaborator_title %}
-        {% assign collaborator_name = credit.collaborator_name %}
-        {% for role in roles %}
-          {% assign role_name = role | strip %}
-          {% if role_name == 'Producer' %}
-            {% assign collaborator_title = 'Producer' %}
-            {% assign collaborator_name = 'Bob Tsang' %}
-          {% endif %}
-        {% endfor %}
         <li class="about-credits__entry">
           <h3 class="about-credits__title">{{ credit.title | escape }}</h3>
           <span class="about-credits__date">{{ credit.date | escape }}</span>
           <p class="about-credits__company">{{ credit.company | escape }}</p>
           <div class="about-credits__details">
             <div>
-              <p class="about-credits__label">My role</p>
+              <p class="about-credits__label">Role</p>
               <p class="about-credits__role">{% for role in roles %}{{ role | strip | escape }}{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
             </div>
-            {% if collaborator_title and collaborator_title != '' and collaborator_name and collaborator_name != '' %}
             <div>
-              <p class="about-credits__label">{{ collaborator_title | escape }}</p>
-              <p class="about-credits__collaborator">{{ collaborator_name | escape }}</p>
+              <p class="about-credits__label">Producer</p>
+              <p class="about-credits__collaborator">{{ credit.producer | escape }}</p>
             </div>
-            {% endif %}
           </div>
         </li>
         {% endfor %}

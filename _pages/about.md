@@ -9,111 +9,93 @@ credits:
   - title: "Summer's End"
     company: Personal Project
     date: Nov 2025
-    role: Producer/ Director/ Writer/ Camera Operator/ Editor
-    collaborator_title: Producer
-    collaborator_name: Bob Tsang
+    role: Director/ Writer/ Cinematographer/ Editor/ Colourist
+    producer: Bob Tsang
   - title: Merry Christmas Aubrey Flint
     company: Shush Films
     date: Nov 2025
     role: Camera Trainee
-    collaborator_title: ""
-    collaborator_name: ""
+    producer: Producer to be confirmed
   - title: Enhanced Audio Description Promo
     company: University of York School of Physics, Engineering and Technology
     date: Sep 2025
-    role: Director/ Camera Operator/ Editor
-    collaborator_title: ""
-    collaborator_name: ""
+    role: Director/ Cinematographer/ Editor/ Colourist
+    producer: Producer to be confirmed
   - title: The Art of Healing
     company: Personal Project
     date: Sep 2025
-    role: Producer/ Director/ Camera Operator/Editor
-    collaborator_title: Producer
-    collaborator_name: Bob Tsang
+    role: Director/ Cinematographer/ Editor/ Colourist
+    producer: Bob Tsang
   - title: The Harbour I Remember
     company: Personal Project
     date: Jun 2025
-    role: Producer/ Director/ Camera Operator/Editor
-    collaborator_title: Producer
-    collaborator_name: Bob Tsang
+    role: Director/ Cinematographer/ Editor/ Colourist
+    producer: Bob Tsang
   - title: Blueberry Inn
     company: Dancing Fox Entertainment
     date: May 2025
     role: Unit Stills Student Photographer/ Videographer
-    collaborator_title: ""
-    collaborator_name: ""
+    producer: Producer to be confirmed
   - title: The Red Brick House
     company: University of York
     date: May 2025
     role: Director
-    collaborator_title: ""
-    collaborator_name: ""
+    producer: Producer to be confirmed
   - title: LPCUWC Vision 2052 Promo
     company: Li Po Chun United World College
     date: Feb 2025
-    role: Director/ Camera Operator/ Editor
-    collaborator_title: ""
-    collaborator_name: ""
+    role: Director/ Cinematographer/ Editor/ Colourist
+    producer: Producer to be confirmed
   - title: A Taste of Japan
     company: Personal Project
     date: Jan 2025
-    role: Producer/ Director/ Camera Operator/Editor
-    collaborator_title: Producer
-    collaborator_name: Bob Tsang
+    role: Director/ Cinematographer/ Editor/ Colourist
+    producer: Bob Tsang
   - title: I Cycled 800km Across Japan
     company: Personal Project
     date: Dec 2024
-    role: Producer/ Director/ Camera Operator/ Editor
-    collaborator_title: Producer
-    collaborator_name: Bob Tsang
+    role: Director/ Cinematographer/ Editor/ Colourist
+    producer: Bob Tsang
   - title: Duffy and Friends Friendversary Social Media Videos
     company: Hong Kong Disneyland
     date: Aug 2024
-    role: Camera Operator/ Editor
-    collaborator_title: ""
-    collaborator_name: ""
+    role: Cinematographer/ Editor/ Colourist
+    producer: Producer to be confirmed
   - title: 2024 Christmas Social Media Promos
     company: Hong Kong Disneyland
     date: Aug 2024
     role: Production Assistant/ Escort
-    collaborator_title: ""
-    collaborator_name: ""
+    producer: Producer to be confirmed
   - title: 2024 Halloween TVC
     company: Hong Kong Disneyland
     date: Aug 2024
     role: Production Assistant/ Escort
-    collaborator_title: ""
-    collaborator_name: ""
+    producer: Producer to be confirmed
   - title: Mong Kok at Night
     company: Personal Project
     date: Jan 2024
-    role: Producer/ Director/ Camera Operator/ Editor
-    collaborator_title: Producer
-    collaborator_name: Bob Tsang
+    role: Director/ Cinematographer/ Editor/ Colourist
+    producer: Bob Tsang
   - title: Vinson 4892
     company: Personal Project
     date: Jan 2024
-    role: Producer/ Director/ Camera Operator/ Editor
-    collaborator_title: Producer
-    collaborator_name: Bob Tsang
+    role: Director/ Cinematographer/ Editor/ Colourist
+    producer: Bob Tsang
   - title: In My Life
     company: University of York
     date: Jan 2024
-    role: Director/ Writer/ Editor
-    collaborator_title: ""
-    collaborator_name: ""
+    role: Director/ Writer/ Editor/ Colourist
+    producer: Producer to be confirmed
   - title: What Climbing Mount Fuji is Like
     company: Personal Project
     date: Aug 2023
-    role: Producer/ Director/ Camera Operator/ Editor
-    collaborator_title: Producer
-    collaborator_name: Bob Tsang
+    role: Director/ Cinematographer/ Editor/ Colourist
+    producer: Bob Tsang
   - title: I.SWIM
     company: Makerville
     date: Oct 2021
     role: Production Assistant/ Camera Trainee
-    collaborator_title: ""
-    collaborator_name: ""
+    producer: Producer to be confirmed
 credits_footer: "and more..."
 ---
 
