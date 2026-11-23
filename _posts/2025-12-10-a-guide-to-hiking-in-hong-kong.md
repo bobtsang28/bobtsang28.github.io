@@ -36,7 +36,7 @@ Truth be told, a lot of hikes in Hong Kong are really just pleasant walks. Many 
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/post-5a.jpg" loading="lazy" alt="Is Mount Fuji in Winter Too Dangerous to Climb?">
+    <img src="/images/post-5a.jpg" loading="lazy" alt="A hilltop with radio masts silhouetted against the sunset">
   </div>
 </div>
 
@@ -48,7 +48,7 @@ One of the biggest regions to explore as a hiker is Sai Kung East Country Park, 
 
 For those seeking more challenging and technical climbs, spots like Kowloon Peak, Shek O, and the western side of Lantau Island also offer plenty of opportunities for scrambling and rock climbing.
 
-## What are the Hikes Like?
+## Recommended Hikes {#what-are-the-hikes-like-1}
 
 I’ve already shared a post about some of my personal favourite hikes in Hong Kong, but here are a few more that didn’t make the cut last time.
 
@@ -56,7 +56,7 @@ I’ve already shared a post about some of my personal favourite hikes in Hong K
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/post-5b.jpg" loading="lazy" alt="Is Mount Fuji in Winter Too Dangerous to Climb?">
+    <img src="/images/post-5b.jpg" loading="lazy" alt="A person on a rocky ledge overlooking Hong Kong and its harbour">
   </div>
 </div>
 
@@ -74,7 +74,7 @@ Located right next to the popular Wong Lung Stream, this is one of the many stre
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/post-5c.jpg" loading="lazy" alt="Is Mount Fuji in Winter Too Dangerous to Climb?">
+    <img src="/images/post-5c.jpg" loading="lazy" alt="A hiker overlooking the city and water from a rocky hilltop">
   </div>
 </div>
 
@@ -108,7 +108,7 @@ One of the best things about living in such a compact and dense city is how acce
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/post-5d.jpg" loading="lazy" alt="Is Mount Fuji in Winter Too Dangerous to Climb?">
+    <img src="/images/post-5d.jpg" loading="lazy" alt="An elevated concrete viaduct crossing wetlands">
   </div>
 </div>
 

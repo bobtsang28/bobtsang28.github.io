@@ -28,7 +28,7 @@ Dad quickly looked over to Mum, his eyes lit up.
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/post-4a.jpg" loading="lazy" alt="Is Mount Fuji in Winter Too Dangerous to Climb?">
+    <img src="/images/post-4a.jpg" loading="lazy" alt="People on a path beneath cable cars">
   </div>
 </div>
 
@@ -38,7 +38,7 @@ In total, I must have visited the trail at least thirty times that year, but it 
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/post-4b.jpg" loading="lazy" alt="Is Mount Fuji in Winter Too Dangerous to Climb?">
+    <img src="/images/post-4b.jpg" loading="lazy" alt="Cable cars above a wooded hillside">
   </div>
 </div>
 
@@ -58,7 +58,7 @@ Despite having heard about it countless times, I’d never actually been, mainly
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/post-4c.jpg" loading="lazy" alt="Is Mount Fuji in Winter Too Dangerous to Climb?">
+    <img src="/images/post-4c.jpg" loading="lazy" alt="A path leading to a marker on a coastal headland">
   </div>
 </div>
 
@@ -70,7 +70,7 @@ If you know the Sai Kung area, you probably know that less than an hour away fro
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/post-4d.jpg" loading="lazy" alt="Is Mount Fuji in Winter Too Dangerous to Climb?">
+    <img src="/images/post-4d.jpg" loading="lazy" alt="A trail winding along a mountain ridge">
   </div>
 </div>
 
@@ -86,7 +86,7 @@ I glanced over at a middle-aged man and his kid hauling backpacks almost twice t
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/post-4e.jpg" loading="lazy" alt="Is Mount Fuji in Winter Too Dangerous to Climb?">
+    <img src="/images/post-4e.jpg" loading="lazy" alt="A dry grassy ridge with a trail across the hills">
   </div>
 </div>
 
@@ -102,7 +102,7 @@ These days, as you get closer to the second and final peak, Lo Tin Teng, you’l
 
 <div class="gallery-box">
   <div class="gallery">
-    <img src="/images/post-4f.jpg" loading="lazy" alt="Is Mount Fuji in Winter Too Dangerous to Climb?">
+    <img src="/images/post-4f.jpg" loading="lazy" alt="A valley and town viewed from green hills at dusk">
   </div>
 </div>
 
