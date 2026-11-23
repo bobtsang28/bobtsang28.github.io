@@ -190,11 +190,21 @@
   img { max-width: 100%; height: auto; margin: 0 auto; }
   .gallery-box { margin: 32px 0; }
   .gallery { display: flex; flex-direction: column; gap: 24px; margin: 0; }
+  .gallery img { width: 100%; }
   .gallery img:not(:only-child) { width: 100%; max-width: 100%; margin: 0; }
   iframe { max-width: 100%; }
   table { display: block; max-width: 100%; overflow-x: auto; }
   .journal-wide { width: min(var(--journal-wide-width), calc(100vw - 48px)); max-width: none; margin-left: 50%; transform: translateX(-50%); }
   .journal-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+}
+
+@media only screen and (min-width: 760px) {
+  .journal-content > p {
+    text-align: justify;
+    text-align-last: left;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+  }
 }
 
 .journal-content > :first-child { margin-top: 0; }
