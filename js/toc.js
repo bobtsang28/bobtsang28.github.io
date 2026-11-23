@@ -81,13 +81,13 @@
     if (headings.length) activate(current);
   };
 
-  container.addEventListener("pointerenter", () => {
-    if (!finePointer.matches) return;
+  container.addEventListener("pointerenter", event => {
+    if (!finePointer.matches || event.pointerType === "touch") return;
     clearTimeout(closeTimer);
     openTimer = setTimeout(() => setOpen(true), 140);
   });
-  container.addEventListener("pointerleave", () => {
-    if (!finePointer.matches || pinned) return;
+  container.addEventListener("pointerleave", event => {
+    if (!finePointer.matches || event.pointerType === "touch" || pinned) return;
     clearTimeout(openTimer);
     closeTimer = setTimeout(() => {
       if (!container.contains(document.activeElement)) setOpen(false);
@@ -131,7 +131,7 @@
         block: "start"
       });
       activate(index);
-      if (!finePointer.matches || !pinned) {
+      if (event.pointerType === "touch" || !finePointer.matches || !pinned) {
         pinned = false;
         setOpen(false);
         restoringFocus = true;
