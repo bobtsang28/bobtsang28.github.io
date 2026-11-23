@@ -31,10 +31,12 @@
       </button>
     {% endfor %}
   </div>
+  <p class="page-navigation-link"><a href="{{ '/blog/' | relative_url }}">Read the journal</a></p>
 </section>
 
-<dialog class="photo-lightbox" aria-label="Photograph viewer">
+<dialog class="photo-lightbox photo-lightbox--screening" aria-label="Photograph viewer">
   <div class="photo-lightbox__controls">
+    <span class="photo-lightbox__counter" aria-live="polite" aria-atomic="true"></span>
     <button class="photo-lightbox__button photo-lightbox__previous" type="button" aria-label="Previous photograph">‹</button>
     <button class="photo-lightbox__button photo-lightbox__next" type="button" aria-label="Next photograph">›</button>
     <button class="photo-lightbox__button photo-lightbox__close" type="button" aria-label="Close photograph viewer">×</button>

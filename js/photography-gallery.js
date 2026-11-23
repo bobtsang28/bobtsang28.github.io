@@ -9,10 +9,12 @@
   const previous = lightbox.querySelector(".photo-lightbox__previous");
   const next = lightbox.querySelector(".photo-lightbox__next");
   const closeButton = lightbox.querySelector(".photo-lightbox__close");
+  const counter = lightbox.querySelector(".photo-lightbox__counter");
   let activeIndex = 0;
   let closing = false;
   let touchStart = null;
   let returnFocus = null;
+  let returnScroll = [0, 0];
   const closeDuration = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 220;
 
   if (!items.length) return;
@@ -69,12 +71,15 @@
     image.alt = source.alt;
     image.width = Number(source.getAttribute("width")) || 0;
     image.height = Number(source.getAttribute("height")) || 0;
+    counter.textContent = `${activeIndex + 1} / ${items.length}`;
   };
 
   const open = index => {
     returnFocus = items[index];
+    returnScroll = [window.scrollX, window.scrollY];
     showImage(index);
     lightbox.showModal();
+    document.documentElement.classList.add("photography-lightbox-open");
     requestAnimationFrame(() => lightbox.classList.add("is-visible"));
   };
 
@@ -106,7 +111,9 @@
     if (event.target === lightbox) close();
   });
   lightbox.addEventListener("close", () => {
-    returnFocus?.focus();
+    document.documentElement.classList.remove("photography-lightbox-open");
+    window.scrollTo({ left: returnScroll[0], top: returnScroll[1], behavior: "instant" });
+    returnFocus?.focus({ preventScroll: true });
     returnFocus = null;
     image.removeAttribute("src");
     imageSource.removeAttribute("srcset");

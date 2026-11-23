@@ -485,7 +485,7 @@
 .toggle-theme {
   --theme-position: 0;
   position: relative;
-  width: 56px;
+  width: 62px;
   height: 44px;
   color: #333;
   user-select: none;
@@ -514,13 +514,13 @@
 
   &::-webkit-slider-thumb {
     appearance: none;
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 30px;
   }
 
   &::-moz-range-thumb {
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 30px;
     border: 0;
   }
 }
@@ -531,13 +531,18 @@
 
   &::before {
     position: absolute;
-    top: 50%;
+    top: 7px;
     right: 0;
+    bottom: 7px;
     left: 0;
-    height: 1px;
-    background: #888;
+    border-radius: 15px;
+    background: #d3d3d3;
     content: "";
   }
+}
+
+.dark-mode .toggle-theme__track::before {
+  background: #383838;
 }
 
 .toggle-theme__input:focus-visible + .toggle-theme__track {
@@ -548,18 +553,28 @@
 .toggle-theme__handle {
   position: absolute;
   top: 50%;
-  left: calc(10px + 36px * var(--theme-position));
-  width: 20px;
-  height: 20px;
+  left: calc(16px + 30px * var(--theme-position));
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+  border-radius: 50%;
+  background: #303030;
+  color: #fff;
   transform: translate(-50%, -50%);
   pointer-events: none;
-  transition: left .23s ease;
+  transition: left .22s ease;
 
   svg {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 14px;
+    height: 14px;
   }
+}
+
+.dark-mode .toggle-theme__handle {
+  background: #eee;
+  color: #303030;
 }
 
 .toggle-theme__handle .toggle-sun,
@@ -576,12 +591,12 @@
 }
 
 body.disable-animation .toggle-theme:not(.is-dragging) .toggle-theme__handle {
-  transition: left .23s ease !important;
+  transition: left .22s ease !important;
 }
 
 @media (prefers-reduced-motion: reduce) {
   body .toggle-theme .toggle-theme__handle,
-  body.disable-animation .toggle-theme .toggle-theme__handle {
+  body.disable-animation .toggle-theme:not(.is-dragging) .toggle-theme__handle {
     transition: none !important;
   }
 }
