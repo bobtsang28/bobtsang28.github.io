@@ -27,12 +27,14 @@ After adding or replacing a project cover, run `python3 scripts/optimize_images.
 
 ### Publishing
 
-GitHub Pages must use the GitHub Actions source. The Pages workflow builds with Ruby 3.2.9 and the locked Bundler dependencies, then resizes legacy JPEGs **in the generated site only** to a maximum 2560-pixel long edge at JPEG quality 93. This keeps their URLs and source originals intact, but the published versions no longer provide their original full resolution. The workflow verifies Photography delivery assets and fails if the site exceeds 800 MiB.
+GitHub Pages must use the GitHub Actions source. The Pages workflow builds with Ruby 3.2.9 and the locked Bundler dependencies, then resizes legacy JPEGs **in the generated site only** to a maximum 2560-pixel long edge at JPEG quality 93. This keeps their URLs and source originals intact, but the published versions no longer provide their original full resolution. ExifTool removes image metadata from the generated site without recompressing pixels, retaining color profiles, orientation and copyright/credit fields. The workflow verifies Photography delivery assets and fails if the site exceeds 800 MiB. Metadata and full-resolution images already committed to the public repository or its history remain accessible there; the publishing step cannot remove them from Git.
 
-To reproduce the published build on macOS, build into a disposable directory and run:
+To reproduce the published build on macOS, install ExifTool 13.64, build into a disposable directory and run:
 
 ```sh
 bundle exec jekyll build --destination /tmp/portfolio-site
 python3 scripts/optimize_published_images.py /tmp/portfolio-site
 bundle exec ruby scripts/verify_photography.rb /tmp/portfolio-site
 ```
+
+The workflow pins Actions and ExifTool to upstream commit SHAs. When updating them, verify the release or maintained tag against the official repository, update the corresponding SHA and version comment in the workflow, and test the build and deployment before relying on the new version.

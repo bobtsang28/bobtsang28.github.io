@@ -11,7 +11,7 @@ tags:   [cycling, bikepacking, japan, travel]
   <a href="https://filmmakingbob.substack.com/p/completing-japans-subtropical-paradise" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 12px 24px; background-color: #a0d149; color: #181818; text-decoration: none; border-radius: 4px; font-weight: 700; font-family: 'Inter', Helvetica Neue, Helvetica, Arial, sans-serif;">Read on Substack</a>
 </div>
 
-This is part two of my cycling trip across Okinawa back in 2015. If you haven’t checked out the first part, you can find it <a href="/2026/01/06/cycling-across-japans-subtropical-paradise/"><strong><u>here</u></strong></a>.
+This is part two of my cycling trip across Okinawa back in 2015. If you haven’t checked out the first part, you can find it <a href="/blog/cycling-across-japans-subtropical-paradise"><strong><u>here</u></strong></a>.
 
 ## The Land of The Forgotten
 

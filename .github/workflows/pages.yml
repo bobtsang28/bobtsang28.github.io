@@ -7,8 +7,6 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: pages
@@ -18,25 +16,40 @@ jobs:
   build:
     runs-on: macos-15
     steps:
-      - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: ruby/setup-ruby@be3c7df29b3349ec6bcfc6b4792f1cf9f5237d18 # v1
         with:
           ruby-version: '3.2.9'
           bundler-cache: true
       - run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
+      - run: python3 -m unittest discover -s scripts/tests -v
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          repository: exiftool/exiftool
+          ref: 3d7a0538324e9b04aa8930201b007009491321d2 # 13.64
+          path: _build_tools/exiftool
+          persist-credentials: false
       - run: python3 scripts/optimize_published_images.py _site
+        env:
+          EXIFTOOL: ${{ github.workspace }}/_build_tools/exiftool/exiftool
       - run: bundle exec ruby scripts/verify_photography.rb _site
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         with:
           path: _site
   deploy:
+    if: github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

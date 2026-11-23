@@ -2,8 +2,10 @@
 """Resize legacy JPEGs in a generated Jekyll site, never in the source tree."""
 
 import concurrent.futures
+import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
@@ -44,6 +46,54 @@ def optimize(path):
     return True
 
 
+def strip_metadata(images, exiftool):
+    paths = [p for p in images.rglob("*")
+             if p.is_file() and p.suffix.lower() in (".jpg", ".jpeg", ".png", ".avif")]
+    if not paths:
+        raise RuntimeError("No published images found for metadata cleanup")
+
+    with tempfile.TemporaryDirectory(dir=images.parent) as directory:
+        replacements = []
+        inputs = []
+        for path in paths:
+            with path.open("rb") as image:
+                is_png = image.read(8) == b"\x89PNG\r\n\x1a\n"
+            if is_png and path.suffix.lower() != ".png":
+                temporary = Path(directory) / f"{len(replacements)}.png"
+                shutil.copy2(path, temporary)
+                replacements.append((temporary, path))
+                inputs.append(temporary)
+            else:
+                inputs.append(path)
+
+        input_names = [str(path) for path in inputs]
+        subprocess.run(
+            [exiftool, "-overwrite_original", "-all=", "--ICC_Profile:all",
+             "-tagsFromFile", "@", "-Orientation", "-ColorSpaceTags",
+             "-Copyright", "-Creator", "-Rights", "-Credit",
+             *input_names],
+            check=True,
+        )
+        result = subprocess.run(
+            [exiftool, "-json", "-GPS*", "-Serial*", "-BodySerialNumber",
+             "-CameraSerialNumber", "-InternalSerialNumber", "-LensSerialNumber",
+             "-OwnerName", "-CameraOwnerName", "-CreatorContactInfo", *input_names],
+            check=True, stdout=subprocess.PIPE, text=True,
+        )
+        metadata = json.loads(result.stdout)
+        if {item["SourceFile"] for item in metadata} != set(input_names):
+            raise RuntimeError("Could not verify metadata for every published image")
+        for item in metadata:
+            tags = [key for key in item if key != "SourceFile"]
+            if tags:
+                raise RuntimeError(f"Private metadata remains in {item['SourceFile']}: "
+                                   f"{', '.join(tags)}")
+        for temporary, path in replacements:
+            temporary.replace(path)
+
+    return len(paths)
+
+
 def main():
     if len(sys.argv) != 2:
         raise RuntimeError("Usage: python3 scripts/optimize_published_images.py SITE_DIRECTORY")
@@ -58,8 +108,10 @@ def main():
     with concurrent.futures.ThreadPoolExecutor(max_workers=2) as executor:
         resized = sum(executor.map(optimize, originals))
 
+    cleaned = strip_metadata(images, os.environ.get("EXIFTOOL", "exiftool"))
     total = sum(p.stat().st_size for p in site.rglob("*") if p.is_file())
-    print(f"Optimized {resized} legacy JPEGs; published site: {total / 1024**2:.1f} MiB")
+    print(f"Optimized {resized} legacy JPEGs and cleaned metadata from {cleaned} images; "
+          f"published site: {total / 1024**2:.1f} MiB")
     if total > MAX_SITE_BYTES:
         raise RuntimeError(f"Published site exceeds the {MAX_SITE_BYTES // 1024**2} MiB safety limit")
 
