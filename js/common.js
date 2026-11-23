@@ -69,11 +69,42 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function menuOpen() {
     menuList.classList.add("is-open");
+    menuOpenIcon.setAttribute("aria-expanded", "true");
+    menuCloseIcon.focus();
   }
 
   function menuClose() {
     menuList.classList.remove("is-open");
+    menuOpenIcon.setAttribute("aria-expanded", "false");
+    menuOpenIcon.focus();
   }
+
+  document.querySelectorAll(".nav__item.dropdown").forEach(dropdown => {
+    const trigger = dropdown.querySelector(".dropdown-toggle");
+    const setOpen = open => {
+      dropdown.classList.toggle("is-open", open);
+      trigger.setAttribute("aria-expanded", String(open));
+    };
+    trigger.addEventListener("click", () => setOpen(!dropdown.classList.contains("is-open")));
+    dropdown.addEventListener("pointerenter", event => {
+      if (event.pointerType === "mouse") setOpen(true);
+    });
+    dropdown.addEventListener("pointerleave", event => {
+      if (event.pointerType === "mouse" && !dropdown.contains(document.activeElement)) setOpen(false);
+    });
+    dropdown.addEventListener("focusout", event => {
+      if (!dropdown.contains(event.relatedTarget) && !dropdown.matches(":hover")) setOpen(false);
+    });
+    dropdown.addEventListener("keydown", event => {
+      if (event.key === "Escape") {
+        setOpen(false);
+        trigger.focus();
+      }
+    });
+  });
+  menuList.addEventListener("keydown", event => {
+    if (event.key === "Escape" && menuList.classList.contains("is-open")) menuClose();
+  });
 
   if (toggleTheme) {
     toggleTheme.addEventListener("click", () => {

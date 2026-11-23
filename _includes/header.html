@@ -14,18 +14,18 @@
           </a>
         </div>
 
-        <nav class="main-nav">
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
           <div class="main-nav__box">
-            <div class="nav__icon-close">
-              <i class="fa-solid fa-xmark"></i>
-            </div>
+            <button class="nav__icon-close" type="button" aria-label="Close menu">
+              <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+            </button>
             <div class="nav__title">Menu</div>
             <ul class="nav__list list-reset">
 
               {% for item in site.data.settings.menu__settings.menu__items %}
                 {% if item.submenu %}
                 <li class="nav__item dropdown">
-                  <span class="nav__link dropdown-toggle">{{ item.title }} <i class="fa-solid fa-chevron-down arrow-down"></i></span>
+                  <button class="nav__link dropdown-toggle" type="button" aria-expanded="false">{{ item.title }} <i class="fa-solid fa-chevron-down arrow-down" aria-hidden="true"></i></button>
                   <div class="dropdown-menu">
                     {% for submenu-item in item.submenu %}
                       <a href="{{ submenu-item.url }}" class="nav__link{% if page.url == submenu-item.url %} active-link{% endif %}">{{submenu-item.title}}</a>
@@ -43,8 +43,7 @@
         </nav>
 
         <div class="nav-button">
-          <!-- <i class="nav__icon icon__menu ion ion-md-menu"></i> -->
-          <i class="nav__icon icon__menu fa-solid fa-bars"></i>
+          <button class="nav__icon icon__menu" type="button" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
 
           {% if site.data.settings.color_scheme == "auto" %}
           <div class="toggle-theme toggle-theme-js">

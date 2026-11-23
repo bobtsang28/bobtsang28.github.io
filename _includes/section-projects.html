@@ -14,7 +14,7 @@
 
           <div class="row projects__gallery" role="region" aria-labelledby="selected-works-heading" tabindex="0">
             {% assign sorted = site.projects | sort: 'date' | reverse %}
-            {% for project in sorted %}
+            {% for project in sorted limit: 6 %}
             <article class="project col col-4 col-d-6 col-t-12">
               <div class="project__content">
                 <a href="{{ project.url }}" class="project__image">

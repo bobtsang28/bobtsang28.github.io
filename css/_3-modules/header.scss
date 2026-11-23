@@ -124,6 +124,7 @@
 
         .dropdown-menu {
           position: relative;
+          top: 0;
           left: 0;
           padding: 0;
           opacity: 1;
@@ -211,6 +212,7 @@
     color: var(--heading-font-color);
     background: var(--background-alt-color);
     cursor: pointer;
+    border: 0;
 
     &:hover {
       .fa-xmark {
@@ -319,7 +321,7 @@
     &.dropdown {
       position: relative;
 
-      &:hover {
+      &.is-open {
         .dropdown-menu {
           opacity: 1;
           visibility: visible;
@@ -334,6 +336,8 @@
       .dropdown-toggle {
         color: var(--link-color);
         cursor: pointer;
+        background: none;
+        border: 0;
 
         &::before {
           content: none;
@@ -359,6 +363,15 @@
     border-radius: 8px;
     box-shadow: 0 15px 40px 5px rgba(20, 20, 20, 0.07);
     background-color: var(--background-color);
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      height: 8px;
+    }
 
     .nav__link {
       position: relative;
@@ -434,6 +447,10 @@
   .icon__menu {
     display: none;
     margin-right: 20px;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
     font-size: 20px;
     cursor: pointer;
   }
@@ -455,6 +472,13 @@
       display: block;
     }
   }
+}
+
+.main-nav button:focus-visible,
+.main-nav a:focus-visible,
+.nav-button button:focus-visible {
+  outline: 2px solid var(--brand-color);
+  outline-offset: 4px;
 }
 
 /* Toggle Theme */

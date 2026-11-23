@@ -55,7 +55,24 @@ layout: default
     {{ content }}
   </div>
 
-  {% if page.previous.url %}
+  {% assign projects = site.projects | sort: 'date' | reverse %}
+  {% for project in projects %}
+    {% if project.url == page.url %}
+      {% assign current_project = project %}
+      {% assign previous_index = forloop.index0 | minus: 1 %}
+      {% assign next_index = forloop.index0 | plus: 1 %}
+      {% if forloop.first == false %}{% assign previous_project = projects[previous_index] %}{% endif %}
+      {% unless forloop.last %}{% assign next_project = projects[next_index] %}{% endunless %}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+  {% if current_project %}
+  <nav class="project__nav project__nav--compact" aria-label="Project navigation">
+    {% if previous_project %}<a href="{{ previous_project.url | relative_url }}" aria-label="Previous project: {{ previous_project.title | escape }}">← Previous</a>{% else %}<span></span>{% endif %}
+    <a href="{{ '/projects/' | relative_url }}">All projects</a>
+    {% if next_project %}<a href="{{ next_project.url | relative_url }}" aria-label="Next project: {{ next_project.title | escape }}">Next →</a>{% else %}<span></span>{% endif %}
+  </nav>
+  {% elsif page.previous.url %}
   <div class="project__nav animate">
     <a class="project__prev" href="{{page.previous.url}}">
       <div class="project__box">
