@@ -107,38 +107,71 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   if (toggleTheme) {
-    toggleTheme.addEventListener("click", () => {
-      darkMode();
-    });
-  };
+    const slider = toggleTheme.closest(".toggle-theme");
+    let pointerStart;
+    let disableTransition;
 
-
-  // Theme Switcher
-  function darkMode() {
-    if (html.classList.contains('dark-mode')) {
-      html.classList.remove('dark-mode');
-      html.classList.add('light-mode');
-      localStorage.setItem("theme", "light");
-      document.documentElement.removeAttribute("dark");
-      document.documentElement.setAttribute("light", "");
-    } else {
-      html.classList.remove('light-mode');
-      html.classList.add('dark-mode');
-      localStorage.setItem("theme", "dark");
-      document.documentElement.removeAttribute("light");
-      document.documentElement.setAttribute("dark", "");
+    function showPosition(value) {
+      slider.style.setProperty("--theme-position", value / 100);
     }
-  }
 
-
-  /* ================================================================
-  // Stop Animations During Window Resizing and Switching Theme Modes
-  ================================================================ */
-  let disableTransition;
-
-  if (toggleTheme) {
-    toggleTheme.addEventListener("click", () => {
+    function setTheme(theme) {
       stopAnimation();
+      html.classList.toggle("dark-mode", theme === "dark");
+      html.classList.toggle("light-mode", theme === "light");
+      html.removeAttribute(theme === "dark" ? "light" : "dark");
+      html.setAttribute(theme, "");
+      localStorage.setItem("theme", theme);
+      toggleTheme.value = theme === "light" ? "100" : "0";
+      toggleTheme.setAttribute("aria-valuetext", theme === "light" ? "Light" : "Dark");
+      showPosition(Number(toggleTheme.value));
+    }
+
+    toggleTheme.value = html.classList.contains("light-mode") ? "100" : "0";
+    toggleTheme.setAttribute("aria-valuetext", toggleTheme.value === "100" ? "Light" : "Dark");
+    showPosition(Number(toggleTheme.value));
+
+    toggleTheme.addEventListener("pointerdown", event => {
+      pointerStart = { x: event.clientX, value: toggleTheme.value };
+    });
+    toggleTheme.addEventListener("pointermove", event => {
+      if (pointerStart && Math.abs(event.clientX - pointerStart.x) >= 4) {
+        slider.classList.add("is-dragging");
+      }
+    });
+    toggleTheme.addEventListener("input", () => {
+      showPosition(Number(toggleTheme.value));
+    });
+    toggleTheme.addEventListener("pointerup", event => {
+      slider.classList.remove("is-dragging");
+      if (pointerStart && Math.abs(event.clientX - pointerStart.x) < 4 &&
+          toggleTheme.value === pointerStart.value) {
+        setTheme(html.classList.contains("dark-mode") ? "light" : "dark");
+      }
+      pointerStart = null;
+    });
+    toggleTheme.addEventListener("pointercancel", () => {
+      pointerStart = null;
+      slider.classList.remove("is-dragging");
+      toggleTheme.value = html.classList.contains("light-mode") ? "100" : "0";
+      showPosition(Number(toggleTheme.value));
+    });
+    toggleTheme.addEventListener("change", () => {
+      setTheme(Number(toggleTheme.value) >= 50 ? "light" : "dark");
+    });
+    toggleTheme.addEventListener("keydown", event => {
+      let theme;
+      if (event.key === "ArrowRight" || event.key === "ArrowUp" || event.key === "End") {
+        theme = "light";
+      } else if (event.key === "ArrowLeft" || event.key === "ArrowDown" || event.key === "Home") {
+        theme = "dark";
+      } else if (event.key === " " || event.key === "Enter") {
+        theme = html.classList.contains("dark-mode") ? "light" : "dark";
+      } else {
+        return;
+      }
+      event.preventDefault();
+      setTheme(theme);
     });
 
     window.addEventListener("resize", () => {

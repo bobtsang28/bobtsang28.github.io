@@ -44,7 +44,7 @@
 }
 
 .content {
-  padding-top: 148px;
+  padding-top: 164px;
 
   @media only screen and (max-width: $desktop) {
     padding-top: 124px;
@@ -483,56 +483,105 @@
 
 /* Toggle Theme */
 .toggle-theme {
+  --theme-position: 0;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
+  width: 56px;
   height: 44px;
-  border-radius: 50%;
+  color: #333;
   user-select: none;
-  cursor: pointer;
-  background: var(--background-alt-color);
-
-  &.theme-light {
-    transform: none;
-    cursor: auto;
-
-    .toggle-sun {
-      display: block;
-    }
-  }
-
-  &.theme-dark {
-    transform: none;
-    cursor: auto;
-
-    .toggle-moon {
-      display: block;
-    }
-  }
 }
 
-.toggle-sun,
-.toggle-moon {
+.light-mode .toggle-theme {
+  --theme-position: 1;
+}
+
+.dark-mode .toggle-theme {
+  color: #eee;
+}
+
+.toggle-theme__input {
   position: absolute;
-  font-size: 20px;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  appearance: none;
+  background: transparent;
+  opacity: 0;
+  cursor: pointer;
+  touch-action: pan-y;
 
-  &:hover {
-    color: var(--link-color);
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+  }
+
+  &::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 0;
   }
 }
 
-.toggle-sun {
+.toggle-theme__track {
+  position: absolute;
+  inset: 0;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background: #888;
+    content: "";
+  }
+}
+
+.toggle-theme__input:focus-visible + .toggle-theme__track {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.toggle-theme__handle {
+  position: absolute;
+  top: 50%;
+  left: calc(10px + 36px * var(--theme-position));
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: left .23s ease;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.toggle-theme__handle .toggle-sun,
+.light-mode .toggle-theme__handle .toggle-moon {
   display: none;
 }
 
-.dark-mode {
-  .toggle-sun {
-    display: block;
-  }
+.light-mode .toggle-theme__handle .toggle-sun {
+  display: block;
+}
 
-  .toggle-moon {
-    display: none;
+.toggle-theme.is-dragging .toggle-theme__handle {
+  transition: none;
+}
+
+body.disable-animation .toggle-theme:not(.is-dragging) .toggle-theme__handle {
+  transition: left .23s ease !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body .toggle-theme .toggle-theme__handle,
+  body.disable-animation .toggle-theme .toggle-theme__handle {
+    transition: none !important;
   }
 }

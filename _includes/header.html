@@ -45,66 +45,24 @@
         <div class="nav-button">
           <button class="nav__icon icon__menu" type="button" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
 
-          {% if site.data.settings.color_scheme == "auto" %}
-          <div class="toggle-theme toggle-theme-js">
-            <div class="toggle-moon" title="Enable dark mode">
-              <svg width="14" height="14" viewBox="0 0 1472 1536" xmlns="http://www.w3.org/2000/svg">
+          <div class="toggle-theme">
+            {% unless site.data.settings.color_scheme == "light" or site.data.settings.color_scheme == "dark" %}
+            <input class="toggle-theme__input toggle-theme-js" type="range" min="0" max="100" step="1" value="0" aria-label="Color theme" aria-valuetext="Dark">
+            {% endunless %}
+            <span class="toggle-theme__track" aria-hidden="true"></span>
+            <span class="toggle-theme__handle" aria-hidden="true">
+              <svg class="toggle-moon" viewBox="0 0 1472 1536" xmlns="http://www.w3.org/2000/svg">
                 <path fill="currentColor" d="M1464 1090q-94 203-283 323.5T768 1536q-157-1-299-62t-244.5-163.5T61 1066T0 768q0-205 97.5-378t267-276.5T738 2q43-2 62 38q17 42-16 72q-176 164-176 400q0 111 43 211.5t115 173t172.5 116T1151 1056q119 0 228-51q41-18 72 13t13 72"/>
               </svg>
-            </div>
-            <div class="toggle-sun" title="Enable light mode">
-              <svg width="15" height="15" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <svg class="toggle-sun" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
-                  <path stroke-linecap="round"
-                    d="m9.15 9.15l2.228 2.228M3 24h3.15m3 14.85l2.228-2.228M38.85 38.85l-2.228-2.228M45 24h-3.15m-3-14.85l-2.228 2.228M24 3v3.15" />
+                  <path stroke-linecap="round" d="m9.15 9.15l2.228 2.228M3 24h3.15m3 14.85l2.228-2.228M38.85 38.85l-2.228-2.228M45 24h-3.15m-3-14.85l-2.228 2.228M24 3v3.15" />
                   <path fill="currentColor" d="M24 36c6.627 0 12-5.373 12-12s-5.373-12-12-12s-12 5.373-12 12s5.373 12 12 12Z" />
                   <path stroke-linecap="round" d="M24 45v-3.15" />
                 </g>
               </svg>
-            </div>
+            </span>
           </div>
-          {% elsif site.data.settings.color_scheme == "light" %}
-          <div class="toggle-theme theme-light">
-            <div class="toggle-sun" title="Light mode">
-              <svg width="15" height="15" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
-                  <path stroke-linecap="round"
-                    d="m9.15 9.15l2.228 2.228M3 24h3.15m3 14.85l2.228-2.228M38.85 38.85l-2.228-2.228M45 24h-3.15m-3-14.85l-2.228 2.228M24 3v3.15" />
-                  <path fill="currentColor" d="M24 36c6.627 0 12-5.373 12-12s-5.373-12-12-12s-12 5.373-12 12s5.373 12 12 12Z" />
-                  <path stroke-linecap="round" d="M24 45v-3.15" />
-                </g>
-              </svg>
-            </div>
-          </div>
-          {% elsif site.data.settings.color_scheme == "dark" %}
-          <div class="toggle-theme theme-dark">
-            <div class="toggle-moon" title="Dark mode">
-              <svg width="14" height="14" viewBox="0 0 1472 1536" xmlns="http://www.w3.org/2000/svg">
-                <path fill="currentColor"
-                  d="M1464 1090q-94 203-283 323.5T768 1536q-157-1-299-62t-244.5-163.5T61 1066T0 768q0-205 97.5-378t267-276.5T738 2q43-2 62 38q17 42-16 72q-176 164-176 400q0 111 43 211.5t115 173t172.5 116T1151 1056q119 0 228-51q41-18 72 13t13 72" />
-              </svg>
-            </div>
-          </div>
-          {% else %}
-          <div class="toggle-theme toggle-theme-js">
-            <div class="toggle-moon" title="Enable dark mode">
-              <svg width="14" height="14" viewBox="0 0 1472 1536" xmlns="http://www.w3.org/2000/svg">
-                <path fill="currentColor"
-                  d="M1464 1090q-94 203-283 323.5T768 1536q-157-1-299-62t-244.5-163.5T61 1066T0 768q0-205 97.5-378t267-276.5T738 2q43-2 62 38q17 42-16 72q-176 164-176 400q0 111 43 211.5t115 173t172.5 116T1151 1056q119 0 228-51q41-18 72 13t13 72" />
-              </svg>
-            </div>
-            <div class="toggle-sun" title="Enable light mode">
-              <svg width="15" height="15" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4">
-                  <path stroke-linecap="round"
-                    d="m9.15 9.15l2.228 2.228M3 24h3.15m3 14.85l2.228-2.228M38.85 38.85l-2.228-2.228M45 24h-3.15m-3-14.85l-2.228 2.228M24 3v3.15" />
-                  <path fill="currentColor" d="M24 36c6.627 0 12-5.373 12-12s-5.373-12-12-12s-12 5.373-12 12s5.373 12 12 12Z" />
-                  <path stroke-linecap="round" d="M24 45v-3.15" />
-                </g>
-              </svg>
-            </div>
-          </div>
-          {% endif %}
         </div>
 
       </div>
