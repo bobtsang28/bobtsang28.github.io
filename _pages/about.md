@@ -7,15 +7,8 @@ permalink: /about/
 image: '/images/01-2.jpg'
 credits:
   - title: The Weight We Share
-    company: Mini-documentary
+    company: Personal Project
     date: In post-production
-    role: Director/ Cinematographer/ Editor/ Colourist
-    producers:
-      - name: Bob Tsang
-        url: https://www.instagram.com/filmmaking_bob/
-  - title: The Shape of Life
-    company: Mini-documentary
-    date: Sep 2026
     role: Director/ Cinematographer/ Editor/ Colourist
     producers:
       - name: Bob Tsang
@@ -28,7 +21,7 @@ credits:
       - name: Jeremy Joyce
         url: https://jp.linkedin.com/in/jeremy-joyce-097901111
   - title: When Metal Meets the Shamisen
-    company: Mini-documentary
+    company: Personal Project
     date: Mar 2026
     role: Director/ Cinematographer/ Editor/ Colourist
     producers:
