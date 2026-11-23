@@ -8,10 +8,9 @@
       {% endif %}
     </div>
     <div class="journal-card__text">
-      <p class="journal-card__meta">{{ post.tags.first | escape }} <span aria-hidden="true">·</span> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>{% if include.featured %} <span aria-hidden="true">·</span> {% include blog-reading-time.html post=post %}{% endif %}</p>
+      <p class="journal-card__meta">{{ post.tags.first | escape }} <span aria-hidden="true">·</span> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time> <span aria-hidden="true">·</span> {% include blog-reading-time.html post=post %}</p>
       <h2 class="journal-card__title"><span class="journal-card__title-text">{{ post.title | escape }}</span></h2>
       {% if post.description %}<p class="journal-card__excerpt">{{ post.description | escape }}</p>{% endif %}
-      {% unless include.featured %}<p class="journal-card__reading">{% include blog-reading-time.html post=post %}</p>{% endunless %}
     </div>
   </a>
 </article>

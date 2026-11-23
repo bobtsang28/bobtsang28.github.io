@@ -21,10 +21,9 @@ layout: default
 <div class="journal-post">
   <header class="journal-post__header">
     <a class="journal-back" href="{{ '/blog/' | relative_url }}">← Back to Blog</a>
-    {% if page.tags.size > 0 %}<p class="journal-post__category">{{ page.tags.first | escape }}</p>{% endif %}
+    {% if page.tags.size > 0 or series %}<p class="journal-post__category">{% if page.tags.size > 0 %}{{ page.tags.first | escape }}{% endif %}{% if series %}{% if page.tags.size > 0 %} · {% endif %}{{ series.name | escape }} — Part {{ series.part }} of 2{% endif %}</p>{% endif %}
     <h1 class="journal-post__title">{{ page.title | escape }}</h1>
     {% if page.subtitle %}<p class="journal-post__subtitle">{{ page.subtitle | escape }}</p>{% elsif page.description %}<p class="journal-post__subtitle">{{ page.description | escape }}</p>{% endif %}
-    {% if series %}<p class="journal-series">{{ series.name | escape }} · Part {{ series.part }} of 2</p>{% endif %}
     <p class="journal-post__meta"><a href="{{ '/about/' | relative_url }}">{{ site.data.settings.author.author__name | escape }}</a> · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time> · {% include blog-reading-time.html post=page %}</p>
     {% include blog-share.html %}
   </header>
