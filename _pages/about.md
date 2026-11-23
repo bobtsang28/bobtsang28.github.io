@@ -14,7 +14,7 @@ credits:
       - name: Bob Tsang
         url: https://www.instagram.com/filmmaking_bob/
   - title: G-Shock Global Campaign
-    company: Commercial
+    company: Casio
     date: Jul 2026
     role: Production Assistant
     producers:
