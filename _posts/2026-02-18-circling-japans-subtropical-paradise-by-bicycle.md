@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  Circling Japan’s Subtropical Paradise by Bicycle
-description: How I cycled 500 km across the island of Okinawa (Part 2)
-subtitle: How I cycled 500 km across the island of Okinawa
+description: How I cycled 500 km across the island of Okinawa — Part 2
 date:   2026-02-18
 image:  '/images/post-7.jpg'
 tags:   [cycling, bikepacking, japan, travel]
