@@ -19,14 +19,34 @@ description: From travel guides to fun anecdotes, I regularly publish posts refl
   </div>
 </div>
 
-<div class="container animate">
-  <div class="row">
-    {% if site.posts.size > 0 %}
-      {% for post in paginator.posts offset:0 %}
-        {% include article.html %}
-      {% endfor %}
+{% assign journal_page = paginator.page | default: 1 %}
+{% assign journal_page_size = 10 %}
+{% assign journal_page_count = site.posts.size | minus: 1 | divided_by: journal_page_size | plus: 1 %}
+{% assign journal_offset = journal_page | minus: 1 | times: journal_page_size %}
+{% if journal_page > journal_page_count %}
+  <meta http-equiv="refresh" content="0; url={{ '/blog/' | relative_url }}">
+  <p class="journal-redirect">This archive has moved. <a href="{{ '/blog/' | relative_url }}">Return to the Blog</a>.</p>
+{% else %}
+  <div class="journal-index">
+    {% for post in site.posts limit: journal_page_size offset: journal_offset %}
+      {% if journal_page == 1 and forloop.first %}
+        {% include blog-card.html featured=true %}
+        <div class="journal-archive">
+      {% else %}
+        {% if journal_page != 1 and forloop.first %}<div class="journal-archive">{% endif %}
+        {% include blog-card.html %}
+      {% endif %}
+      {% if forloop.last %}</div>{% endif %}
+    {% endfor %}
+    {% if journal_page_count > 1 %}
+    <nav class="journal-pagination" aria-label="Blog pages">
+      {% if journal_page > 1 %}
+        {% assign previous_page = journal_page | minus: 1 %}
+        {% if previous_page == 1 %}<a href="{{ '/blog/' | relative_url }}">← Newer articles</a>{% else %}<a href="{{ '/blog/page/' | append: previous_page | append: '/' | relative_url }}">← Newer articles</a>{% endif %}
+      {% endif %}
+      <span>Page {{ journal_page }} of {{ journal_page_count }}</span>
+      {% if journal_page < journal_page_count %}{% assign next_page = journal_page | plus: 1 %}<a href="{{ '/blog/page/' | append: next_page | append: '/' | relative_url }}">Older articles →</a>{% endif %}
+    </nav>
     {% endif %}
   </div>
-</div>
-
-{% include pagination.html %}
+{% endif %}

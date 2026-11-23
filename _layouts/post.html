@@ -2,100 +2,93 @@
 layout: default
 ---
 
-<div class="post-head">
-  <div class="container">
-    <div class="row">
+{% assign series = site.data.blog_series[page.url] %}
+{% assign article_body = content %}
+{% assign first_block = content | split: '</div>' | first %}
+{% if first_block contains 'filmmakingbob.substack.com/p/' %}
+  {% assign substack_url = first_block | split: 'href="' | last | split: '"' | first %}
+  {% assign first_block_html = first_block | append: '</div>' %}
+  {% assign article_body = article_body | remove_first: first_block_html %}
+{% endif %}
+{% for entry in site.data.blog_variants %}
+  {% assign image = entry[1] %}
+  {% assign full_width = image.full_width | append: '' %}
+  {% capture original_src %}src="{{ entry[0] }}"{% endcapture %}
+  {% capture responsive_src %}src="{{ image.jpeg[full_width] | relative_url }}?v={{ image.version }}" srcset="{% for variant in image.jpeg %}{{ variant[1] | relative_url }}?v={{ image.version }} {{ variant[0] }}w{% unless forloop.last %}, {% endunless %}{% endfor %}" sizes="(max-width: 728px) calc(100vw - 48px), 680px" width="{{ image.width }}" height="{{ image.height }}" data-blog-full="{{ image.jpeg[full_width] | relative_url }}?v={{ image.version }}"{% endcapture %}
+  {% assign article_body = article_body | replace: original_src, responsive_src %}
+{% endfor %}
 
-      <div class="col col-12">
-        <div class="post-info">
+<div class="journal-progress" aria-hidden="true"><div class="journal-progress__bar"></div></div>
+<div class="journal-post">
+  <header class="journal-post__header">
+    <a class="journal-back" href="{{ '/blog/' | relative_url }}">← Back to Blog</a>
+    {% if page.tags.size > 0 %}<p class="journal-post__category">{{ page.tags.first | escape }}</p>{% endif %}
+    <h1 class="journal-post__title">{{ page.title | escape }}</h1>
+    {% if page.subtitle %}<p class="journal-post__subtitle">{{ page.subtitle | escape }}</p>{% elsif page.description %}<p class="journal-post__subtitle">{{ page.description | escape }}</p>{% endif %}
+    {% if series %}<p class="journal-series">{{ series.name | escape }} · Part {{ series.part }} of 2</p>{% endif %}
+    <p class="journal-post__meta"><a href="{{ '/about/' | relative_url }}">{{ site.data.settings.author.author__name | escape }}</a> · <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time> · {% include blog-reading-time.html post=page %}</p>
+    {% include blog-share.html %}
+  </header>
 
-          {% if page.tags.size >= 1 %}
-            <div class="post-tags">
-              {% for tag in page.tags %}
-                <a href="{{ site.baseurl }}/tags/?tag={{ tag | downcase | url_encode }}" class="post__tag">{{ tag }}</a>
-              {% endfor %}
-            </div>
-          {% endif %}
-
-          <h1 class="post-title">{{ page.title | escape }}</h1>
-
-          <div class="post-meta">
-            <a href="{{site.baseurl}}/about/" class="post-author-link">{{site.data.settings.author.author__name}}</a> –
-            <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
+  {% if page.image %}
+  <div class="journal-post__hero">
+    {% include blog-image.html src=page.image alt="" sizes="(max-width: 1008px) calc(100vw - 48px), 960px" loading="eager" priority=true %}
   </div>
-</div>
+  {% endif %}
 
-<div class="container">
-  <div class="row">
-    {%if page.image %}
-    <div class="col col-12">
-      <div class="post-image animate">
-        <img class="lazy" data-src="{{site.baseurl}}{{page.image}}" alt="{{page.title}}">
-      </div>
-    </div>
-    {%endif %}
-  </div>
-</div>
-
-<!-- begin post -->
-<div class="container animate">
-  
   <div class="toc-compact" id="toc-compact">
-    <button class="toc-toggle" id="toc-toggle">
-      <span class="toc-icon" id="toc-icon"></span>
+    <button class="toc-toggle" id="toc-toggle" type="button" aria-label="Article chapters" aria-expanded="false" aria-controls="toc-dropdown">
+      <span class="toc-icon" aria-hidden="true">☰</span>
     </button>
-    <nav class="toc-dropdown" id="toc-dropdown">
+    <nav class="toc-dropdown" id="toc-dropdown" aria-label="Article chapters" hidden>
       <ul class="toc-list" id="toc-list"></ul>
     </nav>
   </div>
 
-  <article class="post">
-
-    <div class="post__content">
-      {{ content }}
+  <article class="post journal-article">
+    <div class="journal-content">{{ article_body }}</div>
+    <div class="journal-post__end">
+      {% include blog-share.html %}
+      {% if substack_url %}<p><a href="{{ substack_url | escape }}" target="_blank" rel="noopener noreferrer">Read this story on Substack ↗</a></p>{% endif %}
+      <section class="journal-subscribe">
+        <h2>More stories from the road</h2>
+        <p>Occasional writing about filmmaking, travel and the outdoors.</p>
+        <a href="https://filmmakingbob.substack.com/subscribe" target="_blank" rel="noopener noreferrer">Subscribe on Substack ↗</a>
+      </section>
+      {% if series %}
+        {% for other in site.posts %}{% if other.url == series.other %}
+        <p class="journal-series__link"><a href="{{ other.url | relative_url }}">{{ series.name | escape }} · {% if series.part == 1 %}Part 2{% else %}Part 1{% endif %}: {{ other.title | escape }} →</a></p>
+        {% endif %}{% endfor %}
+      {% endif %}
+      <nav class="journal-neighbours" aria-label="Adjacent articles">
+        {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span>← Older article</span>{{ page.previous.title | escape }}</a>{% endif %}
+        {% if page.next %}<a href="{{ page.next.url | relative_url }}"><span>Newer article →</span>{{ page.next.title | escape }}</a>{% endif %}
+      </nav>
+      {% assign related_count = 0 %}
+      {% capture related_links %}
+        {% for related in site.posts %}
+          {% if related.url != page.url and related.url != page.previous.url and related.url != page.next.url and related.tags contains page.tags.first %}
+            {% if related_count < 2 %}
+              <li><a href="{{ related.url | relative_url }}">{{ related.title | escape }} →</a></li>
+              {% assign related_count = related_count | plus: 1 %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      {% endcapture %}
+      {% if related_count > 0 %}<section class="journal-related"><h2>Related reading</h2><ul>{{ related_links }}</ul></section>{% endif %}
+      <a class="journal-top" href="#top">Back to top ↑</a>
     </div>
-
-    <div class="post__share">
-      <ul class="share__list list-reset">
-        <li class="share__item">
-          <a class="share__link share__twitter"
-            href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&url={{ site.url }}{{ site.baseurl }}{{ page.url }}"
-            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-            title="Share on Twitter" rel="nofollow"><i class="fa-brands fa-x-twitter"></i></a>
-        </li>
-        <li class="share__item">
-          <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ site.baseurl }}{{ page.url }}"
-            onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
-            title="Share on Facebook" rel="nofollow"><i class="fa-brands fa-square-facebook"></i></a>
-        </li>
-        <li class="share__item">
-          <a class="share__link share__pinterest" href="https://pinterest.com/pin/create/button/?url={{ site.url }}{{ page.url }}&amp;media={{ site.url }}{{ site.baseurl }}{{ page.image }}&amp;description={{ page.title | uri_escape }}"
-          onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Pinterest"
-          rel="nofollow"><i class="fa-brands fa-pinterest"></i></a>
-        </li>
-      </ul>
-    </div>
-
   </article>
+
+  {% if site.data.settings.disqus-identifier %}
+    <div class="journal-comments">{% include disqus-comments.html %}</div>
+  {% endif %}
 </div>
-<!-- end post -->
 
-{% include related-posts.html %}
-
-{% if site.data.settings.disqus-identifier %}
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-        {% include disqus-comments.html %}
-      </div>
-    </div>
+<dialog class="photo-lightbox journal-lightbox" aria-label="Photograph viewer">
+  <div class="photo-lightbox__controls">
+    <button class="photo-lightbox__button journal-lightbox__close" type="button" aria-label="Close photograph viewer">×</button>
   </div>
-{% endif %}
-
-<script src="{{ site.baseurl }}/js/toc.js"></script>
+  <img class="photo-lightbox__image journal-lightbox__image" alt="">
+</dialog>
+<script src="{{ '/js/toc.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>

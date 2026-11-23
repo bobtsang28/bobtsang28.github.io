@@ -75,4 +75,7 @@
   </script>
 
   <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  {% if page.url contains '/blog/' %}
+  <link rel="stylesheet" href="{{ '/css/journal.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  {% endif %}
 </head>
