@@ -280,14 +280,19 @@
 .journal-related li { margin-top: 6px; }
 
 .journal-progress {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
   z-index: 999;
   width: 100%;
   height: 2px;
   pointer-events: none;
+  visibility: hidden;
+  transform: translateY(var(--journal-header-height, 0px));
 }
+
+.journal-progress.is-ready { visibility: visible; transition: transform 300ms ease; }
+.header.is-hidden:not(.is-pinned):not(:focus-within) + .journal-progress { transform: translateY(0); }
 
 .journal-progress__bar {
   width: 100%;
@@ -374,5 +379,6 @@
 
 @media (prefers-reduced-motion: reduce) {
   .journal-card__image img, .journal-card__title-text,
-  .journal-post .toc-toggle, .journal-post .toc-dropdown, .journal-lightbox { transition: none; }
+  .journal-post .toc-toggle, .journal-post .toc-dropdown, .journal-lightbox,
+  .journal-progress.is-ready { transition: none; }
 }

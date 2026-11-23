@@ -198,11 +198,18 @@
   const progress = document.querySelector(".journal-progress");
   const bar = progress?.querySelector(".journal-progress__bar");
   const header = document.querySelector(".header");
+  if (progress && header) {
+    progress.style.setProperty("--journal-header-height", `${header.offsetHeight}px`);
+    // Set the initial position before enabling transitions.
+    progress.getBoundingClientRect();
+    progress.classList.add("is-ready");
+  }
   let frame = 0;
   const updateProgress = () => {
     frame = 0;
     const rect = content.getBoundingClientRect();
     const headerHeight = header?.offsetHeight || 0;
+    if (progress) progress.style.setProperty("--journal-header-height", `${headerHeight}px`);
     const start = scrollY + rect.top - headerHeight;
     const end = scrollY + rect.bottom - innerHeight;
     const value = Math.max(0, Math.min(1, (scrollY - start) / Math.max(1, end - start)));
@@ -214,6 +221,7 @@
   };
   addEventListener("scroll", schedule, { passive: true });
   addEventListener("resize", schedule, { passive: true });
+  if (header && window.ResizeObserver) new ResizeObserver(schedule).observe(header);
   schedule();
 
   const dialog = document.querySelector(".journal-lightbox");
