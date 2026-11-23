@@ -1,5 +1,14 @@
-<div class="journal-share" aria-label="Share this article">
-  <button type="button" class="journal-share__native" hidden>Share</button>
-  <button type="button" class="journal-share__copy">Copy link</button>
+<div class="journal-share{% if include.footer %} journal-share--actions{% endif %}" aria-label="{% if include.footer %}Article actions{% else %}Share this article{% endif %}">
+  {% if include.footer %}
+  <a class="journal-share__email" href="mailto:?subject={{ page.title | url_encode }}&amp;body={{ page.url | absolute_url | url_encode }}" aria-label="Share by email"><i class="fa-solid fa-share-nodes" aria-hidden="true"></i> <span class="journal-share__label">Share</span></a>
+  {% endif %}
+  <button type="button" class="journal-share__native"{% if include.footer %} aria-label="Share"{% endif %} hidden>{% if include.footer %}<i class="fa-solid fa-share-nodes" aria-hidden="true"></i> <span class="journal-share__label">Share</span>{% else %}Share{% endif %}</button>
+  <button type="button" class="journal-share__copy"{% if include.footer %} aria-label="Copy link"{% endif %}>{% if include.footer %}<i class="fa-solid fa-link" aria-hidden="true"></i> <span class="journal-share__label">Copy link</span>{% else %}Copy link{% endif %}</button>
+  {% if include.footer and site.data.settings.disqus-identifier %}
+  <button type="button" id="show-comments-button" aria-label="Comments" onclick="disqus();return false;"><i class="fa-regular fa-comment" aria-hidden="true"></i> <span class="journal-share__label">Comments</span></button>
+  {% endif %}
+  {% if include.footer and include.substack_url %}
+  <a href="{{ include.substack_url | escape }}" target="_blank" rel="noopener noreferrer">Read on Substack <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+  {% endif %}
   <span class="journal-share__status" role="status" aria-live="polite"></span>
 </div>

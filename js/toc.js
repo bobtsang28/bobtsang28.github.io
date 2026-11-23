@@ -180,9 +180,11 @@
   document.querySelectorAll(".journal-share").forEach(group => {
     const native = group.querySelector(".journal-share__native");
     const copy = group.querySelector(".journal-share__copy");
+    const email = group.querySelector(".journal-share__email");
     copy.addEventListener("click", () => copyLink(articleUrl, copy));
     if (navigator.share) {
       native.hidden = false;
+      if (email) email.hidden = true;
       native.addEventListener("click", async () => {
         try {
           await navigator.share({ title: document.title, url: articleUrl });
@@ -200,12 +202,11 @@
   const updateProgress = () => {
     frame = 0;
     const rect = content.getBoundingClientRect();
-    const headerBottom = Math.max(0, header?.getBoundingClientRect().bottom || 0);
-    const start = scrollY + rect.top - headerBottom;
+    const headerHeight = header?.offsetHeight || 0;
+    const start = scrollY + rect.top - headerHeight;
     const end = scrollY + rect.bottom - innerHeight;
     const value = Math.max(0, Math.min(1, (scrollY - start) / Math.max(1, end - start)));
     updateActive();
-    if (progress) progress.style.top = `${headerBottom}px`;
     if (bar) bar.style.transform = `scaleX(${value})`;
   };
   const schedule = () => {

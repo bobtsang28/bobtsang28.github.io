@@ -18,7 +18,6 @@ layout: default
   {% assign article_body = article_body | replace: original_src, responsive_src %}
 {% endfor %}
 
-<div class="journal-progress" aria-hidden="true"><div class="journal-progress__bar"></div></div>
 <div class="journal-post">
   <header class="journal-post__header">
     <a class="journal-back" href="{{ '/blog/' | relative_url }}">← Back to Blog</a>
@@ -48,41 +47,39 @@ layout: default
   <article class="post journal-article">
     <div class="journal-content">{{ article_body }}</div>
     <div class="journal-post__end">
-      {% include blog-share.html %}
-      {% if substack_url %}<p><a href="{{ substack_url | escape }}" target="_blank" rel="noopener noreferrer">Read this story on Substack ↗</a></p>{% endif %}
+      {% include blog-share.html footer=true substack_url=substack_url %}
+      {% if site.data.settings.disqus-identifier %}
+        <div class="journal-comments">{% include disqus-comments.html %}</div>
+      {% endif %}
       <section class="journal-subscribe">
         <h2>More stories from the road</h2>
         <p>Occasional writing about filmmaking, travel and the outdoors.</p>
-        <a href="https://filmmakingbob.substack.com/subscribe" target="_blank" rel="noopener noreferrer">Subscribe on Substack ↗</a>
+        <a href="https://filmmakingbob.substack.com/subscribe" target="_blank" rel="noopener noreferrer">Subscribe</a>
       </section>
-      {% if series %}
+      {% if series and series.other != page.previous.url and series.other != page.next.url %}
         {% for other in site.posts %}{% if other.url == series.other %}
-        <p class="journal-series__link"><a href="{{ other.url | relative_url }}">{{ series.name | escape }} · {% if series.part == 1 %}Part 2{% else %}Part 1{% endif %}: {{ other.title | escape }} →</a></p>
+        <p class="journal-series__link"><a href="{{ other.url | relative_url }}">{{ series.name | escape }} · {% if series.part == 1 %}Part 2{% else %}Part 1{% endif %}: {{ other.title | escape }}</a></p>
         {% endif %}{% endfor %}
       {% endif %}
       <nav class="journal-neighbours" aria-label="Adjacent articles">
-        {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span>← Older article</span>{{ page.previous.title | escape }}</a>{% endif %}
-        {% if page.next %}<a href="{{ page.next.url | relative_url }}"><span>Newer article →</span>{{ page.next.title | escape }}</a>{% endif %}
+        {% if page.previous %}<a href="{{ page.previous.url | relative_url }}" aria-label="{% if series.other == page.previous.url %}{{ series.name | escape }} Part 1{% else %}Older article{% endif %}: {{ page.previous.title | escape }}">← {% if series.other == page.previous.url %}Part 1{% else %}Older{% endif %}</a>{% else %}<span></span>{% endif %}
+        <a href="{{ '/blog/' | relative_url }}">All articles</a>
+        {% if page.next %}<a href="{{ page.next.url | relative_url }}" aria-label="{% if series.other == page.next.url %}{{ series.name | escape }} Part 2{% else %}Newer article{% endif %}: {{ page.next.title | escape }}">{% if series.other == page.next.url %}Part 2{% else %}Newer{% endif %} →</a>{% else %}<span></span>{% endif %}
       </nav>
       {% assign related_count = 0 %}
       {% capture related_links %}
         {% for related in site.posts %}
-          {% if related.url != page.url and related.url != page.previous.url and related.url != page.next.url and related.tags contains page.tags.first %}
+          {% if related.url != page.url and related.url != page.previous.url and related.url != page.next.url and related.url != series.other and related.tags contains page.tags.first %}
             {% if related_count < 2 %}
-              <li><a href="{{ related.url | relative_url }}">{{ related.title | escape }} →</a></li>
+              <li><a href="{{ related.url | relative_url }}">{{ related.title | escape }}</a></li>
               {% assign related_count = related_count | plus: 1 %}
             {% endif %}
           {% endif %}
         {% endfor %}
       {% endcapture %}
       {% if related_count > 0 %}<section class="journal-related"><h2>Related reading</h2><ul>{{ related_links }}</ul></section>{% endif %}
-      <a class="journal-top" href="#top">Back to top ↑</a>
     </div>
   </article>
-
-  {% if site.data.settings.disqus-identifier %}
-    <div class="journal-comments">{% include disqus-comments.html %}</div>
-  {% endif %}
 </div>
 
 <dialog class="photo-lightbox journal-lightbox" aria-label="Photograph viewer">
