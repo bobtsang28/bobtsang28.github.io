@@ -6,6 +6,34 @@ seo_description: "Learn about Bob Tsang's work as a London-based filmmaker, came
 permalink: /about/
 image: '/images/01-2.jpg'
 credits:
+  - title: The Weight We Share
+    company: Mini-documentary
+    date: In post-production
+    role: Director/ Cinematographer/ Editor/ Colourist
+    producers:
+      - name: Bob Tsang
+        url: https://www.instagram.com/filmmaking_bob/
+  - title: The Shape of Life
+    company: Mini-documentary
+    date: Sep 2026
+    role: Director/ Cinematographer/ Editor/ Colourist
+    producers:
+      - name: Bob Tsang
+        url: https://www.instagram.com/filmmaking_bob/
+  - title: G-Shock Global Campaign
+    company: Commercial
+    date: Jul 2026
+    role: Production Assistant
+    producers:
+      - name: Jeremy Joyce
+        url: https://jp.linkedin.com/in/jeremy-joyce-097901111
+  - title: When Metal Meets the Shamisen
+    company: Mini-documentary
+    date: Mar 2026
+    role: Director/ Cinematographer/ Editor/ Colourist
+    producers:
+      - name: Bob Tsang
+        url: https://www.instagram.com/filmmaking_bob/
   - title: "Summer's End"
     company: Personal Project
     date: Nov 2025
@@ -29,20 +57,6 @@ credits:
     producers:
       - name: Mariana Lopez
         url: https://uk.linkedin.com/in/mariana-j-l%C3%B3pez-9a229096
-  - title: The Art of Healing
-    company: Personal Project
-    date: Sep 2025
-    role: Director/ Cinematographer/ Editor/ Colourist
-    producers:
-      - name: Bob Tsang
-        url: https://www.instagram.com/filmmaking_bob/
-  - title: The Harbour I Remember
-    company: Personal Project
-    date: Jun 2025
-    role: Director/ Cinematographer/ Editor/ Colourist
-    producers:
-      - name: Bob Tsang
-        url: https://www.instagram.com/filmmaking_bob/
   - title: Blueberry Inn
     company: Dancing Fox Entertainment
     date: May 2025
@@ -63,13 +77,6 @@ credits:
     producers:
       - name: Elizabeth Fung
         url: https://hk.linkedin.com/in/elizabeth-fung
-  - title: A Taste of Japan
-    company: Personal Project
-    date: Jan 2025
-    role: Director/ Cinematographer/ Editor/ Colourist
-    producers:
-      - name: Bob Tsang
-        url: https://www.instagram.com/filmmaking_bob/
   - title: I Cycled 800km Across Japan
     company: Personal Project
     date: Dec 2024
@@ -98,30 +105,9 @@ credits:
     producers:
       - name: Turkey Ho
         url: https://hk.linkedin.com/in/turkey-ho-36a776a9
-  - title: Mong Kok at Night
-    company: Personal Project
-    date: Jan 2024
-    role: Director/ Cinematographer/ Editor/ Colourist
-    producers:
-      - name: Bob Tsang
-        url: https://www.instagram.com/filmmaking_bob/
   - title: Vinson 4892
     company: Personal Project
     date: Jan 2024
-    role: Director/ Cinematographer/ Editor/ Colourist
-    producers:
-      - name: Bob Tsang
-        url: https://www.instagram.com/filmmaking_bob/
-  - title: In My Life
-    company: University of York
-    date: Jan 2024
-    role: Director/ Writer/ Editor/ Colourist
-    producers:
-      - name: Bob Tsang
-        url: https://www.instagram.com/filmmaking_bob/
-  - title: What Climbing Mount Fuji is Like
-    company: Personal Project
-    date: Aug 2023
     role: Director/ Cinematographer/ Editor/ Colourist
     producers:
       - name: Bob Tsang
