@@ -9,11 +9,7 @@
     </div>
     <div class="journal-card__text">
       <p class="journal-card__meta">{{ post.tags.first | escape }} <span aria-hidden="true">·</span> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>{% if include.featured %} <span aria-hidden="true">·</span> {% include blog-reading-time.html post=post %}{% endif %}</p>
-      {% assign title_words = post.title | split: ' ' %}
-      {% assign last_word = title_words | last %}
-      {% assign prefix_length = post.title.size | minus: last_word.size %}
-      {% assign title_prefix = post.title | slice: 0, prefix_length | strip %}
-      <h2 class="journal-card__title">{% unless title_prefix == '' %}<span class="journal-card__title-text">{{ title_prefix | escape }}</span> {% endunless %}<span class="journal-card__ending"><span class="journal-card__title-text">{{ last_word | escape }}</span><span class="journal-card__arrow" aria-hidden="true">↗</span></span></h2>
+      <h2 class="journal-card__title"><span class="journal-card__title-text">{{ post.title | escape }}</span></h2>
       {% if post.description %}<p class="journal-card__excerpt">{{ post.description | escape }}</p>{% endif %}
       {% unless include.featured %}<p class="journal-card__reading">{% include blog-reading-time.html post=post %}</p>{% endunless %}
     </div>
